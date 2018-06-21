@@ -19,6 +19,7 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
+    "aos": "^2.3.0",
     "express": "^4.15.4"
   }
 }
