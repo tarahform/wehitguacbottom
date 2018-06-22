@@ -1,7 +1,7 @@
 {
-  "name": "mern",
+  "name": "create-oh",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "Alcohol Delivery",
   "main": "server.js",
   "scripts": {
     "server": "node server.js",

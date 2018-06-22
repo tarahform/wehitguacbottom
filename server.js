@@ -1,19 +1,32 @@
-const express = require("express");
-const path = require("path");
-const PORT = process.env.PORT || 3001;
-const app = express();
+var express = require("express");
+var bodyParser = require("body-parser");
+// var mysql = require("mysql2"); ??
+const routes = require("./routes");
+var app = express();
 
-// Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
+// Set the port of our application
+// process.env.PORT lets the port be set by Heroku
+var PORT = process.env.PORT || 8080;
 
-// Send every request to the React app
-// Define any API routes before this runs
-app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// lets client side files use relative file paths
+// specifically the public folder
+app.use(express.static("public"));
+
+// Parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+
+// allows the app (express) to use the var routes
+app.use(routes);
+
+// Start our server so that it can begin listening to client requests.
+// force: true = allows for testing - delete when hosting on heroku
+db.sequelize.sync().then(function () {
+  app.listen(PORT, function () {
+    // Log (server-side) when our server has started
+    console.log("Server listening on: http://localhost:" + PORT);
+  });
 });
 
-app.listen(PORT, function() {
-  console.log(`🌎 ==> Server now on port ${PORT}!`);
-});
+
