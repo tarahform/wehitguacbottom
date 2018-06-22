@@ -1,7 +1,8 @@
 import React from "react";
+import "./Container.css";
 
 const Container = () => (
-  <div>
+  <div className="container-fluid">
   </div>
 );
 
