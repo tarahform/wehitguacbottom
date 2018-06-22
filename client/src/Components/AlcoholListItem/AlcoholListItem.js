@@ -1,6 +1,7 @@
 import React from "react";
+import "./AlcoholListItem.css";
 
-const AlcoholListItem = ({ children }) => (
+const AlcoholListItem = () => (
   <div>
   </div>
 );

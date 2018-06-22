@@ -1,21 +1,28 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import About from "./Views/About";
+import Alcohol from "./Views/Alcohol";
+import Recipies from "./Views/Recipies";
+import Welcome from "./Views/Welcome";
+import NoMatch from "./Views/NoMatch";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <Router>
+    <div>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Welcome} />
+        <Route exact path="/welcome" component={Welcome} />
+        <Route exact path="/About" component={About} />
+        <Route exact path="/Alcohol" component={Alcohol} />
+        <Route exact path="/Recipies" component={Recipies} />
+        <Route component={NoMatch} />
+      </Switch>
+      <Footer />
+    </div>
+  </Router>
+)
 
 export default App;
