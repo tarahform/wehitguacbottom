@@ -14,10 +14,10 @@ const App = () => (
       <Navbar />
       <Switch>
         <Route exact path="/" component={Welcome} />
-        <Route exact path="/welcome" component={Welcome} />
-        <Route exact path="/About" component={About} />
-        <Route exact path="/Alcohol" component={Alcohol} />
-        <Route exact path="/Recipes" component={Recipes} />
+        {/* <Route exact path="/welcome" component={Welcome} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/alcohol" component={Alcohol} />
+        <Route exact path="/recipes" component={Recipes} /> */}
         <Route component={NoMatch} />
       </Switch>
       <Footer />

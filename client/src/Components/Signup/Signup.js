@@ -2,7 +2,7 @@ import React from "react";
 import "./Signup.css";
 
 const Signup = () => (
-  <div>
+  <div><h1>Signup</h1>
   </div>
 );
 

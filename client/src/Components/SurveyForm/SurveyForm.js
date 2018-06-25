@@ -2,7 +2,7 @@ import React from "react";
 import "./SurveyForm.css";
 
 const SurveyForm = () => (
-  <div>
+  <div><h1>Survey Form</h1>
   </div>
 );
 
