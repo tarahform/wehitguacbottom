@@ -1,0 +1,12 @@
+.card {
+    border-radius: 2px;
+    height: 300px;
+    width: 300px;
+    margin: 1rem;
+    position: relative;
+  }
+  .square {
+    width: 300px;
+    height: 300px;
+  }
+   
