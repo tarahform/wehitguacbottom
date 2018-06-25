@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 
-const Nav = () => (
+const Navbar = () => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
     <a className="navbar-brand" href="/">
       Basic Nav Bar
@@ -9,4 +9,4 @@ const Nav = () => (
   </nav>
 );
 
-export default Nav;
+export default Navbar;
