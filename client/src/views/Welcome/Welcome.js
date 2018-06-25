@@ -1,8 +1,12 @@
 import React from "react";
+import Hero from "../../components/Hero";
 
 const Welcome = () => (
   <div>
-    <h1>Welcome</h1>
+        <Hero backgroundImage="./img/hero-wine.jpg">
+          <h1>SUCK IT BOOTSTRAP!</h1>
+          <h2>Coming Soon...</h2>
+        </Hero>
   </div>
 );
 
