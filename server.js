@@ -1,6 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-// var mysql = require("mysql2"); ??
+var mysql2 = require("mysql2");
 const routes = require("./routes");
 var app = express();
 
