@@ -6,7 +6,7 @@ const AboutInfo = () => (
     // <h1>About Info Component</h1>
     <div className="container-fluid" id="aboutPage">
         <div className="container" id="aboutContainer">
-            <ScrollAnimation className="row text-center" animateIn="bounceInLeft" id="missionRow">
+            <ScrollAnimation className="row text-center" animateIn="fadeInDown" id="missionRow">
                 <div className="col-md-12 text-center" id="missionDiv">
                     <h1 id="aboutPageh1">Mission Statement</h1>
                     <p>Here at Ice Breaker, we focus on inspiring and promoting sociability and kindness in the world. We all need
@@ -17,7 +17,7 @@ const AboutInfo = () => (
                 </div>
             </ScrollAnimation>
             <hr />
-            <ScrollAnimation className="row text-center" animateIn="bounceInRight">
+            <ScrollAnimation className="row text-center" animateIn="fadeInDown">
                 <div className="col-md-12 text-center" id="aboutDiv">
                     <h1 id="aboutPageh1">How It Works</h1>
                     <p>Create a profile.
@@ -39,7 +39,7 @@ const AboutInfo = () => (
             </div>
         </div>
         <div className="row">
-            <ScrollAnimation className="col-md-3" animateIn="bounce">
+            <ScrollAnimation className="col-md-3" animateIn="fadeInDown">
                 <div className="card developer-image">
                     <div className="card-body">
                         <img src="./img/developers/HalleConger.jpg" className="image img-fluid" alt="Halle" />
@@ -52,7 +52,7 @@ const AboutInfo = () => (
                     </div>
                 </div>
             </ScrollAnimation>
-            <ScrollAnimation className="col-md-3" animateIn="bounce">
+            <ScrollAnimation className="col-md-3" animateIn="fadeInDown">
                 <div className="card developer-image">
                     <div className="card-body">
                         <img src="./img/developers/NicholasEdwards.jpg" className="image img-fluid" alt="Nick" />
@@ -65,7 +65,7 @@ const AboutInfo = () => (
                     </div>
                 </div>
             </ScrollAnimation>
-            <ScrollAnimation className="col-md-3" animateIn="bounce">
+            <ScrollAnimation className="col-md-3" animateIn="fadeInDown">
                 <div className="card developer-image">
                     <div className="card-body">
                         <img src="./img/developers/TarahPerry.jpg" className="image img-fluid" alt="Tarah" />
@@ -77,7 +77,7 @@ const AboutInfo = () => (
                     </div>
                 </div>
             </ScrollAnimation>
-            <ScrollAnimation className="col-md-3" animateIn="bounce">
+            <ScrollAnimation className="col-md-3" animateIn="fadeInDown">
                 <div className="card developer-image">
                     <div className="card-body">
                         <img src="./img/developers/DanielAlamo.jpg" className="image img-fluid" alt="Dan" />
