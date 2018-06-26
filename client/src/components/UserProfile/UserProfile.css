@@ -1,0 +1,39 @@
+
+#userProfilePhotoCard {
+    position: relative;
+    width: 100%;
+    border: none;
+  }
+  #userPicture {
+    display: block;
+    max-width: 300px;
+    height: auto;
+  }
+  #userOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 350px;
+    height: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+    border: none;
+  }
+  #userPictureDiv:hover #userOverlay {
+    opacity: 1;
+    border: none;
+  }
+  #userProfilePhotoBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  #userProfileRow2 {
+    margin-left: 10%;
+  }
