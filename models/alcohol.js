@@ -8,6 +8,10 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false
         },
+        price: {
+            type: DataTypes.DECIMAL,
+            allowNull: false
+        },
         subscription: {
             type: DataTypes.STRING,
             allowNull: false
