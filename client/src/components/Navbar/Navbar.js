@@ -61,10 +61,7 @@ const Navbar = props => (
             About
           </Link>
         </li>
-<<<<<<< HEAD
 
-=======
->>>>>>> 0aa62ebc2e6d2f4f3b7110653078b9f9262dcfde
         <li
           className={
             window.location.pathname === "/signin"
@@ -73,16 +70,10 @@ const Navbar = props => (
           }
         >
           <Link to="/signin" className="nav-link">
-<<<<<<< HEAD
-            Signin
-          </Link>
-        </li>
-
-=======
             Sign In
           </Link>
         </li>
->>>>>>> 0aa62ebc2e6d2f4f3b7110653078b9f9262dcfde
+        
         <li
           className={
             window.location.pathname === "/signup"
@@ -91,16 +82,9 @@ const Navbar = props => (
           }
         >
           <Link to="/signup" className="nav-link">
-<<<<<<< HEAD
-            Signup
-          </Link>
-        </li>
-
-=======
             Sign Up
           </Link>
         </li>
->>>>>>> 0aa62ebc2e6d2f4f3b7110653078b9f9262dcfde
       </ul>
     </div>
   </nav>
