@@ -13,8 +13,6 @@ create table users(
     phone_number INT(10),
     age INT(3),
     member_since DATETIME DEFAULT NOW() NOT NULL,
-    challenge_id VARCHAR(255),
-    user_points INT,
     primary key (id)
 );
 
