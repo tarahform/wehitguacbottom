@@ -55,52 +55,8 @@ module.exports = function (app) {
             phone_number: req.body.phone_number,
             age: req.body.age,
             member_since: req.body.member_since,
-            challenge_id: req.body.challenge_id,
-            user_points: req.body.user_points,
         }).then(function (data) {
             res.json(data);
         });
     });
-
-
-    //get data from challenges table
-    app.get("/api/challenges", function (req, res) {
-        db.Challenge.findAll({}).then(function (data) {
-            res.json(data);
-        });
-    });
-
-    //post data to challenges table
-    app.post("/api/challenges", function (req, res) {
-        db.Challenge.create({
-            challenge_task: req.body.challenge_task,
-            point_value: req.body.point_value,
-        }).then(function (data) {
-            res.json(data);
-        });
-    });
-
-    //get data from recommendations table
-    app.get("/api/recommendations", function (req, res) {
-        db.Recommendation.findAll({}).then(function (data) {
-            res.json(data);
-        });
-    });
-
-    app.put("/api/users/:email", function (req, res) {
-        console.log("req.body", req.body)
-        db.User.update(
-            {
-                challenge_id: req.body.completedChallengesArray,
-                user_points: req.body.updatedPoints
-            },
-            {
-                where: {
-                    email: req.params.email
-                }
-            }
-        ).then(function (data) {
-            res.sendStatus(200);
-        })
-    })
 }
