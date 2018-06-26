@@ -1,7 +1,7 @@
 import React from "react";
 import "./UserProfile.css";
 
-<script>
+{/* <script>
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
         setTimeout(function () {
@@ -12,7 +12,7 @@ import "./UserProfile.css";
         }, 500);
     }
 });
-</script>
+</script> */}
 
 const UserProfile = props => (
     <div className="container-fluid" id="userProfilePage">
