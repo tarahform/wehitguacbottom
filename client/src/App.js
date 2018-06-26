@@ -10,23 +10,9 @@ import NoMatch from "./views/NoMatch";
 import Wine from "./components/Wine";
 import Beer from "./components/Beer";
 import Liquor from "./components/Liquor";
+import Signup from "./components/Signup";
+import Signin from "./components/Signin";
 
-// // FirebaseUI config.
-// var uiConfig = {
-//   signInSuccessUrl: '/userprofile',
-//   signInOptions: [
-//     // Leave the lines as is for the providers you want to offer your users.
-//     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-//     firebase.auth.EmailAuthProvider.PROVIDER_ID
-//   ],
-//   // Terms of service url.
-//   // tosUrl: '<your-tos-url>'
-// };
-
-// // Initialize the FirebaseUI Widget using Firebase.
-// var ui = new firebaseui.auth.AuthUI(firebase.auth());
-// // The start method will wait until the DOM is loaded.
-// ui.start('#firebaseui-auth-container', uiConfig);
 
 const App = () => (
   <Router>
@@ -41,6 +27,8 @@ const App = () => (
         <Route exact path="/wine" component={Wine} />
         <Route exact path="/beer" component={Beer} />
         <Route exact path="/liquor" component={Liquor} />
+        <Route exact path="/signin" component={Signin} />
+        <Route exact path="/signup" component={Signup} />
         <Route component={NoMatch} />
       </Switch>
       <Footer />
