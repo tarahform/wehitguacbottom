@@ -8,12 +8,15 @@ const Navbar = props => (
     <Link className="navbar-brand" to="/">
       Create-OH
     </Link>
+
     <div>
+
       <ul className="navbar-nav">
+
         <li
           className={
             window.location.pathname === "/" ||
-            window.location.pathname === "/welcome"
+              window.location.pathname === "/welcome"
               ? "nav-item active"
               : "nav-item"
           }
@@ -22,6 +25,7 @@ const Navbar = props => (
             Welcome
           </Link>
         </li>
+
         <li
           className={
             window.location.pathname === "/Alcohol"
@@ -33,6 +37,7 @@ const Navbar = props => (
             Alcohol
           </Link>
         </li>
+
         <li
           className={
             window.location.pathname === "/recipes"
@@ -44,6 +49,7 @@ const Navbar = props => (
             Recipes
           </Link>
         </li>
+
         <li
           className={
             window.location.pathname === "/about"
@@ -53,6 +59,30 @@ const Navbar = props => (
         >
           <Link to="/about" className="nav-link">
             About
+          </Link>
+        </li>
+
+        <li
+          className={
+            window.location.pathname === "/signin"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/signin" className="nav-link">
+            Sign In
+          </Link>
+        </li>
+        
+        <li
+          className={
+            window.location.pathname === "/signup"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/signup" className="nav-link">
+            Sign Up
           </Link>
         </li>
       </ul>
