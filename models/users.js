@@ -12,11 +12,13 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false
         },
-        age: {
-            type: DataTypes.INTEGER,
-            validate: {
-                len: [1,3]
-            }
+        photo_link: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        email: {
+            type: DataTypes.STRING,
+            allowNull: false
         },
         phone_number: {
             type: DataTypes.STRING,
@@ -24,12 +26,17 @@ module.exports = function (sequelize, DataTypes) {
                 len: [10]
             }
         },
-        email: {
-            type: DataTypes.STRING,
-            allowNull: false
+        age: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            validate: {
+                len: [1, 3]
+            }
         },
+
         challenge_id: DataTypes.STRING,
         user_points: DataTypes.INTEGER,
     });
+    
     return User;
 }
