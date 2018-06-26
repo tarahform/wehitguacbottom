@@ -1,11 +1,12 @@
 import React from "react";
 import "./AboutInfo.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const AboutInfo = () => (
     // <h1>About Info Component</h1>
     <div className="container-fluid" id="aboutPage">
         <div className="container" id="aboutContainer">
-            <div className="row text-center" id="missionRow">
+            <ScrollAnimation className="row text-center" animateIn="bounceInLeft" id="missionRow">
                 <div className="col-md-12 text-center" id="missionDiv">
                     <h1 id="aboutPageh1">Mission Statement</h1>
                     <p>Here at Ice Breaker, we focus on inspiring and promoting sociability and kindness in the world. We all need
@@ -14,9 +15,9 @@ const AboutInfo = () => (
                         not have before.
                 </p>
                 </div>
-            </div>
+            </ScrollAnimation>
             <hr />
-            <div className="row text-center">
+            <ScrollAnimation className="row text-center" animateIn="bounceInRight">
                 <div className="col-md-12 text-center" id="aboutDiv">
                     <h1 id="aboutPageh1">How It Works</h1>
                     <p>Create a profile.
@@ -27,7 +28,7 @@ const AboutInfo = () => (
                     <br /> Leave knowing you tried something new today.
                 </p>
                 </div>
-            </div>
+            </ScrollAnimation>
         </div>
 
         <hr />
@@ -38,7 +39,7 @@ const AboutInfo = () => (
             </div>
         </div>
         <div className="row">
-            <div className="col-md-3">
+            <ScrollAnimation className="col-md-3" animateIn="bounce">
                 <div className="card developer-image">
                     <div className="card-body">
                         <img src="./img/developers/HalleConger.jpg" className="image img-fluid" alt="Halle" />
@@ -50,8 +51,8 @@ const AboutInfo = () => (
                 </div>
                     </div>
                 </div>
-            </div>
-            <div className="col-md-3">
+            </ScrollAnimation>
+            <ScrollAnimation className="col-md-3" animateIn="bounce">
                 <div className="card developer-image">
                     <div className="card-body">
                         <img src="./img/developers/NicholasEdwards.jpg" className="image img-fluid" alt="Nick" />
@@ -63,8 +64,8 @@ const AboutInfo = () => (
                     </div>
                     </div>
                 </div>
-            </div>
-            <div className="col-md-3">
+            </ScrollAnimation>
+            <ScrollAnimation className="col-md-3" animateIn="bounce">
                 <div className="card developer-image">
                     <div className="card-body">
                         <img src="./img/developers/TarahPerry.jpg" className="image img-fluid" alt="Tarah" />
@@ -75,8 +76,8 @@ const AboutInfo = () => (
                 </div>
                     </div>
                 </div>
-            </div>
-            <div className="col-md-3">
+            </ScrollAnimation>
+            <ScrollAnimation className="col-md-3" animateIn="bounce">
                 <div className="card developer-image">
                     <div className="card-body">
                         <img src="./img/developers/DanielAlamo.jpg" className="image img-fluid" alt="Dan" />
@@ -86,7 +87,7 @@ const AboutInfo = () => (
                     harder he laughs. The jokes he enjoys most are his own.</div>
                     </div>
                 </div>
-            </div>
+            </ScrollAnimation>
             <hr />
         </div>
     </div>
