@@ -12,7 +12,7 @@ import Beer from "./components/Beer";
 import Liquor from "./components/Liquor";
 import Signup from "./components/Signup";
 import Signin from "./components/Signin";
-
+import Events from "./components/Events";
 
 const App = () => (
   <Router>
@@ -29,6 +29,7 @@ const App = () => (
         <Route exact path="/liquor" component={Liquor} />
         <Route exact path="/signin" component={Signin} />
         <Route exact path="/signup" component={Signup} />
+        <Route exact path="/events" component={Events} />
         <Route component={NoMatch} />
       </Switch>
       <Footer />
