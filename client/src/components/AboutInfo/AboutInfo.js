@@ -1,11 +1,11 @@
 import React from "react";
 import "./AboutInfo.css";
 
-const AboutInfo = props => (
+const AboutInfo = () => (
     // <h1>About Info Component</h1>
     <div className="container-fluid" id="aboutPage">
         <div className="container" id="aboutContainer">
-            <div className="row text-center" data-aos="fade-up-right" id="missionRow">
+            <div className="row text-center" id="missionRow">
                 <div className="col-md-12 text-center" id="missionDiv">
                     <h1 id="aboutPageh1">Mission Statement</h1>
                     <p>Here at Ice Breaker, we focus on inspiring and promoting sociability and kindness in the world. We all need
@@ -16,8 +16,8 @@ const AboutInfo = props => (
                 </div>
             </div>
             <hr />
-            <div className="row text-center" data-aos="fade-up-right">
-                <div className="col-md-12 text-center" id="aboutDiv" data-aos="fade-up-left">
+            <div className="row text-center">
+                <div className="col-md-12 text-center" id="aboutDiv">
                     <h1 id="aboutPageh1">How It Works</h1>
                     <p>Create a profile.
                     <br /> Search for venues in your area.
@@ -33,12 +33,12 @@ const AboutInfo = props => (
         <hr />
 
         <div className="row" id="developers">
-            <div className="col-md-12 aos-item" data-aos="flip-up">
+            <div className="col-md-12">
                 <h2 className="developers text-center">Developers</h2>
             </div>
         </div>
         <div className="row">
-            <div className="col-md-3 aos-item" data-aos="flip-down">
+            <div className="col-md-3">
                 <div className="card developer-image">
                     <div className="card-body">
                         <img src="./img/developers/HalleConger.jpg" className="image img-fluid" alt="Halle" />
@@ -51,7 +51,7 @@ const AboutInfo = props => (
                     </div>
                 </div>
             </div>
-            <div className="col-md-3 aos-item" data-aos="flip-down">
+            <div className="col-md-3">
                 <div className="card developer-image">
                     <div className="card-body">
                         <img src="./img/developers/NicholasEdwards.jpg" className="image img-fluid" alt="Nick" />
@@ -64,7 +64,7 @@ const AboutInfo = props => (
                     </div>
                 </div>
             </div>
-            <div className="col-md-3 aos-item" data-aos="flip-down">
+            <div className="col-md-3">
                 <div className="card developer-image">
                     <div className="card-body">
                         <img src="./img/developers/TarahPerry.jpg" className="image img-fluid" alt="Tarah" />
@@ -76,7 +76,7 @@ const AboutInfo = props => (
                     </div>
                 </div>
             </div>
-            <div className="col-md-3 aos-item" data-aos="flip-down">
+            <div className="col-md-3">
                 <div className="card developer-image">
                     <div className="card-body">
                         <img src="./img/developers/DanielAlamo.jpg" className="image img-fluid" alt="Dan" />

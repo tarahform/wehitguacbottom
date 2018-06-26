@@ -19,3 +19,6 @@ values ("Tahrah", "Leah", "Perry", "photolink", "tahrah.dummyemail@gmail.com", "
 
 insert into users (first_name, middle_name, last_name, photo_link, email, phone_number, age, challenge_id, user_points, createdAt, updatedAt)
 values ("Ali", "Prince", "Arfeen", "photolink", "ali.dummyemail@gmail.com", "5689930088", 26, "[6,4,3,12,9]", 5, NOW(), NOW());
+
+-- alcohol tabledata
+
