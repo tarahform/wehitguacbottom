@@ -10,6 +10,8 @@ import NoMatch from "./views/NoMatch";
 import Wine from "./components/Wine";
 import Beer from "./components/Beer";
 import Liquor from "./components/Liquor";
+import Signup from "./components/Signup";
+import Signin from "./components/Signin";
 
 // // FirebaseUI config.
 // var uiConfig = {
@@ -41,6 +43,8 @@ const App = () => (
         <Route exact path="/wine" component={Wine} />
         <Route exact path="/beer" component={Beer} />
         <Route exact path="/liquor" component={Liquor} />
+        <Route exact path="/signin" component={Signin} />
+        <Route exact path="/signup" component={Signup} />
         <Route component={NoMatch} />
       </Switch>
       <Footer />
