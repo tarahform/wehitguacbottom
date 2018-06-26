@@ -23,6 +23,20 @@
     <script>
         AOS.init();
     </script>
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDPkokot0_mZAsHfbRgiVDnbtBELgH3sY0",
+            authDomain: "create-oh.firebaseapp.com",
+            databaseURL: "https://create-oh.firebaseio.com",
+            projectId: "create-oh",
+            storageBucket: "create-oh.appspot.com",
+            messagingSenderId: "508873121210"
+        };
+        firebase.initializeApp(config);
+    </script>
 
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
