@@ -39,8 +39,4 @@ module.exports = function (app) {
             res.send(200).end();
         })
     });
-    app.get("/heynick", function(req,res) {
-        var obj = {};
-        res.render("heynick");
-    });
 }
