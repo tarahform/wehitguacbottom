@@ -790,44 +790,43 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values("Rhum Barbancourt Réserve Spéciale 8 Year", "", "Rum", 19.84, "Basic", "[Citrus, Vanilla, Spicy]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Blue Chair Bay Rum Coconut", "", "Rum", 12.99, "Basic", "[Fruity, Sweet, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("ABC Light Rum", "", "Rum", 10.50, "Basic", "[Sweet, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("El Dorado 12 Year", "", "Rum", 55.00, "Moderate", "[Semi-sweet, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Lamb's Navy Rum", "", "Rum", 26.09, "Basic", "[Smooth, Sweet]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Ron Barcelo Rum Anejo", "", "Rum", 23.99, "Basic", "[Dry, Fruity, Spicy, Wood]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Santa Teresa 1796", "", "Rum", 79.99, "Premium", "[Sweet, Wood, Vanilla, Rich]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Pusser's British Navy Rum", "", "Rum", 43.09, "Moderate", "[Smooth, Spicy]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Ronrico Gold Rum", "", "Rum", 16.99, "Basic", "[Dry, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Bumbu Original Rum", "", "Rum", 39.99, "Moderate", "[Spicy, Sweet]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Ron Abuelo Rum Anejo", "", "Rum", 15.99, "Basic", "[Smooth, Spicy]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Koloa Kauai Coffee Rum Liqueur", "", "Rum", 59.99, "Moderate", "[Sweet, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Calypso Rum Silver", "", "Rum", 10.99, "Basic", "[Sweet, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Old New Orleans Cajun Spiced Rum", "", "Rum", 19.99, "Basic", "[Spicy, Ginger, Roast, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
-values("Four Roses Small Batch", "liquor/fourrosessmallbatch", "Whiskey", 43.99, "Moderate", "A mellow symphony of rich, spicy flavors along with sweet, fruity aromas and hints of sweet oak and caramel. Finishes soft, smooth and pleasantly long. Best enjoyed straight up, on the rocks, or with a splash.")
+values("Atlantico Private Rum Cask", "", "Rum", 21.99, "Basic", "[Wood, Sweet, Fruity]")
