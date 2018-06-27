@@ -452,76 +452,76 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Redd's Apple Ale", "beer/", "Cider", "6.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Boulevard Tropical Pale Ale", "beer/", "Pale Ale", "6.00", "Basic", "", NOW(), NOW());
+values ("Boulevard Tropical Pale Ale", "beer/boulevardtropicalpale", "Pale Ale", "6.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Evil Twin Hipster Ale", "beer/", "Pale Ale", "4.00", "Basic", "", NOW(), NOW());
+values ("Evil Twin Hipster Ale", "beer/eviltwinhipster", "Pale Ale", "4.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Einstök Icelandic Pale Ale", "beer/", "Pale Ale", "5.00", "Basic", "", NOW(), NOW());
+values ("Einstök Icelandic Pale Ale", "beer/einstokicelandicpaleale", "Pale Ale", "5.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Founders All Day IPA", "beer/", "IPA", "5.00", "Basic", "", NOW(), NOW());
+values ("Founders All Day IPA", "beer/foundersalldayipa", "IPA", "5.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Harpoon IPA", "beer/", "IPA", "6.00", "Basic", "", NOW(), NOW());
+values ("Harpoon IPA", "beer/harpoonipa", "IPA", "6.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Stone Delicious IPA", "beer/", "IPA", "5.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Night Shift Morph IPA", "beer/", "IPA", "6.00", "Basic", "", NOW(), NOW());
+values ("Night Shift Morph IPA", "beer/nightshiftmorphipa", "IPA", "6.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Goose Island 312 Urban Wheat Ale", "beer/", "Wheat", "5.00", "Basic", "", NOW(), NOW());
+values ("Goose Island 312 Urban Wheat Ale", "beer/gooseisland312urbanwheatale", "Wheat", "5.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Upland Wheat", "beer/", "Wheat", "6.00", "Basic", "", NOW(), NOW());
+values ("Upland Wheat", "beer/uplandwheat", "Wheat", "6.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Blue Moon Mango Wheat", "beer/", "Wheat", "6.00", "Basic", "", NOW(), NOW());
+values ("Blue Moon Mango Wheat", "beer/bluemoonmangowheat", "Wheat", "6.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Youngs Double Chocolate Stout", "beer/", "Stout", "5.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Founders KBS", "beer/", "Stout", "5.00", "Basic", "", NOW(), NOW());
+values ("Founders KBS", "beer/founderskbs", "Stout", "5.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Mikkeller Vanilla Shake", "beer/", "Stout", "5.00", "Basic", "", NOW(), NOW());
+values ("Mikkeller Vanilla Shake", "beer/mikkellervanillashake", "Stout", "5.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Budweiser", "beer/", "Domestic", "5.00", "Basic", "", NOW(), NOW());
+values ("Budweiser", "beer/budweiser", "Domestic", "5.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Pabst Blue Ribbon", "beer/", "Domestic", "4.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Busch Lite", "beer/", "Domestic", "5.00", "Basic", "", NOW(), NOW());
+values ("Busch Lite", "beer/buschlight", "Domestic", "5.00", "Basic", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Jacks Hard Cider Peach", "beer/", "Cider", "10.00", "Moderate", "", NOW(), NOW());
+values ("Jacks Hard Cider Peach", "beer/jackshardciderpeach", "Cider", "10.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Angry Orchard Crisp Apple Hard Cider", "beer/", "Cider", "12.00", "Moderate", "", NOW(), NOW());
+values ("Angry Orchard Crisp Apple Hard Cider", "beer/angryorchardcrispapplecider", "Cider", "12.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Woodchuck Amber Hard Cider", "beer/", "Cider", "14.00", "Moderate", "", NOW(), NOW());
+values ("Woodchuck Amber Hard Cider", "beer/woodchuckamberhardcider", "Cider", "14.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Three Floyds Munsterfest", "beer/", "Pale Ale", "15.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Sierra Nevada Pale Ale", "beer/", "Pale Ale", "14.00", "Moderate", "", NOW(), NOW());
+values ("Sierra Nevada Pale Ale", "beer/sierranevadapaleale", "Pale Ale", "14.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Half Acre Daisy Cutter Pale Ale", "beer/", "Pale Ale ", "13.00", "Moderate", "", NOW(), NOW());
+values ("Half Acre Daisy Cutter Pale Ale", "beer/halfacredaisycutterpaleale", "Pale Ale ", "13.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Goose Island IPA", "beer/", "IPA", "15.00", "Moderate", "", NOW(), NOW());
+values ("Goose Island IPA", "beer/gooseislandipa", "IPA", "15.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Elysian Space Dust IPA", "beer/", "IPA", "14.00", "Moderate", "", NOW(), NOW());
+values ("Elysian Space Dust IPA", "beer/elysianspacedustipa", "IPA", "14.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Bells Two Hearted IPA", "beer/", "IPA", "14.00", "Moderate", "", NOW(), NOW());
@@ -530,31 +530,31 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Tree Floyds Blackheart", "beer/", "Wheat", "15.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Blue Moon Belgian White", "beer/", "Wheat", "15.00", "Moderate", "", NOW(), NOW());
+values ("Blue Moon Belgian White", "beer/bluemoonbelgianwhite", "Wheat", "15.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Old Rasputin", "beer/", "Stout", "14.00", "Moderate", "", NOW(), NOW());
+values ("Old Rasputin", "beer/oldrasputinrussianimperialstout", "Stout", "14.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Lagunitas Imperial Stout", "beer/", "Stout", "13.00", "Moderate", "", NOW(), NOW());
+values ("Lagunitas Imperial Stout", "beer/lagunitasimperialstout", "Stout", "13.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Avery Vanilla Bean Stout", "beer/", "Stout", "12.00", "Moderate", "", NOW(), NOW());
+values ("Avery Vanilla Bean Stout", "beer/averyvanillabeanstout", "Stout", "12.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Coors Light", "beer/", "Domestic", "8.00", "Moderate", "", NOW(), NOW());
+values ("Coors Light", "beer/coorslight", "Domestic", "8.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Bud Light", "beer/", "Domestic", "8.00", "Moderate", "", NOW(), NOW());
+values ("Bud Light", "beer/budlight", "Domestic", "8.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Yuengling", "beer/", "Domestic", "8.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Original Sin Hard Cider", "beer/", "Cider", "16.00", "Premium", "", NOW(), NOW());
+values ("Original Sin Hard Cider", "beer/originalsinhardcider", "Cider", "16.00", "Premium", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Shacksberry Semi-Sweet Dry Hard Cider", "beer/", "Cider", "16.00", "Premium", "", NOW(), NOW());
+values ("Shacksberry Semi-Sweet Dry Hard Cider", "beer/shacksburysemidry", "Cider", "16.00", "Premium", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Night Shift Whirl Pool", "beer/", "Pale Ale", "17.00", "Premium", "", NOW(), NOW());
@@ -566,31 +566,31 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Bells Oberon Ale", "beer/", "Pale Ale", "20.00", "Premium", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Great Divide Denver Pale Ale", "beer/", "Pale Ale", "18.00", "Premium", "", NOW(), NOW());
+values ("Great Divide Denver Pale Ale", "beer/greatdividedenverpaleale", "Pale Ale", "18.00", "Premium", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("New Belgium Voodoo Ranger Imperial IPA", "beer/", "IPA", "17.00", "Premium", "", NOW(), NOW());
+values ("New Belgium Voodoo Ranger Imperial IPA", "beer/newbelgiumrampantimperialipa", "IPA", "17.00", "Premium", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Elysian Day Glow IPA", "beer/", "IPA", "17.00", "Premium", "", NOW(), NOW());
+values ("Elysian Day Glow IPA", "beer/elysiandayglowipa", "IPA", "17.00", "Premium", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Upland Dragonfly IPA", "beer/", "IPA", "18.00", "Premium", "", NOW(), NOW());
+values ("Upland Dragonfly IPA", "beer/uplanddragonflyipa", "IPA", "18.00", "Premium", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Shock Top Pumpkin Wheat", "beer/", "Wheat", "20.00", "Premium", "", NOW(), NOW());
+values ("Shock Top Pumpkin Wheat", "beer/shocktoppumpkinwheat", "Wheat", "20.00", "Premium", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Founders Barrel Aged CBS", "beer/", "Stout", "16.00", "Premium", "", NOW(), NOW());
+values ("Founders Barrel Aged CBS", "beer/foundersbarrelagedcbs", "Stout", "16.00", "Premium", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Corona", "beer/", "Domestic", "15.00", "Premium", "", NOW(), NOW());
+values ("Corona", "beer/corona", "Domestic", "15.00", "Premium", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Michelob Ultra", "beer/", "Domestic", "15.00", "Premium", "", NOW(), NOW());
+values ("Michelob Ultra", "beer/michelobultra", "Domestic", "15.00", "Premium", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Miller Lite", "beer/", "Domestic", "15.00", "Premium", "", NOW(), NOW());
+values ("Miller Lite", "beer/millerlite", "Domestic", "15.00", "Premium", "", NOW(), NOW());
 
 
 
