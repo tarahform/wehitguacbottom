@@ -59,19 +59,19 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Smirnoff Moscow Mule Vodka", "", "Vodka", 12.00, "Basic", "['sharp', 'bitter', 'spicy', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Titos Handmade Vodka", "", "Vodka", 15.50, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
+values ("Tito's Handmade Vodka", "", "Vodka", 15.50, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("SKYY Vodka", "", "Vodka", 16.00, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Absolute Vodka", "", "Vodka", 17.00, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
+values ("Absolut Vodka", "", "Vodka", 17.00, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Effen Vodka", "", "Vodka", 17.50, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Skinny Girl Naked Vodka", "", "Vodka", 16.00, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
+values ("Skinnygirl Bare Naked Vodka", "", "Vodka", 16.00, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Three Olives Vodka", "", "Vodka", 15.50, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
@@ -86,10 +86,10 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Effen Green Apple Vodka", "", "Vodka", 20.00, "Moderate", "['sharp', 'bitter', 'fruity', 'sour']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("SKYY Infusion Wild Strawberry", "", "Vodka", 25.00, "Moderate", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
+values ("SKYY Infusions Wild Strawberry", "", "Vodka", 25.00, "Moderate", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("SKYY Infusion Texas Grapefruit", "", "Vodka", 23.00, "Moderate", "['sharp', 'bitter', 'citrus']", NOW(), NOW());
+values ("SKYY Infusions Texas Grapefruit", "", "Vodka", 23.00, "Moderate", "['sharp', 'bitter', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Three Olives Watermelon Vodka", "", "Vodka", 21.50, "Moderate", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
@@ -98,49 +98,49 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Absolut Mango", "", "Vodka", 27.00, "Moderate", "['sharp', 'bitter', 'citrus', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Three Olives Rootbeer Vodka", "", "Vodka", 20.00, "Moderate", "['sharp', 'bitter', 'sweet', 'vanilla']", NOW(), NOW());
+values ("Three Olives Root Beer Vodka", "", "Vodka", 20.00, "Moderate", "['sharp', 'bitter', 'sweet', 'vanilla']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Effen Salted Caramel Vodka", "", "Vodka", 19.50, "Moderate", "['sharp', 'bitter', 'sweet', 'vanilla']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Grey Goose", "", "Vodka", 40.00, "Premium", "['sharp', 'bitter']", NOW(), NOW());
+values ("Grey Goose Vodka", "", "Vodka", 40.00, "Premium", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Kettle One", "", "Vodka", 35.00, "Premium", "['sharp', 'bitter']", NOW(), NOW());
+values ("Ketel One Vodka", "", "Vodka", 35.00, "Premium", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Belvedere", "", "Vodka", 37.00, "Premium", "['sharp', 'bitter']", NOW(), NOW());
+values ("Belvedere Vodka", "", "Vodka", 37.00, "Premium", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Ciroc", "", "Vodka", 39.00, "Premium", "['sharp', 'bitter']", NOW(), NOW());
+values ("CIROC Vodka", "", "Vodka", 39.00, "Premium", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Kettle One Cucumber + Mint", "", "Vodka", 37.00, "Premium", "['sharp', 'bitter', 'savory', 'crisp', 'spicy']", NOW(), NOW());
+values ("Ketel One Botanical Cucumber and Mint", "", "Vodka", 37.00, "Premium", "['sharp', 'bitter', 'savory', 'crisp', 'spicy']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Kettle One Botanical Peach and Orange Blossom", "", "Vodka", 37.00, "Premium", "['sharp', 'bitter', 'fruity', 'crisp']", NOW(), NOW());
+values ("Ketel One Botanical Peach and Orange Blossom", "", "Vodka", 37.00, "Premium", "['sharp', 'bitter', 'fruity', 'crisp']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Ciroc Pinapple", "", "Vodka", 47.00, "Premium", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
+values ("CIROC Pinapple Vodka", "", "Vodka", 47.00, "Premium", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Belvedere Bloody Mary Vodka", "", "Vodka", 41.00, "Premium", "['sharp', 'bitter', 'spicy', 'savory']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Ciroc French Vanilla", "", "Vodka", 40.00, "Premium", "['sharp', 'bitter', 'sweet', 'vanilla']", NOW(), NOW());
+values ("CIROC French Vanilla Vodka", "", "Vodka", 40.00, "Premium", "['sharp', 'bitter', 'sweet', 'vanilla']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Grey Goose L'Orange", "", "Vodka", 45.00, "Premium", "['sharp', 'bitter', 'citrus', 'fruity']", NOW(), NOW());
+values ("Grey Goose L’Orange", "", "Vodka", 45.00, "Premium", "['sharp', 'bitter', 'citrus', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Grey Goose Le Citron", "", "Vodka", 45.00, "Premium", "['sharp', 'bitter', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Belvedere Pink Grape Fruit", "", "Vodka", 43.00, "Premium", "['sharp', 'bitter', 'citrus']", NOW(), NOW());
+values ("Belvedere Vodka Pink Grapefruit", "", "Vodka", 43.00, "Premium", "['sharp', 'bitter', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Ciroc Coconut", "", "Vodka", 48.00, "Premium", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
+values ("CIROC Coconut Vodka", "", "Vodka", 48.00, "Premium", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
 
 -- tequila data
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
