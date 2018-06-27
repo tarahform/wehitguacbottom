@@ -805,43 +805,43 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values("Rhum Barbancourt Réserve Spéciale 8 Year", "liquor/rhumbarbancourtreservespeciale8year", "Rum", 19.84, "Basic", "[Citrus, Vanilla, Spicy]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Blue Chair Bay Rum Coconut", "liquor/", "Rum", 12.99, "Basic", "[Fruity, Sweet, Smooth]")
+values("Blue Chair Bay Rum Coconut", "liquor/bluechairbayrumcoconut", "Rum", 12.99, "Basic", "[Fruity, Sweet, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("ABC Light Rum", "liquor/", "Rum", 10.50, "Basic", "[Sweet, Smooth]")
+values("ABC Light Rum", "liquor/abclightrum", "Rum", 10.50, "Basic", "[Sweet, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("El Dorado 12 Year", "liquor/", "Rum", 55.00, "Moderate", "[Semi-sweet, Smooth]")
+values("El Dorado 12 Year", "liquor/eldorado12year", "Rum", 55.00, "Moderate", "[Semi-sweet, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Lamb's Navy Rum", "liquor/", "Rum", 26.09, "Basic", "[Smooth, Sweet]")
+values("Lamb's Navy Rum", "liquor/lambsnavyrum", "Rum", 26.09, "Basic", "[Smooth, Sweet]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Ron Barcelo Rum Anejo", "liquor/", "Rum", 23.99, "Basic", "[Dry, Fruity, Spicy, Wood]")
+values("Ron Barcelo Rum Anejo", "liquor/ronbarcelorumanejo", "Rum", 23.99, "Basic", "[Dry, Fruity, Spicy, Wood]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Santa Teresa 1796", "liquor/", "Rum", 79.99, "Premium", "[Sweet, Wood, Vanilla, Rich]")
+values("Santa Teresa 1796", "liquor/santateresa1796", "Rum", 79.99, "Premium", "[Sweet, Wood, Vanilla, Rich]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Pusser's British Navy Rum", "liquor/", "Rum", 43.09, "Moderate", "[Smooth, Spicy]")
+values("Pusser's British Navy Rum", "liquor/pussersbritishnavyrum", "Rum", 43.09, "Moderate", "[Smooth, Spicy]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Ronrico Gold Rum", "liquor/", "Rum", 16.99, "Basic", "[Dry, Smooth]")
+values("Ronrico Gold Rum", "liquor/ronricogoldrum", "Rum", 16.99, "Basic", "[Dry, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Bumbu Original Rum", "liquor/", "Rum", 39.99, "Moderate", "[Spicy, Sweet]")
+values("Bumbu Original Rum", "liquor/bumbuoriginalrum", "Rum", 39.99, "Moderate", "[Spicy, Sweet]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Ron Abuelo Rum Anejo", "liquor/", "Rum", 15.99, "Basic", "[Smooth, Spicy]")
+values("Ron Abuelo Rum Anejo", "liquor/ronabuelorumanejo", "Rum", 15.99, "Basic", "[Smooth, Spicy]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Koloa Kauai Coffee Rum Liqueur", "liquor/", "Rum", 59.99, "Moderate", "[Sweet, Smooth]")
+values("Koloa Kauai Coffee Rum Liqueur", "liquor/koloakauaicoffeerumliqueur", "Rum", 59.99, "Moderate", "[Sweet, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Calypso Rum Silver", "liquor/", "Rum", 10.99, "Basic", "[Sweet, Smooth]")
+values("Calypso Rum Silver", "liquor/calypsorumsilver", "Rum", 10.99, "Basic", "[Sweet, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Old New Orleans Cajun Spiced Rum", "liquor/", "Rum", 19.99, "Basic", "[Spicy, Ginger, Roast, Smooth]")
+values("Old New Orleans Cajun Spiced Rum", "liquor/oldneworleanscajunspicedrum", "Rum", 19.99, "Basic", "[Spicy, Ginger, Roast, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Atlantico Private Rum Cask", "liquor/", "Rum", 21.99, "Basic", "[Wood, Sweet, Fruity]")
+values("Atlantico Private Rum Cask", "liquor/atlanticoprivaterumcask", "Rum", 21.99, "Basic", "[Wood, Sweet, Fruity]")
