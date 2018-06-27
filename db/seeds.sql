@@ -589,6 +589,123 @@ values ("Michelob Ultra", "beer/michelobultra", "Domestic", "15.00", "Premium", 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Miller Lite", "beer/millerlite", "Domestic", "15.00", "Premium", "", NOW(), NOW());
 
+-- alcohol tabledata
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Crown Royal Deluxe", "", "Whiskey", 0, "Basic", 22.97,  "Crown Royal is a smooth blend of 50 Canadian whiskies. It has a rich, bold nose with notes of vanilla and fruit. It's an extraordinarily smooth, creamy whiskey, and you'll notice hints of oak before savoring the long, satisfying finish.")
 
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Blanton's Straight From The Barel Bourbon", "", "Whiskey", 139.99, "Premium", "Created for connoisseurs familiar with cask strength whiskeys this enormous taste profile reaches depths of flavor found only in the rarest of spirits. The complexity of rye, caramel, oak, honey and vanilla coat your palate followed by a legendary finish.")
 
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Jack Daniel's Old No. 7 Whiskey", "", "Whiskey", 26.99, "Basic", "Jack Daniel's Tennessee Whiskey is known for its smooth, sweet and mild palate with flavors of caramel, complemented by hints of spice, nuts and a touch of smoke. Has a quick, sweet finish with notes of oak, spice, caramel, walnuts and white pepper.")
 
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Johnnie Walker Black Label", "", "Whiskey", 49.99, "Moderate", "A deluxe blended whiskey, sit back, relax and savor the creamy toffee and caramel notes and hints of allspice and citrus. You'll also taste hints of the oak sherry casks that aged this whiskey, along with a rich, smoky finish.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Lagavulin 16 Year", "", "Whiskey", 89.99, "Premium", "The taste of dry peat smoke with strong maritime notes give Lagavulin its elegant finish, and peat bog provide the raw material which imbues the barley with our iconic smoky flavor.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Southern Comfort Black 80 Proof", "", "Whiskey", 15.99, "Basic", "A robust whiskey-forward profile with subtle spice and fruity accents, our 80 proof takes the original Southern Comfort experience up a notch — for those who like their extra-smooth whiskey extra bold. Try it neat, on the rocks or in a classic cocktail.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Bulleit Rye", "", "Whiskey", 38.99, "Moderate", "Bulleit Rye Whiskey allows you to savor its bold, spicy character and distinctively clean finish. The flavor profile of our rye whiskey combines hints of spice, vanilla and honey for a smooth, well-balanced finish that lingers long after the final sip.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Glenfiddich 15 Year", "", "Whiskey", 99.97, "Premium", "Glenfiddich 15 Year Old expression is created using a technique pioneered by our Malt Master and its warm, spicy flavours are transformed with the alchemy of the Solera Vat.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Maccalan 15 Year Fine Oak", "", "Whiskey", 109.99, "Premium", "The Macallan 15 Year Fine Oak draws out subtle dessert and spice flavors that make it perfect as a sipping whisky or a cocktail whisky. When you taste it, you'll get deep chocolate notes, with some raisin and orange around the edges.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Willet Pot Still Reserve Bourbon", "", "Whiskey", 36.99, "Moderate", "A single barrel bourbon from Kentucky Bourbon Distillers, packaged in an unusual, and rather smart Pot Still shaped bottle. The flavors start out light and buttery smooth, with vanilla, and caramel on the start, with spicy sweetness on the finish.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Kentucky Gentlemen Bourbon", "", "Whiskey", 15.99, "Basic", "Deep amber hue. Generous sweet wood and caramel aromas. A relatively viscous attack leads to a moderately full-bodied palate. Lingering, flavorful finish. Well balanced and straightforward with a slight burn.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("The Famous Grouse", "", "Whiskey", 20.99, "Basic", "Scotland’s number 1 whisky is crafted from the finest single malt whiskies and grain whiskies for the smoothest possible taste. It is characterized by its balance of flavors, with a hint of citrus fruit, provides its distinctively long and clean finish.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Old Grand Dad Bourbon Whiskey", "", "Whiskey", 24.99, "Basic", "Lovely buttery feel on the palate with tangy fruit and baked pie flavors.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("2 Gingers Irish Whiskey", "", "Whiskey", 15.99, "Basic", "2 GINGERS is a smooth, stand-out spirit when consumed neat or on the rocks, and a mixable Irish Whiskey that stands up in a cocktail. You will not find a better whiskey to mix and share with friends, any time of year.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Hibiki 17 Year Old Japanese Whisky", "", "Whiskey", 199.99, "Premium", "There are notes of honey and wax, resin and oak. The taste is sweet and rich. There are crisp notes of mixed peels, raisin and custard with a little zest and plenty of oak. The finish is long with notes of oak and cocoa and sherried peels.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Jim Beam Honey Bourbon Whiskey", "", "Whiskey", 14.97, "Basic", "Jim Beam Honey opens with complex notes of caramel, oak, vanilla and a finish of sweet honey. Made with Kentucky Straight Bourbon Whiskey slowly infused with natural golden honey to produce a sophisticated, deep, rich flavor with honey aroma.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Benchmark Bourbon", "", "Whiskey", 12.99, "Basic", "The nose bears caramel notes with a delicate stone-fruit backdrop. A robust and sturdy palate with some fine leather notes mingling with dry tobacco, a touch of oak and a hint of dried cherries. The finish is smooth and calming.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Redemption High-Rye Bourbon", "", "Whiskey", 25.99, "Basic", "High-Rye Bourbon mash-bill approaches the upper limit of allowable rye grain in a bourbon mash-bill. The dry spiciness of the rye balances the sweetness of the corn for a really wonderful sipping experience on its own or in classic cocktail recipes.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Old Forester 1920", "", "Whiskey", 54.99, "Moderate", "Dark fruit is most prominent, with hints of caramel, vanilla, and just the right amount of oak rounding it out. The sweetness here is balanced by a nearly perfect spice note.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Bird Dog Kentucky Bourbon", "", "Whiskey", 54.99, "Moderate", "Bird Dog Bourbon has an elaborate medley of corn, malted barley and rye that formulates into a distinctive gentle bourbon. Bird Dog Bourbon flourishes with light undertones of honey and golden raisins which is complimented by the richness of caramelized wood sugar.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Knob Creek Bourbon Whiskey", "", "Whiskey", 32.47, "Moderate", "Undeniably big, full flavor that strikes your senses with a maple sugar aroma, distinctive sweetness and a rich, woody, caramel flavor. Bottled at 100 proof, it's aged in the deepest charred American Oak barrels.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Evan Williams Bourbon Whiskey Black Label", "", "Whiskey", 15.99, "Basic", "As soon as you open a bottle of Evan Williams Black Label, you're met with a rich aroma of vanilla and mint, but this is just the precursor. When it hits your lips, hints of oak, caramel and brown sugar greet you and linger through the satisfying finish.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Seagram's 7 Crown Blended Whiskey", "", "Whiskey", 27.99, "Basic", "It’s both sweet and smooth while still being a little bit spicy. The nose offers up a lot of smokiness, a good amount of herbs, as well as some honey elements. Meanwhile, the taste is a lot like charred wood and apricots with just a touch of butter.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Jameson Irish Whiskey 18 Year Old Limited Reserve", "", "Whiskey", 134.99, "Premium", "A true original, Jameson 18 Year Old Limited Reserve is an exceptionally balanced whiskey and is the elder statesman of the Jameson Family. It has mellow, complex taste and lingering finale of wood, spice and toffee.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Buffalo Trace Bourbon", "", "Whiskey", 25.99, "Basic", "Buffalo Trace has a nose with sweet caramel, honey and citrus. You'll also notice a refreshing hint of mint before you taste this bourbon's mellow toffee, brown sugar and rye. The finish shines a spotlight on Buffalo Trace's oak barrels.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Woodford Reserve Bourbon", "", "Whiskey", 36.99, "Moderate", "Every bottle of Woodford Reserve Kentucky Straight Bourbon Whiskey boasts over 200 tasting notes. You'll notice wood, spice, fruity, and floral notes. Then comes the full range of rich, well-rounded flavors, including cinnamon, caramel and spiced citrus.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Old Overholt Rye Whiskey", "", "Whiskey", 29.99, "Basic", "Old Overholt is the oldest of The Olds, a relic you can drink. This famous Straight Rye Whiskey has a distinctive ﬂavor and appeal that, after Prohibition, made it the most popular spirit in the country.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Basil Hayden's Kentucky Straight Bourbon Whiskey", "", "Whiskey", 39.97, "Moderate", "Basil Hayden's is unequalled in that it utilizes twice as much rye in it as the other bourbons in the Collection. Enriched by a hint of peppermint, it impresses with notes of pepper balanced by slight citrus overtones, and a spicy, warming finish.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Dewar's White Label", "", "Whiskey", 19.99, "Basic", "Since 1899, this scotch whiskey has been produced with a time-honored traditional distillation process. Honey, vanilla, apple and wood combine into a versatile and soothing mix with an aftertaste of smokiness and a bit of fudge.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("The Balvenie 14 Year Caribbean Cask", "", "Whiskey", 116.09, "Premium", "The best whiskies are aged well, and The Balvenie 14 Year Caribbean Cask is one of the best. When you take a drink, you'll get flavors of sweet vanilla, mango, apple and just a touch of orange.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Wild Turkey 101", "", "Whiskey", 21.97, "Basic", "Wild Turkey ages the whiskey longer in new American White Oak barrels with the deepest possible char, cutting no corners across all of our bourbons and giving each one distinctive and rich flavor.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Monkey Shoulder Blended Scotch", "", "Whiskey", 53.74, "Moderate", "A blend of Speyside single malt Scotch whiskies for flavor and consistency. Richness and vibrancy combine with fruity aromas and mellow vanilla. Monkey Shoulder casks are former bourbon casks, which add smooth vanilla flavors to this Scotch.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("W.L. Weller Special Reserve", "", "Whiskey", 199.99, "Premium", "The Original Wheated Bourbon Whiskey features an exceptionally smooth taste, substituting wheat for rye grain. Its softer flavor notes make this bourbon great for sipping or making cocktails.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Nikka Coffey Grain Whisky", "", "Whiskey", 114.99, "Premium", "An essential component of the house blends, Nikka Coffey Grain is an original single grain whisky, distilled mainly from corn in a Coffey still. Exotic, fruity and unique, it is meant for the connoisseur in search of an unconventional whisky")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Angel's Envy Bourbon", "", "Whiskey", 99.99, "Premium", "Notes of sweet caramel, raisins and toffee that fade into notes of cinnamon and a touch of vanilla. The long finish has hints of dark chocolate and caramelized fruit, with just a touch of cherry.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Eagle Rare 10 Year", "", "Whiskey", 23.99, "Basic", "Full of excitement with a bit of an attitude... Rich, mature aroma of molasses, maple syrup, and leather, with background notes of creamy vanilla, tobacco, and subtle mint. Full, thick, mouth-coating body.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Johnnie Walker Blue Label", "", "Whiskey", 349.99, "Premium", "Blue Label is incredibly smoky and rich with a velvety smoothness that complements its powerful flavor. Hints of honey, hazelnuts, oranges and sherry hit the senses first, giving way to kumquats, ginger, dark chocolate and sandalwood.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Oban 14 Year Single Malt", "", "Whiskey", 142.99, "Premium", "A full-bodied, extremely dry scotch with notes of honey and dried figs, which lead to a soft, oaky finish.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Alberta Premium Rye Whisky", "", "Whiskey", 24.09, "Basic", "Made by blending two aged whiskies, one of which is aged for flavor in used bourbon casks. After blending, it is aged some more. The slow aging in cold temperatures preserves the natural rye spice. Known for its full flavor.")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Four Roses Small Batch", "", "Whiskey", 43.99, "Moderate", "A mellow symphony of rich, spicy flavors along with sweet, fruity aromas and hints of sweet oak and caramel. Finishes soft, smooth and pleasantly long. Best enjoyed straight up, on the rocks, or with a splash.")
