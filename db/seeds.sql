@@ -709,3 +709,125 @@ values("Alberta Premium Rye Whisky", "liquor/albertapremiumryewhisky", "Whiskey"
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values("Four Roses Small Batch", "liquor/fourrosessmallbatch", "Whiskey", 43.99, "Moderate", "A mellow symphony of rich, spicy flavors along with sweet, fruity aromas and hints of sweet oak and caramel. Finishes soft, smooth and pleasantly long. Best enjoyed straight up, on the rocks, or with a splash.")
+
+--rum data
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Captain Morgan Original Spiced Rum", "", "Rum", 24.99, "Basic", "[Spicy, Wood]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Bacardi Superior Rum", "", "Rum", 27.09, "Basic", "[Ginger, Citrus]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Bacardi Gold", "", "Rum", 27.09, "Basic", "[Sweet, Vanilla]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("The Kraken Black Spiced Rum", "", "Rum", 12.99, "Basic", "[Semi-sweet, Coffee, Vanilla, Citrus, Spicy]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Gosling's Black Seal 151 Proof Rum", "", "Rum", 42.24, "Moderate", "[Smooth, Semi-sweet]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Appleton Estate Signature Blend", "", "Rum", 18.99, "Basic", "[Fruity, Semi-sweet]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Malibu Black", "", "Rum", 13.99, "Basic", "[Smooth, Semi-sweet, Fruity]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Castillo Silver Rum", "", "Rum", 14.99, "Basic", "[Sweet, Spicy, Fruity]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Zaya Gran Reserva 12 Year Rum", "", "Rum", 72.09, "Premium", "[Sweet, Chocolate, Vanilla, Coffee, Rich, Smokey]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Plantation Rum XO Reserve 20th Anniversary", "", "Rum", 40.99, "Moderate", "[Fruity, Rich, Vanilla, Sweet, Wood]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("The Baron Samedi Spiced Rum", "", "Rum", 10.99, "Basic", "[Spicy, Roast, Vanilla, Smooth]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Blackheart Spiced Rum", "", "Rum", 19.99, "Basic", "[Sweet, Spicy, Smooth]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Sailor Jerry Spiced Rum", "", "Rum", 49.99, "Moderate", "[Spicy, Sweet]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Mount Gay Eclipse Rum", "", "Rum", 15.99, "Basic", "[Sweet, Spicy]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Ron Zacapa 23 Year Centenario", "", "Rum", 35.99, "Moderate", "[Spicy, Ginger, Sweet, Honey, Vanilla]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Admiral Nelson's Spiced Rum", "", "Rum", 11.99, "Basic", "[Smooth, Spicy]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Myers's Original Dark Rum", "", "Rum", 48.99, "Moderate", "[Sweet, Roast, Fruity, Wood]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Don Q Rum Cristal", "", "Rum", 23.05, "Basic", "[Smooth, Wood]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Diplomatico Rum Reserva Exclusiva", "", "Rum", 59.99, "Moderate", "[Fruity, Sweet, Wood, Citrus, Chocolate]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Ronrico Silver Rum", "", "Rum", 16.99, "Basic", "[Dry, Smooth]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Wray & Nephew White Overproof Rum", "", "Rum", 43.09, "Moderate", "[Fruity, Sweet]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Brugal Añejo Rum", "", "Rum", 26.88, "Basic", "[Smooth, Semi-sweet]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Flor de Caña 4 Year Gold Rum", "", "Rum", 29.99, "Basic", "[Sweet, Fruity, Spicy, Roast, Smooth]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Pyrat Rum XO Reserve", "", "Rum", 51.09, "Moderate", "[Semi-sweet, Honey, Citrus, Spicy, Smooth]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Cruzan Aged Light Rum", "", "Rum", 13.99, "Basic", "[Smooth, Spicy, Sweet]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Rhum Barbancourt Réserve Spéciale 8 Year", "", "Rum", 19.84, "Basic", "[Citrus, Vanilla, Spicy]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+values("Four Roses Small Batch", "liquor/fourrosessmallbatch", "Whiskey", 43.99, "Moderate", "A mellow symphony of rich, spicy flavors along with sweet, fruity aromas and hints of sweet oak and caramel. Finishes soft, smooth and pleasantly long. Best enjoyed straight up, on the rocks, or with a splash.")
