@@ -684,28 +684,28 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values("Wild Turkey 101", "", "Whiskey", 21.97, "Basic", "Wild Turkey ages the whiskey longer in new American White Oak barrels with the deepest possible char, cutting no corners across all of our bourbons and giving each one distinctive and rich flavor.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Monkey Shoulder Blended Scotch", "", "Whiskey", 53.74, "Moderate", "Description")
+values("Monkey Shoulder Blended Scotch", "", "Whiskey", 53.74, "Moderate", "A blend of Speyside single malt Scotch whiskies for flavor and consistency. Richness and vibrancy combine with fruity aromas and mellow vanilla. Monkey Shoulder casks are former bourbon casks, which add smooth vanilla flavors to this Scotch.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("W.L. Weller Special Reserve", "", "Whiskey", 199.99, "Premium", "The Original Wheated Bourbon Whiskey features an exceptionally smooth taste, substituting wheat for rye grain. Its softer flavor notes make this bourbon great for sipping or making cocktails.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Nikka Coffey Grain Whisky", "", "Whiskey", 114.99, "Premium", "An essential component of the house blends, Nikka Coffey Grain is an original single grain whisky, distilled mainly from corn in a Coffey still. Exotic, fruity and unique, it is meant for the connoisseur in search of an unconventional whisky")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Angel's Envy Bourbon", "", "Whiskey", 99.99, "Premium", "Notes of sweet caramel, raisins and toffee that fade into notes of cinnamon and a touch of vanilla. The long finish has hints of dark chocolate and caramelized fruit, with just a touch of cherry.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Eagle Rare 10 Year", "", "Whiskey", 23.99, "Basic", "Full of excitement with a bit of an attitude... Rich, mature aroma of molasses, maple syrup, and leather, with background notes of creamy vanilla, tobacco, and subtle mint. Full, thick, mouth-coating body.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Johnnie Walker Blue Label", "", "Whiskey", 349.99, "Premium", "Blue Label is incredibly smoky and rich with a velvety smoothness that complements its powerful flavor. Hints of honey, hazelnuts, oranges and sherry hit the senses first, giving way to kumquats, ginger, dark chocolate and sandalwood.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Oban 14 Year Single Malt", "", "Whiskey", 142.99, "Premium", "A full-bodied, extremely dry scotch with notes of honey and dried figs, which lead to a soft, oaky finish.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Alberta Premium Rye Whisky", "", "Whiskey", 24.09, "Basic", "Made by blending two aged whiskies, one of which is aged for flavor in used bourbon casks. After blending, it is aged some more. The slow aging in cold temperatures preserves the natural rye spice. Known for its full flavor.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Four Roses Small Batch", "", "Whiskey", 43.99, "Moderate", "A mellow symphony of rich, spicy flavors along with sweet, fruity aromas and hints of sweet oak and caramel. Finishes soft, smooth and pleasantly long. Best enjoyed straight up, on the rocks, or with a splash.")
