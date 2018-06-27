@@ -24,6 +24,8 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNul: false
         }
-    });
+    }, {
+            timestamps: false
+        });
     return Alcohol;
 }
