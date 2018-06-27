@@ -19,39 +19,6 @@
     <!-- Font Awesome -->
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css' integrity='sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp'
         crossorigin='anonymous'>
-    <!-- FIREBASE -->
-    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyDPkokot0_mZAsHfbRgiVDnbtBELgH3sY0",
-            authDomain: "create-oh.firebaseapp.com",
-            databaseURL: "https://create-oh.firebaseio.com",
-            projectId: "create-oh",
-            storageBucket: "create-oh.appspot.com",
-            messagingSenderId: "508873121210"
-        };
-        firebase.initializeApp(config);
-    </script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.css" />
-    <script>
-        // FirebaseUI config.
-        var uiConfig = {
-            signInSuccessUrl: '/userprofile',
-            signInOptions: [
-                // Leave the lines as is for the providers you want to offer your users.
-                firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-                firebase.auth.EmailAuthProvider.PROVIDER_ID
-            ],
-            // Terms of service url.
-            // tosUrl: '<your-tos-url>'
-        };
-        // Initialize the FirebaseUI Widget using Firebase.
-        var ui = new firebaseui.auth.AuthUI(firebase.auth());
-        // The start method will wait until the DOM is loaded.
-        ui.start('#firebaseui-auth-container', uiConfig);
-    </script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.

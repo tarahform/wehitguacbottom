@@ -39,7 +39,6 @@ class Signup extends Component {
     }
     userRef.push(user);
     this.setState({
-      user: [],
       firstName: "",
       middleName: "",
       lastName: "",
