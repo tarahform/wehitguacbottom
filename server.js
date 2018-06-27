@@ -1,7 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var mysql2 = require("mysql2");
-const routes = require("./routes");
+// const routes = require("./routes");
 var app = express();
 var db = require("./models");
 
@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // allows the app (express) to use the var routes
-app.use(routes);
+// app.use(routes);
 require("./routes/apiroutes")(app);
 require("./routes/viewsRoutes")(app);
 
