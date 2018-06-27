@@ -708,8 +708,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values("Alberta Premium Rye Whisky", "liquor/albertapremiumryewhisky", "Whiskey", 24.09, "Basic", "Made by blending two aged whiskies, one of which is aged for flavor in used bourbon casks. After blending, it is aged some more. The slow aging in cold temperatures preserves the natural rye spice. Known for its full flavor.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-<<<<<<< HEAD
-values("Four Roses Small Batch", "", "Whiskey", 43.99, "Moderate", "A mellow symphony of rich, spicy flavors along with sweet, fruity aromas and hints of sweet oak and caramel. Finishes soft, smooth and pleasantly long. Best enjoyed straight up, on the rocks, or with a splash.")
+values("Four Roses Small Batch", "liquor/fourrosessmallbatch", "Whiskey", 43.99, "Moderate", "A mellow symphony of rich, spicy flavors along with sweet, fruity aromas and hints of sweet oak and caramel. Finishes soft, smooth and pleasantly long. Best enjoyed straight up, on the rocks, or with a splash.")
 
 --rum data
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
@@ -831,6 +830,4 @@ values("Name", "", "Rum", 000, "Basic", "Description")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values("Name", "", "Rum", 000, "Basic", "Description")
-=======
 values("Four Roses Small Batch", "liquor/fourrosessmallbatch", "Whiskey", 43.99, "Moderate", "A mellow symphony of rich, spicy flavors along with sweet, fruity aromas and hints of sweet oak and caramel. Finishes soft, smooth and pleasantly long. Best enjoyed straight up, on the rocks, or with a splash.")
->>>>>>> 4af176a033f92b0394278d13e244cfae3b911f72
