@@ -421,10 +421,10 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values("Atlantico Private Rum Cask", "liquor/atlanticoprivaterumcask", "Rum", 21.99, "Basic", "[wood, sweet, fruity]", NOW(), NOW());
 -- wine data
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Apothic Crush smooth Red Blend", "wine/", "Red Wine", 10.00, "Basic", "['sweet', 'malty', 'fruity', 'chocolate']", NOW(), NOW());
+values ("Apothic Crush smooth Red Blend", "wine/apothiccrush", "Red Wine", 10.00, "Basic", "['sweet', 'malty', 'fruity', 'chocolate']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Barefoot Merlot", "wine/", "Red Wine", 12.00, "Basic", "['chocolate', 'fruit', 'vanilla', 'wood']", NOW(), NOW());
+values ("Barefoot Merlot", "wine/barefootmerlot", "Red Wine", 12.00, "Basic", "['chocolate', 'fruit', 'vanilla', 'wood']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Barefoot Zinfandel", "wine/", "Red Wine", 12.00, "Basic", "['fruity', 'spicy']", NOW(), NOW());
