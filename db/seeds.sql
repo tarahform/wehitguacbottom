@@ -427,190 +427,187 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Barefoot Merlot", "wine/barefootmerlot", "Red Wine", 12.00, "Basic", "['chocolate', 'fruit', 'vanilla', 'wood']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Barefoot Zinfandel", "wine/", "Red Wine", 12.00, "Basic", "['fruity', 'spicy']", NOW(), NOW());
-
-insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Casa Smith ViNO Rosso", "wine/", "Red Wine", 12.00, "Basic", "['fruit', 'spicy']", NOW(), NOW());
+values ("Barefoot Zinfandel", "wine/barefootzinfandel", "Red Wine", 12.00, "Basic", "['fruity', 'spicy']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Meiomi Pinot Nior", "wine/", "Red Wine", 14.00, "Basic", "['fruity', 'chocolate', 'vanilla', 'wood']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Motto Unabashed Zinfandel California", "wine/", "Red Wine", 15.00, "Basic", "['fruity', 'spicy', 'vanilla']", NOW(), NOW());
+values ("Motto Unabashed Zinfandel California", "wine/mottounabashedzinfandel", "Red Wine", 15.00, "Basic", "['fruity', 'spicy', 'vanilla']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("The Dreaming Tree Crush Red Blend", "wine/", "Red Wine", 15.00, "Basic", "['wood', 'fruity']", NOW(), NOW());
+values ("The Dreaming Tree Crush Red Blend", "wine/thedreamingtreecrushredblend", "Red Wine", 15.00, "Basic", "['wood', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Chateau Souverain Sauvignon Blanc", "wine/", "White Wine", 11.00, "Basic", "['citrus', 'honey', 'chrisp']", NOW(), NOW());
+values ("The Dreaming Tree Crush White Blend", "wine/thedreamingtreecrushwhiteblend", "White Wine", 15.00, "Basic", "['crisp', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Barefoot Pinot Grigio", "wine/", "White Wine", 12.00, "Basic", "['fruity', 'sour', 'citrus']", NOW(), NOW());
+values ("Barefoot Pinot Grigio", "wine/barefootpinotgrigio", "White Wine", 12.00, "Basic", "['fruity', 'sour', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Barefoot Moscato", "wine/", "White Wine", 12.00, "Basic", "['fruity', 'sweet', 'crisp']", NOW(), NOW());
+values ("Barefoot Moscato", "wine/barefootmoscato", "White Wine", 12.00, "Basic", "['fruity', 'sweet', 'crisp']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Barefoot Riesling", "wine/", "White Wine", 12.00, "Basic", "['citrus', 'fruity', 'sweet']", NOW(), NOW());
+values ("Barefoot Riesling", "wine/barefootriesling", "White Wine", 12.00, "Basic", "['citrus', 'fruity', 'sweet']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Dark Horse Sauvignon Blanc", "wine/", "White Wine", 15.00, "Basic", "['crisp', 'fruity', 'citrus']", NOW(), NOW());
+values ("Dark Horse Sauvignon Blanc", "wine/darkhorsesauvignonblanc", "White Wine", 15.00, "Basic", "['crisp', 'fruity', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Yellow Tail Pinot Grigio", "wine/", "White Wine", 15.00, "Basic", "['sweet', 'fruity']", NOW(), NOW());
+values ("Yellow Tail Pinot Grigio", "wine/yellowtailpinotgrigio", "White Wine", 15.00, "Basic", "['sweet', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Yellow Tail Chardonnary", "wine/", "White Wine", 15.00, "Basic", "['fruity', 'citrus', 'honey', 'wood', 'smooth']", NOW(), NOW());
+values ("Yellow Tail Chardonnary", "wine/yellowtailchardonnay", "White Wine", 15.00, "Basic", "['fruity', 'citrus', 'honey', 'wood', 'smooth']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Chloe Rose", "wine/", "Rose", 13.00, "Basic", "['dry', 'fruity', 'crisp']", NOW(), NOW());
+values ("Chloe Rose", "wine/chloecentralcoastrose", "Rose", 13.00, "Basic", "['dry', 'fruity', 'crisp']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Barefoot Rose", "wine/", "Rose", 14.00, "Basic", "['sweet', 'fruity', 'smooth', 'citrus']", NOW(), NOW());
+values ("Barefoot Rose", "wine/barefootrose", "Rose", 14.00, "Basic", "['sweet', 'fruity', 'smooth', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Dark Horse Rose", "wine/", "Rose", 18.00, "Basic", "['dry', 'crisp']", NOW(), NOW());
+values ("Dark Horse Rose", "wine/darkhorserose", "Rose", 18.00, "Basic", "['dry', 'crisp']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Rose All Day", "wine/", "Rose", 15.00, "Basic", "['fruity', 'crisp']", NOW(), NOW());
+values ("Rose All Day", "wine/roseallday", "Rose", 15.00, "Basic", "['fruity', 'crisp']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Ruby Red Grapefruit Rose", "wine/", "Rose", 18.00, "Basic", "['smooth', 'fruity', 'citrus']", NOW(), NOW());
+values ("Ruby Red Grapefruit Rose", "wine/rubyredgrapefruitrose", "Rose", 18.00, "Basic", "['smooth', 'fruity', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Chateau Barbelelle Rose", "wine/", "Rose", 19.00, "Basic", "['smooth', 'fruity', 'citrus']", NOW(), NOW());
+values ("Chateau Barbelelle Rose", "wine/chateaubarbebellerose", "Rose", 19.00, "Basic", "['smooth', 'fruity', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("La Marca Prosecco", "wine/", "Bubbly", 14.00, "Basic", "['fruity', 'honey', 'bitter']", NOW(), NOW());
+values ("La Marca Prosecco", "wine/lamarcaprosecco", "Bubbly", 14.00, "Basic", "['fruity', 'honey', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Barefoot Bubbly Pineapple", "wine/", "Bubbly", 14.00, "Basic", "['fruity', 'citrus', 'sweet']", NOW(), NOW());
+values ("Barefoot Bubbly Pineapple", "wine/barefootbubblypineapple", "Bubbly", 14.00, "Basic", "['fruity', 'citrus', 'sweet']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Barefoot Bubbly Brut", "wine/", "Bubbly", 12.00, "Basic", "['dry', 'fruity', 'crisp']", NOW(), NOW());
+values ("Barefoot Bubbly Brut", "wine/barefootbubblybrut", "Bubbly", 12.00, "Basic", "['dry', 'fruity', 'crisp']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Yellow Tail Bubbles Rose", "wine/", "Bubbly", 10.00, "Basic", "['spicy', 'fruity', 'sweet', 'crisp']", NOW(), NOW());
+values ("Yellow Tail Bubbles Rose", "wine/yellowtailbubblesrose", "Bubbly", 10.00, "Basic", "['spicy', 'fruity', 'sweet', 'crisp']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Cupcake Cabernet Sauvignon", "wine/", "Red Wine", 20.00, "Moderate", "['bold', 'fruity', 'coffee', 'spicy']", NOW(), NOW());
+values ("Cupcake Cabernet Sauvignon", "wine/cupcakecabernetsauvignon", "Red Wine", 20.00, "Moderate", "['bold', 'fruity', 'coffee', 'spicy']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Cupcake Merlot", "wine/", "Red Wine", 20.00, "Moderate", "['spicy', 'fruity', 'chocolate']", NOW(), NOW());
+values ("Cupcake Merlot", "wine/cupcakemerlot", "Red Wine", 20.00, "Moderate", "['spicy', 'fruity', 'chocolate']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Cupcake Red Velvet", "wine/", "Red Wine", 22.00, "Moderate", "['fruity, 'coffee', 'chocolate', 'vanilla', 'wood']", NOW(), NOW());
+values ("Cupcake Red Velvet", "wine/cupcakeredvelvet", "Red Wine", 22.00, "Moderate", "['fruity, 'coffee', 'chocolate', 'vanilla', 'wood']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Folly of The Beast Pinot Noir", "wine/", "Red Wine", 20.00, "Moderate", "['fruity', 'smokey', 'wood', 'vanilla']", NOW(), NOW());
+values ("Folly of The Beast Pinot Noir", "wine/follyofthebeastpinotnoir", "Red Wine", 20.00, "Moderate", "['fruity', 'smokey', 'wood', 'vanilla']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Cupcake Angel Food", "wine/", "White Wine", 20.00, "Moderate", "['sour', 'fruity', 'vanilla']", NOW(), NOW());
+values ("Cupcake Angel Food", "wine/cupcakeangelfood", "White Wine", 20.00, "Moderate", "['sour', 'fruity', 'vanilla']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Cupcake Chardonnay", "wine/", "White Wine", 20.00, "Moderate", "['fruity', 'citrus', 'vanilla']", NOW(), NOW());
+values ("Cupcake Chardonnay", "wine/cupcakechardonnay", "White Wine", 20.00, "Moderate", "['fruity', 'citrus', 'vanilla']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Cupcake Pinot Grigio", "wine/", "White Wine", 20.00, "Moderate", "['crisp', 'citrus', 'fruity', 'honey']", NOW(), NOW());
+values ("Cupcake Pinot Grigio", "wine/cupcakepinotgrigio", "White Wine", 20.00, "Moderate", "['crisp', 'citrus', 'fruity', 'honey']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Cupcake Sauvignon Blanc", "wine/", "White Wine", 20.00, "Moderate", "['citrus', 'crisp']", NOW(), NOW());
+values ("Cupcake Sauvignon Blanc", "wine/cupcakesauvignonblanc", "White Wine", 20.00, "Moderate", "['citrus', 'crisp']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Starborough Sauvignon Blanc", "wine/", "White Wine", 22.00, "Moderate", "['crisp', 'fruity']", NOW(), NOW());
+values ("Starborough Sauvignon Blanc", "wine/starboroughsauvignonblanc", "White Wine", 22.00, "Moderate", "['crisp', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Kris Pino Grigio", "wine/", "White Wine", 21.00, "Moderate", "['bold', 'citrus', 'honey']", NOW(), NOW());
+values ("Kris Pino Grigio", "wine/krispinotgrigio", "White Wine", 21.00, "Moderate", "['bold', 'citrus', 'honey']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Relax Riesling", "wine/", "White Wine", 21.00, "Moderate", "['crisp', 'sour', 'citrus', 'fruity']", NOW(), NOW());
+values ("Relax Riesling", "wine/relaxriesling", "White Wine", 21.00, "Moderate", "['crisp', 'sour', 'citrus', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Cupcake Rose", "wine/", "Rose", 20.00, "Moderate", "['crisp', 'fruity']", NOW(), NOW());
+values ("Cupcake Rose", "wine/cupcakerose", "Rose", 20.00, "Moderate", "['crisp', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("White Girl Rose", "wine/", "Rose", 22.00, "Moderate", "['fruity', 'citrus', 'crisp']", NOW(), NOW());
+values ("White Girl Rose", "wine/whitegirlrose", "Rose", 22.00, "Moderate", "['fruity', 'citrus', 'crisp']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Charles & Charles Rose", "wine/", "Rose", 21.00, "Moderate", "['fruity', 'citrus']", NOW(), NOW());
+values ("Charles & Charles Red Blend", "wine/charlescharlesredblend", "Red Wine", 21.00, "Moderate", "['fruity', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Chateau Montaud Cotes de Provence Rose", "wine/", "Rose", 28.00, "Moderate", "['fruity', 'bold']", NOW(), NOW());
+values ("Chateau Montaud Cotes de Provence Rose", "wine/chateaumontaudcotesdeprovencerose", "Rose", 28.00, "Moderate", "['fruity', 'bold']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Finca Wolffer Rose Wine", "wine/", "Rose", 20.00, "Moderate", "['citrus', 'fruity']", NOW(), NOW());
+values ("Finca Wolffer Rose Wine", "wine/fincawolfferrosewine", "Rose", 20.00, "Moderate", "['citrus', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("ViNO Rose", "wine/", "Rose", 22.00, "Moderate", "['fruity', 'citrus']", NOW(), NOW());
+values ("ViNO Rose", "wine/vinorose", "Rose", 22.00, "Moderate", "['fruity', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Cupcake Prosecco", "wine/", "Bubbly", 20.00, "Moderate", "['honey', 'fruity']", NOW(), NOW());
+values ("Cupcake Prosecco", "wine/cupcakeprosecco", "Bubbly", 20.00, "Moderate", "['honey', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Cupcake Sparkling Rose", "wine/", "Bubbly", 22.00, "Moderate", "['fruity', 'semi-sweet']", NOW(), NOW());
+values ("Cupcake Sparkling Rose", "wine/cupcakesparklingrose", "Bubbly", 22.00, "Moderate", "['fruity', 'semi-sweet']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Cupcake Sparkling Red", "wine/", "Bubbly", 21.00, "Moderate", "['sweet', 'fruity']", NOW(), NOW());
+values ("Cupcake Sparkling Red", "wine/cupcakesparklingred", "Bubbly", 21.00, "Moderate", "['sweet', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Cooks Extra dry", "wine/", "Bubbly", 20.00, "Moderate", "['citrus', 'fruity', 'dry']", NOW(), NOW());
+values ("Cooks Extra dry", "wine/cooksextradry", "Bubbly", 20.00, "Moderate", "['citrus', 'fruity', 'dry']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Deadly Zins Zinfandel", "wine/", "Red Wine", 30.00, "Premium", "['fruity', 'wood', 'spicy']", NOW(), NOW());
+values ("Deadly Zins Zinfandel", "wine/7deadlyzinszinfandel", "Red Wine", 30.00, "Premium", "['fruity', 'wood', 'spicy']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Domaine Drouhin Oregon Pinot Noir", "wine/", "Red Wine", 45.00, "Premium", "['spicy', 'fruity']", NOW(), NOW());
+values ("Domaine Drouhin Oregon Pinot Noir", "wine/domainedrouhinroserockpinotnoir", "Red Wine", 45.00, "Premium", "['spicy', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("The Pinot Project Pinot Noir", "wine/", "Red Wine", 30.00, "Premium", "['fruity', 'wood', 'spicy']", NOW(), NOW());
+values ("The Pinot Project Pinot Noir", "wine/thepinotprojectpinotnoir", "Red Wine", 30.00, "Premium", "['fruity', 'wood', 'spicy']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("The Velvet Devil", "wine/", "Red Wine", 30.00, "Premium", "['fruity', 'coffee', 'chocolate', 'smooth', 'smokey']", NOW(), NOW());
+values ("The Velvet Devil", "wine/thevelvetdevil", "Red Wine", 30.00, "Premium", "['fruity', 'coffee', 'chocolate', 'smooth', 'smokey']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("The Prisoner Thorn Merlot", "wine/", "Red Wine", 35.00, "Premium", "['spicy', 'chocolate', 'fruity', 'wood']", NOW(), NOW());
+values ("The Prisoner Thorn Merlot", "wine/theprisonerthorn", "Red Wine", 35.00, "Premium", "['spicy', 'chocolate', 'fruity', 'wood']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Kim Crawford Sauvignon Blanc", "wine/", "White Wine", 31.00, "Premium", "['crisp', 'citrus', 'fruity']", NOW(), NOW());
+values ("Kim Crawford Sauvignon Blanc", "wine/kimcrawfordsauvignonblanc", "White Wine", 31.00, "Premium", "['crisp', 'citrus', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Cakebread Chardonnay", "wine/", "White Wine", 45.00, "Premium", "['fruity', 'citrus', 'wood']", NOW(), NOW());
+values ("Cakebread Chardonnay", "wine/cakebreadchardonnay", "White Wine", 45.00, "Premium", "['fruity', 'citrus', 'wood']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Livio Fellugo", "wine/", "White Wine", 33.00, "Premium", "['ginger', 'fruity', 'savory']", NOW(), NOW());
+values ("Livio Fellugo", "wine/liviofellugapinotgrigio", "White Wine", 33.00, "Premium", "['ginger', 'fruity', 'savory']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Cakebread Sauvignon Blanc", "wine/", "White Wine", 33.00, "Premium", "['fruity', 'citrus']", NOW(), NOW());
+values ("Cakebread Sauvignon Blanc", "wine/cakebreadcellarssauvignonblanc", "White Wine", 33.00, "Premium", "['fruity', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Miraval Provence Rose", "wine/", "Rose", 44.00, "Premium", "['fruity', 'spicy', 'crisp']", NOW(), NOW());
+values ("Miraval Provence Rose", "wine/miravalprovencerose", "Rose", 44.00, "Premium", "['fruity', 'spicy', 'crisp']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Diving Into Hampton Water", "wine/", "Rose", 30.00, "Premium", "['fruity', 'dry', 'sweet']", NOW(), NOW());
+values ("Diving Into Hampton Water", "wine/divingntohamptonwaterrose", "Rose", 30.00, "Premium", "['fruity', 'dry', 'sweet']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Meiomi Rose", "wine/", "Rose", 30.00, "Premium", "['dry', 'fruity', 'acidic']", NOW(), NOW());
+values ("Meiomi Rose", "wine/meiomirose", "Rose", 30.00, "Premium", "['dry', 'fruity', 'acidic']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Krug Rose 21st Edition", "wine/", "Rose", 299.00, "Premium", "['rich', 'fruit', 'honey', 'coffee']", NOW(), NOW());
+values ("Krug Rose 21st Edition", "wine/krugrosebrut", "Rose", 299.00, "Premium", "['rich', 'fruit', 'honey', 'coffee']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Bollinger Rose", "wine/", "Rose", 140.00, "Premium", "['acidic', 'rich', 'fruity']", NOW(), NOW());
+values ("Bollinger Rose", "wine/bollingerbrutrose", "Rose", 140.00, "Premium", "['acidic', 'rich', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Pol Roger Brut", "wine/", "Bubbly", 119.00, "Premium", "['rich', 'dry', 'smokey', 'fruity', 'citrus']", NOW(), NOW());
+values ("Pol Roger Brut", "wine/polrogerbrut", "Bubbly", 119.00, "Premium", "['rich', 'dry', 'smokey', 'fruity', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Veuve Clicquot Brut Yellow Label", "wine/", "Bubbly", 100.00, "Premium", "['citrus', 'fruity']", NOW(), NOW());
+values ("Veuve Clicquot Brut Yellow Label", "wine/veuveclicquotyellowlabel", "Bubbly", 100.00, "Premium", "['citrus', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Dom Perignon Vintage Champagne", "wine/", "Bubbly", 444.00, "Premium", "['rich', 'fruity']", NOW(), NOW());
+values ("Dom Perignon Vintage Champagne", "wine/domperignonvintage", "Bubbly", 444.00, "Premium", "['rich', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Moet + Chandon Ice Imperial", "wine/", "Bubbly", 99.00, "Premium", "['fresh', 'rich', 'fruity', 'spicy']", NOW(), NOW());
+values ("Moet + Chandon Ice Imperial Brut", "wine/moetchandonimperialbrut", "Bubbly", 99.00, "Premium", "['fresh', 'rich', 'fruity', 'spicy']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Louis Dumont Brut Champagne", "wine/", "Bubbly", 80.00, "Premium", "['fresh', 'fruity', 'dry']", NOW(), NOW());
+values ("Louis Dumont Brut Champagne", "wine/louisroedererbrut", "Bubbly", 80.00, "Premium", "['fresh', 'fruity', 'dry']", NOW(), NOW());
 
 -- beer data
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
