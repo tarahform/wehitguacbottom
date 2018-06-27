@@ -657,52 +657,52 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values("Jim Beam Honey Bourbon Whiskey", "", "Whiskey", 14.97, "Basic", "Jim Beam Honey opens with complex notes of caramel, oak, vanilla and a finish of sweet honey. Made with Kentucky Straight Bourbon Whiskey slowly infused with natural golden honey to produce a sophisticated, deep, rich flavor with honey aroma.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Benchmark Bourbon", "", "Whiskey", 12.99, "Basic", "The nose bears caramel notes with a delicate stone-fruit backdrop. A robust and sturdy palate with some fine leather notes mingling with dry tobacco, a touch of oak and a hint of dried cherries. The finish is smooth and calming.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Redemption High-Rye Bourbon", "", "Whiskey", 25.99, "Basic", "High-Rye Bourbon mash-bill approaches the upper limit of allowable rye grain in a bourbon mash-bill. The dry spiciness of the rye balances the sweetness of the corn for a really wonderful sipping experience on its own or in classic cocktail recipes.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Old Forester 1920", "", "Whiskey", 54.99, "Moderate", "Dark fruit is most prominent, with hints of caramel, vanilla, and just the right amount of oak rounding it out. The sweetness here is balanced by a nearly perfect spice note.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Bird Dog Kentucky Bourbon", "", "Whiskey", 54.99, "Moderate", "Bird Dog Bourbon has an elaborate medley of corn, malted barley and rye that formulates into a distinctive gentle bourbon. Bird Dog Bourbon flourishes with light undertones of honey and golden raisins which is complimented by the richness of caramelized wood sugar.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Knob Creek Bourbon Whiskey", "", "Whiskey", 32.47, "Moderate", "Undeniably big, full flavor that strikes your senses with a maple sugar aroma, distinctive sweetness and a rich, woody, caramel flavor. Bottled at 100 proof, it's aged in the deepest charred American Oak barrels.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Evan Williams Bourbon Whiskey Black Label", "", "Whiskey", 15.99, "Basic", "As soon as you open a bottle of Evan Williams Black Label, you're met with a rich aroma of vanilla and mint, but this is just the precursor. When it hits your lips, hints of oak, caramel and brown sugar greet you and linger through the satisfying finish.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Seagram's 7 Crown Blended Whiskey", "", "Whiskey", 27.99, "Basic", "It’s both sweet and smooth while still being a little bit spicy. The nose offers up a lot of smokiness, a good amount of herbs, as well as some honey elements. Meanwhile, the taste is a lot like charred wood and apricots with just a touch of butter.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Jameson Irish Whiskey 18 Year Old Limited Reserve", "", "Whiskey", 134.99, "Premium", "A true original, Jameson 18 Year Old Limited Reserve is an exceptionally balanced whiskey and is the elder statesman of the Jameson Family. It has mellow, complex taste and lingering finale of wood, spice and toffee.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Buffalo Trace Bourbon", "", "Whiskey", 25.99, "Basic", "Buffalo Trace has a nose with sweet caramel, honey and citrus. You'll also notice a refreshing hint of mint before you taste this bourbon's mellow toffee, brown sugar and rye. The finish shines a spotlight on Buffalo Trace's oak barrels.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Woodford Reserve Bourbon", "", "Whiskey", 36.99, "Moderate", "Every bottle of Woodford Reserve Kentucky Straight Bourbon Whiskey boasts over 200 tasting notes. You'll notice wood, spice, fruity, and floral notes. Then comes the full range of rich, well-rounded flavors, including cinnamon, caramel and spiced citrus.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Old Overholt Rye Whiskey", "", "Whiskey", 29.99, "Basic", "Old Overholt is the oldest of The Olds, a relic you can drink. This famous Straight Rye Whiskey has a distinctive ﬂavor and appeal that, after Prohibition, made it the most popular spirit in the country.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Basil Hayden's Kentucky Straight Bourbon Whiskey", "", "Whiskey", 39.97, "Moderate", "Basil Hayden's is unequalled in that it utilizes twice as much rye in it as the other bourbons in the Collection. Enriched by a hint of peppermint, it impresses with notes of pepper balanced by slight citrus overtones, and a spicy, warming finish.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Dewar's White Label", "", "Whiskey", 19.99, "Basic", "Since 1899, this scotch whiskey has been produced with a time-honored traditional distillation process. Honey, vanilla, apple and wood combine into a versatile and soothing mix with an aftertaste of smokiness and a bit of fudge.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("The Balvenie 14 Year Caribbean Cask", "", "Whiskey", 116.09, "Premium", "The best whiskies are aged well, and The Balvenie 14 Year Caribbean Cask is one of the best. When you take a drink, you'll get flavors of sweet vanilla, mango, apple and just a touch of orange.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Wild Turkey 101", "", "Whiskey", 21.97, "Basic", "Wild Turkey ages the whiskey longer in new American White Oak barrels with the deepest possible char, cutting no corners across all of our bourbons and giving each one distinctive and rich flavor.")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Whiskey", 000, "Basic", "Description")
+values("Monkey Shoulder Blended Scotch", "", "Whiskey", 53.74, "Moderate", "Description")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values("Name", "", "Whiskey", 000, "Basic", "Description")
