@@ -210,9 +210,6 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Eagle Shot Tequila", "liquor/eagleshot", "Tequila", "25.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("DeLeon Tequila Diamonte", "liquor/deleonleona", "Tequila", "31.00", "Moderate", "", NOW(), NOW());
-
-insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Tonala Tequila Reserve 4 Yr", "liquor/tonalareserve", "Tequila", "29.50", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
