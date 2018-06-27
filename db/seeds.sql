@@ -709,3 +709,124 @@ values("Alberta Premium Rye Whisky", "", "Whiskey", 24.09, "Basic", "Made by ble
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values("Four Roses Small Batch", "", "Whiskey", 43.99, "Moderate", "A mellow symphony of rich, spicy flavors along with sweet, fruity aromas and hints of sweet oak and caramel. Finishes soft, smooth and pleasantly long. Best enjoyed straight up, on the rocks, or with a splash.")
+
+--rum data
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Captain Morgan Original Spiced Rum", "", "Rum", 24.99, "Basic", "[Spicy, Wood]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Bacardi Superior Rum", "", "Rum", 27.09, "Basic", "[Ginger, Citrus]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Bacardi Gold", "", "Rum", 27.09, "Basic", "[Sweet, Vanilla]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("The Kraken Black Spiced Rum", "", "Rum", 12.99, "Basic", "[Semi-sweet, Coffee, Vanilla, Citrus, Spicy]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Gosling's Black Seal 151 Proof Rum", "", "Rum", 42.24, "Moderate", "[Smooth, Semi-sweet]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Appleton Estate Signature Blend", "", "Rum", 18.99, "Basic", "[Fruity, Semi-sweet]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Malibu Black", "", "Rum", 13.99, "Basic", "[Smooth, Semi-sweet, Fruity]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Castillo Silver Rum", "", "Rum", 14.99, "Basic", "[Sweet, Spicy, Fruity]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Zaya Gran Reserva 12 Year Rum", "", "Rum", 72.09, "Premium", "[Sweet, Chocolate, Vanilla, Coffee, Rich, Smokey]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Plantation Rum XO Reserve 20th Anniversary", "", "Rum", 40.99, "Moderate", "[Fruity, Rich, Vanilla, Sweet, Wood]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("The Baron Samedi Spiced Rum", "", "Rum", 10.99, "Basic", "[Spicy, Roast, Vanilla, Smooth]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Blackheart Spiced Rum", "", "Rum", 19.99, "Basic", "[Sweet, Spicy, Smooth]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Sailor Jerry Spiced Rum", "", "Rum", 49.99, "Moderate", "[Spicy, Sweet]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Mount Gay Eclipse Rum", "", "Rum", 15.99, "Basic", "[Sweet, Spicy]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Ron Zacapa 23 Year Centenario", "", "Rum", 35.99, "Moderate", "[Spicy, Ginger, Sweet, Honey, Vanilla]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Admiral Nelson's Spiced Rum", "", "Rum", 11.99, "Basic", "[Smooth, Spicy]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Myers's Original Dark Rum", "", "Rum", 48.99, "Moderate", "[Sweet, Roast, Fruity, Wood]")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
+
+insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
+values("Name", "", "Rum", 000, "Basic", "Description")
