@@ -21,12 +21,14 @@
   },
   "dependencies": {
     "aos": "^2.3.0",
+    "body-parser": "^1.18.3",
     "express": "^4.15.4",
     "mysql2": "^1.5.3",
     "passport-facebook": "^2.1.1",
     "passport-google-oauth": "^1.0.0",
     "passport-local": "^1.0.0",
     "passport-twitter": "^1.0.4",
+    "path": "^0.12.7",
     "react-animate-on-scroll": "^2.1.5",
     "react-router-dom": "^4.3.1",
     "sequelize": "^4.38.0"

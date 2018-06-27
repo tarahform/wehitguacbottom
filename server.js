@@ -1,7 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-var mysql2 = require("mysql2");
-const routes = require("./routes");
+// var mysql2 = require("mysql2");
+var routes = require("./routes/apiroutes");
 var app = express();
 var db = require("./models");
 
@@ -18,12 +18,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // allows the app (express) to use the var routes
+// require("./routes/apiroutes")(app);
+// require("./routes/viewsRoutes")(app);
 app.use(routes);
-require("./routes/apiroutes")(app);
-require("./routes/viewsRoutes")(app);
 
 // Start our server so that it can begin listening to client requests.
-// force: true = allows for testing - delete when hosting on heroku
+// sync({force: true}) = allows for testing - delete when hosting on heroku
 db.sequelize.sync().then(function () {
   console.log("DATABASE IS CONNECTED!");
   app.listen(PORT, function () {
