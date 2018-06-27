@@ -524,7 +524,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Bells Two Hearted IPA", "beer/", "IPA", "14.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Tree Floyds Blackheart", "beer/", "Wheat", "15.00", "Moderate", "", NOW(), NOW());
+values ("Three Floyds Blackheart", "beer/", "Wheat", "15.00", "Moderate", "", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Blue Moon Belgian White", "beer/bluemoonbelgianwhite", "Wheat", "15.00", "Moderate", "", NOW(), NOW());
