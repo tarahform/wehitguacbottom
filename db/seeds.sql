@@ -141,121 +141,121 @@ values ("CIROC Coconut Vodka", "liquor/", "Vodka", 48.00, "Premium", "['sharp', 
 
 -- tequila data
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Jose Cuervo Especial Silver Tequila", "liquor/", "Tequila", 15.00, "Basic", "['smooth', 'crisp']", NOW(), NOW());
+values ("Jose Cuervo Especial Silver Tequila", "liquor/josecuervosilver", "Tequila", 15.00, "Basic", "['smooth', 'crisp']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Exotico Reposado 100% Agare Tequila", "liquor/", "Tequila", 17.00, "Basic", "['spicy', 'vanilla', 'fruity', 'wood']", NOW(), NOW());
+values ("Exotico Reposado 100% Agare Tequila", "liquor/exoticora", "Tequila", 17.00, "Basic", "['spicy', 'vanilla', 'fruity', 'wood']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Margaritaville Tequila Gold", "liquor/", "Tequila", 13.00, "Basic", "['fruity', 'wood']", NOW(), NOW());
+values ("Margaritaville Tequila Gold", "liquor/margaritavillegold", "Tequila", 13.00, "Basic", "['fruity', 'wood']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Jose Cuervo Especial Silver Lady", "liquor/", "Tequila", 18.00, "Basic", "['citrus', 'smooth', 'vanilla']", NOW(), NOW());
+values ("Jose Cuervo Especial Silver Lady", "liquor/josecuervosilverlady", "Tequila", 18.00, "Basic", "['citrus', 'smooth', 'vanilla']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Jose Cuervo Especial Gold Tequila Limited Edition", "liquor/", "Tequila", 16.00, "Basic", "['smooth', 'sweet']", NOW(), NOW());
+values ("Jose Cuervo Especial Gold Tequila Limited Edition", "liquor/josecuervoskull", "Tequila", 16.00, "Basic", "['smooth', 'sweet']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Calle 23 Blanco", "liquor/", "Tequila", 12.00, "Basic", "['spicy', 'citrus']", NOW(), NOW());
+values ("Calle 23 Blanco", "liquor/calle23blanco", "Tequila", 12.00, "Basic", "['spicy', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Jose Cuervo Especial Cinnamon Cinge", "liquor/", "Tequila", 17.00, "Basic", "['spicy', 'citrus']", NOW(), NOW());
+values ("Jose Cuervo Especial Cinnamon Cinge", "liquor/josecuervocinnamon", "Tequila", 17.00, "Basic", "['spicy', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Loma Azul Blanco", "liquor/", "Tequila", 18.00, "Basic", "['spicy', 'citrus', 'smooth']", NOW(), NOW());
+values ("Loma Azul Blanco", "liquor/lomazulejosanejo", "Tequila", 18.00, "Basic", "['spicy', 'citrus', 'smooth']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("100 Anos Blanco Tequila", "liquor/", "Tequila", 14.00, "Basic", "['bitter', 'fruity']", NOW(), NOW());
+values ("100 Anos Blanco Tequila", "liquor/100anosblanco", "Tequila", 14.00, "Basic", "['bitter', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Casamigos Blanco", "liquor/", "Tequila", 20.00, "Moderate", "['citrus', 'vanilla', 'sweet', 'smooth']", NOW(), NOW());
+values ("Casamigos Blanco", "liquor/casamigosblanco", "Tequila", 20.00, "Moderate", "['citrus', 'vanilla', 'sweet', 'smooth']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Don Julio Blanco", "liquor/", "Tequila", 21.00, "Moderate", "['crisp', 'citrus', 'sweet', 'spicy']", NOW(), NOW());
+values ("Don Julio Blanco", "liquor/donjulioblanco", "Tequila", 21.00, "Moderate", "['crisp', 'citrus', 'sweet', 'spicy']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Codigo 1530 Rosa Tequila", "liquor/", "Tequila", 20.50, "Moderate", "['sharp', 'wood']", NOW(), NOW());
+values ("Codigo 1530 Rosa Tequila", "liquor/codigorosa", "Tequila", 20.50, "Moderate", "['sharp', 'wood']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Patron XO Cafe Dark Cocoa", "liquor/", "Tequila", 25.00, "Moderate", "['malty', 'vanilla', 'coffee', 'smooth', 'dry']", NOW(), NOW());
+values ("Patron XO Cafe Dark Cocoa", "liquor/patroncafe", "Tequila", 25.00, "Moderate", "['malty', 'vanilla', 'coffee', 'smooth', 'dry']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Cruz Silver Tequila", "liquor/", "Tequila", 24.00, "Moderate", "['vanilla', 'smooth', 'citrus', 'spicy']", NOW(), NOW());
+values ("Cruz Silver Tequila", "liquor/cruzsilver", "Tequila", 24.00, "Moderate", "['vanilla', 'smooth', 'citrus', 'spicy']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Kah Tequila Blanco", "liquor/", "Tequila", 30.00, "Moderate", "['sweet', 'spicy', 'smooth']", NOW(), NOW());
+values ("Kah Tequila Blanco", "liquor/kahblanco", "Tequila", 30.00, "Moderate", "['sweet', 'spicy', 'smooth']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Siempre Tequila Plata", "liquor/", "Tequila", 26.00, "Moderate", "['smooth', 'sweet', 'spicy', 'honey', 'citrus']", NOW(), NOW());
+values ("Siempre Tequila Plata", "liquor/siempreplata", "Tequila", 26.00, "Moderate", "['smooth', 'sweet', 'spicy', 'honey', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Corazon Blanco", "liquor/", "Tequila", 23.00, "Moderate", "['sweet', 'fruity', 'spicy']", NOW(), NOW());
+values ("Corazon Blanco", "liquor/corazonblanco", "Tequila", 23.00, "Moderate", "['sweet', 'fruity', 'spicy']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Karma Silver Tequila", "liquor/", "Tequila", 29.00, "Moderate", "['sweet', 'smooth']", NOW(), NOW());
+values ("Karma Silver Tequila", "liquor/karmasilver", "Tequila", 29.00, "Moderate", "['sweet', 'smooth']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("T1 Tequila Blanco Selecto", "liquor/", "Tequila", 28.00, "Moderate", "['smooth', 'spicy']", NOW(), NOW());
+values ("T1 Tequila Blanco Selecto", "liquor/t1blanco", "Tequila", 28.00, "Moderate", "['smooth', 'spicy']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("1800 Select Silver Tequila", "liquor/", "Tequila", 27.00, "Moderate", "['smooth', 'semi-sweet', 'crisp']", NOW(), NOW());
+values ("1800 Select Silver Tequila", "liquor/1800silver", "Tequila", 27.00, "Moderate", "['smooth', 'semi-sweet', 'crisp']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("DeLeon Tequila Diamonte", "liquor/", "Tequila", 31.00, "Moderate", "['spicy', 'vanilla', 'wood', 'honey', 'smooth']", NOW(), NOW());
+values ("DeLeon Tequila Diamonte", "liquor/deleondiamante", "Tequila", 31.00, "Moderate", "['spicy', 'vanilla', 'wood', 'honey', 'smooth']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("1921 Tequila Blanco", "liquor/", "Tequila", 34.00, "Moderate", "['spice', 'wood', 'smooth']", NOW(), NOW());
+values ("1921 Tequila Blanco", "liquor/1921blanco", "Tequila", 34.00, "Moderate", "['spice', 'wood', 'smooth']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Skeleto Anejo Tequila", "liquor/", "Tequila", 26.00, "Moderate", "['spicy', 'sweet', 'fruity']", NOW(), NOW());
+values ("Skeleto Anejo Tequila", "liquor/skeletoanejo", "Tequila", 26.00, "Moderate", "['spicy', 'sweet', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Eagle Shot Tequila", "liquor/", "Tequila", 25.00, "Moderate", "['spicy', 'smooth']", NOW(), NOW());
+values ("Eagle Shot Tequila", "liquor/eagleshot", "Tequila", 25.00, "Moderate", "['spicy', 'smooth']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("3 Amigos Tequila Blanco", "liquor/", "Tequila", 30.00, "Moderate", "['fruit', 'smooth']", NOW(), NOW());
+values ("3 Amigos Tequila Blanco", "liquor/amigosblanco", "Tequila", 30.00, "Moderate", "['fruit', 'smooth']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Tonala Tequila Reserve 4 Yr", "liquor/", "Tequila", 29.50, "Moderate", "['wood', 'fruit', 'spice', 'smooth']", NOW(), NOW());
+values ("Tonala Tequila Reserve 4 Yr", "liquor/tonalareserve", "Tequila", 29.50, "Moderate", "['wood', 'fruit', 'spice', 'smooth']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Rock n Roll Tequila Mango", "liquor/", "Tequila", 30.00, "Moderate", "['spicy', 'citrus', 'fruit', 'sweet']", NOW(), NOW());
+values ("Rock n Roll Tequila Mango", "liquor/rockrollmango", "Tequila", 30.00, "Moderate", "['spicy', 'citrus', 'fruit', 'sweet']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Mi Casa Tequila Blanco", "liquor/", "Tequila", 28.00, "Moderate", "['smooth', 'spicy']", NOW(), NOW());
+values ("Mi Casa Tequila Blanco", "liquor/micasablanco", "Tequila", 28.00, "Moderate", "['smooth', 'spicy']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("88 Blanco Tequila", "liquor/", "Tequila", 25.00, "Moderate", "['citrus', 'smooth', 'spicy']", NOW(), NOW());
+values ("88 Blanco Tequila", "liquor/88blanco", "Tequila", 25.00, "Moderate", "['citrus', 'smooth', 'spicy']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Patron Silver Tequila", "liquor/", "Tequila", 40.00, "Premium", "['fruity', 'smooth', 'citrus', 'sweet', 'spicy']", NOW(), NOW());
+values ("Patron Silver Tequila", "liquor/patronsilver", "Tequila", 40.00, "Premium", "['fruity', 'smooth', 'citrus', 'sweet', 'spicy']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Don Julio 1942", "liquor/", "Tequila", 41.00, "Premium", "['sweet', 'spicy', 'crisp', 'citrus']", NOW(), NOW());
+values ("Don Julio 1942", "liquor/donjulio", "Tequila", 41.00, "Premium", "['sweet', 'spicy', 'crisp', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Clase Azul Reposado Tequila", "liquor/", "Tequila", 42.00, "Premium", "['vanilla', 'sweet', 'spicy', 'wood', 'smooth']", NOW(), NOW());
+values ("Clase Azul Reposado Tequila", "liquor/claseazulreposado", "Tequila", 42.00, "Premium", "['vanilla', 'sweet', 'spicy', 'wood', 'smooth']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Gran Patron Platinum", "liquor/", "Tequila", 45.00, "Premium", "['citrus', 'fruit', 'smooth', 'spicy']", NOW(), NOW());
+values ("Gran Patron Platinum", "liquor/granpatronplatinum", "Tequila", 45.00, "Premium", "['citrus', 'fruit', 'smooth', 'spicy']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Grand Mayan Extra Anejo", "liquor/", "Tequila", 46.00, "Premium", "['sweet', 'smooth']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Los Azulejos Tequila", "liquor/", "Tequila", 42.00, "Premium", "['wood', 'bitter', 'vanilla', 'sweet']", NOW(), NOW());
+values ("Los Azulejos Tequila", "liquor/granmayananejo", "Tequila", 42.00, "Premium", "['wood', 'bitter', 'vanilla', 'sweet']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Amor Mio Tequila Extra Anejo", "liquor/", "Tequila", 41.00, "Premium", "['wood', 'vanilla', 'sweet', 'bitter']", NOW(), NOW());
+values ("Amor Mio Tequila Extra Anejo", "liquor/amormioanejo", "Tequila", 41.00, "Premium", "['wood', 'vanilla', 'sweet', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Patron Extra Anejo 5 Year", "liquor/", "Tequila", 47.00, "Premium", "['vanilla', 'honey, 'smooth']", NOW(), NOW());
+values ("Patron Extra Anejo 5 Year", "liquor/patronanejo5year", "Tequila", 47.00, "Premium", "['vanilla', 'honey, 'smooth']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Clase Azul Ultra", "liquor/", "Tequila", 48.00, "Premium", "['wood', 'fruit', 'sweet', 'vanilla', 'smooth']", NOW(), NOW());
+values ("Clase Azul Ultra", "liquor/claseazulultra", "Tequila", 48.00, "Premium", "['wood', 'fruit', 'sweet', 'vanilla', 'smooth']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("DeLeon Leona Tequila", "liquor/", "Tequila", 49.00, "Premium", "['fruit', 'sweet', 'spicy', 'vanilla', 'wood']", NOW(), NOW());
+values ("DeLeon Leona Tequila", "liquor/deleonleona", "Tequila", 49.00, "Premium", "['fruit', 'sweet', 'spicy', 'vanilla', 'wood']", NOW(), NOW());
 
 -- whiskey data
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
