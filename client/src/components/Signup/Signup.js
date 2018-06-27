@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Signup.css";
+import firebase from "../../firebase";
 
 class Signup extends Component {
   state = {
@@ -12,6 +13,7 @@ class Signup extends Component {
     age: "",
     password: ""
   };
+
   handleInputChange = event => {
     const { name, value } = event.target
     // console.log(name, value)
@@ -20,48 +22,80 @@ class Signup extends Component {
     });
     // console.log(this.state);
   }
+
+  handleFormSubmit = event => {
+    // When the form is submitted, prevent its default behavior, get recipes update the recipes state
+    event.preventDefault();
+    const userRef = firebase.database().ref('user');
+    const user = {
+      firstName: this.state.firstName,
+      middleName: this.state.middleName,
+      lastName: this.state.lastName,
+      photoLink: this.state.photoLink,
+      email: this.state.email,
+      phone: this.state.phone,
+      age: this.state.age,
+      password: this.state.password
+    }
+    userRef.push(user);
+    this.setState({
+      user: [],
+      firstName: "",
+      middleName: "",
+      lastName: "",
+      photoLink: "",
+      email: "",
+      phone: "",
+      age: "",
+      password: ""
+    });
+    // API.getRecipes(this.state.recipeSearch)
+      // .then(res => this.setState({ recipes: res.data }))
+      // .catch(err => console.log(err));
+  };
+
   render() {
     return (
       <div className="col-md-12">
         <form id="signUpForm">
           <div className="form-group">
             <label htmlFor="name" id="firstNameLabel">First Name</label>
-            <input onChange={this.handleInputChange} name="firstName" type="name" className="form-control" id="firstNameInput" rows="1" placeholder="John Doe" />
+            <input value={this.state.firstName} onChange={this.handleInputChange} name="firstName" type="name" className="form-control" id="firstNameInput" rows="1" placeholder="John Doe" />
           </div>
           <div className="form-group">
             <label htmlFor="name" id="middleNameLabel">Middle Name</label>
-            <input onChange={this.handleInputChange} name="middleName" type="name" className="form-control" id="middleNameInput" rows="1" placeholder="John Doe" />
+            <input value={this.state.middleName} onChange={this.handleInputChange} name="middleName" type="name" className="form-control" id="middleNameInput" rows="1" placeholder="John Doe" />
           </div>
           <div className="form-group">
             <label htmlFor="name" id="lastNameLabel">Last Name</label>
-            <input onChange={this.handleInputChange} name="lastName" type="name" className="form-control" id="lastNameInput" rows="1" placeholder="John Doe" />
+            <input value={this.state.lastName} onChange={this.handleInputChange} name="lastName" type="name" className="form-control" id="lastNameInput" rows="1" placeholder="John Doe" />
           </div>
           <div className="form-group">
             <label htmlFor="name" id="photoLinkLabel">Photo Link</label>
-            <input onChange={this.handleInputChange} name="photoLink" type="name" className="form-control" id="PhotoLinkInput" rows="1" placeholder="Link to your photo" />
+            <input value={this.state.photoLink} onChange={this.handleInputChange} name="photoLink" type="name" className="form-control" id="PhotoLinkInput" rows="1" placeholder="Link to your photo" />
           </div>
           <div className="form-group">
             <label htmlFor="email" id="emailLabel">Email</label>
-            <input onChange={this.handleInputChange} name="email" type="email" className="form-control" id="emailInput" rows="1" placeholder="example@gmail.com" />
+            <input value={this.state.email} onChange={this.handleInputChange} name="email" type="email" className="form-control" id="emailInput" rows="1" placeholder="example@gmail.com" />
           </div>
           <div className="form-group">
             <label htmlFor="number" id="phoneLabel">Phone Number</label>
-            <input onChange={this.handleInputChange} name="phone" type="number" className="form-control" id="phoneInput" rows="1" placeholder="1235555555" />
+            <input value={this.state.phone} onChange={this.handleInputChange} name="phone" type="number" className="form-control" id="phoneInput" rows="1" placeholder="1235555555" />
           </div>
           <div className="form-group">
             <label htmlFor="number" id="ageLabel">Age</label>
-            <input onChange={this.handleInputChange} name="age" type="number" className="form-control" id="ageInput" rows="1" placeholder="42" />
+            <input value={this.state.age} onChange={this.handleInputChange} name="age" type="number" className="form-control" id="ageInput" rows="1" placeholder="42" />
           </div>
           <div className="form-group">
             <label htmlFor="password" id="passwordLabel">Password</label>
-            <input onChange={this.handleInputChange} name="password" type="password" className="form-control" id="passwordInput" rows="1" placeholder="Password" />
+            <input value={this.state.password} onChange={this.handleInputChange} name="password" type="password" className="form-control" id="passwordInput" rows="1" placeholder="Password" />
           </div>
-          <button type="submit" className="btn btn-primary btn-lg btn-block">Submit</button>
+          <button onClick={this.handleFormSubmit} type="submit" className="btn btn-primary btn-lg btn-block">Submit</button>
         </form>
       </div>
     )
   }
 };
 
-  export default Signup;
+export default Signup;
 
