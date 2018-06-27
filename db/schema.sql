@@ -24,6 +24,5 @@ create table alcohol(
     price DECIMAL(13,2) NOT NULL,
     subscription VARCHAR(255) NOT NULL,
     description VARCHAR(255) NOT NULL,
-    selected BOOLEAN(255) NOT NULL DEFAULT 0 ,
     primary key (id)
 )

@@ -23,121 +23,121 @@ values ("Ali", "Prince", "Arfeen", "photolink", "ali.dummyemail@gmail.com", "568
 -- alcohol tabledata
 -- vodka data
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Svedka Vodka", "liquor/", "Vodka", 12.000, "Basic", "['sharp', 'bitter']", NOW(), NOW());
+values ("Svedka Vodka", "liquor/svedkavodka", "Vodka", 12.000, "Basic", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("New Amsterdam Vodka", "liquor/", "Vodka", 13.50, "Basic", "['sharp', 'bitter']", NOW(), NOW());
+values ("New Amsterdam Vodka", "liquor/newamsterdamvodka", "Vodka", 13.50, "Basic", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Pinnacle Vodka", "liquor/", "Vodka", 11.00, "Basic", "['sharp', 'bitter']", NOW(), NOW());
+values ("Pinnacle Vodka", "liquor/pinnacleoriginalflavoredvodka", "Vodka", 11.00, "Basic", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Smirnoff Vodka", "liquor/", "Vodka", 10.50, "Basic", "['sharp', 'bitter']", NOW(), NOW());
+values ("Smirnoff Vodka", "liquor/smirnoffvodka", "Vodka", 10.50, "Basic", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Smirnoff Blueberry", "liquor/", "Vodka", 10.50, "Basic", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
+values ("Smirnoff Blueberry", "liquor/smirnoffblueberry", "Vodka", 10.50, "Basic", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Svedka vanilla", "liquor/", "Vodka", 12.50, "Basic", "['sharp', 'bitter', 'vanilla', 'sweet']", NOW(), NOW());
+values ("Svedka vanilla", "liquor/svedkavanilla", "Vodka", 12.50, "Basic", "['sharp', 'bitter', 'vanilla', 'sweet']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Smirnoff White Grape", "liquor/", "Vodka", 10.00, "Basic", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
+values ("Smirnoff White Grape", "liquor/smirnoffwhitegrape", "Vodka", 10.00, "Basic", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Smirnoff Peppermint Twist", "liquor/", "Vodka", 12.00, "Basic", "['sharp', 'bitter', 'spicy']", NOW(), NOW());
+values ("Smirnoff Peppermint Twist", "liquor/smirnoffpepperminttwist", "Vodka", 12.00, "Basic", "['sharp', 'bitter', 'spicy']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Pinnacle Peach Vodka", "liquor/", "Vodka", 11.50, "Basic", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
+values ("Pinnacle Peach Vodka", "liquor/pinnaclepeachflavoredvodka", "Vodka", 11.50, "Basic", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Pinnacle Tropical Punch Vodka", "liquor/", "Vodka", 11.50, "Basic", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
+values ("Pinnacle Tropical Punch Vodka", "liquor/pinnacletropicalpunchflavoredvodka", "Vodka", 11.50, "Basic", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Pinnacle Kiwi Strawberry Vodka", "liquor/", "Vodka", 11.50, "Basic", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
+values ("Pinnacle Kiwi Strawberry Vodka", "liquor/pinnaclestrawberrykiwiflavoredvodka", "Vodka", 11.50, "Basic", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Smirnoff Moscow Mule Vodka", "liquor/", "Vodka", 12.00, "Basic", "['sharp', 'bitter', 'spicy', 'citrus']", NOW(), NOW());
+values ("Smirnoff Moscow Mule Vodka", "liquor/smirnoffmoscowmulevodka", "Vodka", 12.00, "Basic", "['sharp', 'bitter', 'spicy', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Tito's Handmade Vodka", "liquor/", "Vodka", 15.50, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
+values ("Tito's Handmade Vodka", "liquor/titoshandmadevodka", "Vodka", 15.50, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("SKYY Vodka", "liquor/", "Vodka", 16.00, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
+values ("SKYY Vodka", "liquor/skyyvodka", "Vodka", 16.00, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Absolut Vodka", "liquor/", "Vodka", 17.00, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
+values ("Absolut Vodka", "liquor/absolutvodka", "Vodka", 17.00, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Effen Vodka", "liquor/", "Vodka", 17.50, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
+values ("Effen Vodka", "liquor/effenvodka", "Vodka", 17.50, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Skinnygirl Bare Naked Vodka", "liquor/", "Vodka", 16.00, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
+values ("Skinnygirl Bare Naked Vodka", "liquor/skinnygirlbarenakedvodka", "Vodka", 16.00, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Three Olives Vodka", "liquor/", "Vodka", 15.50, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
+values ("Three Olives Vodka", "liquor/threeolivesvodka", "Vodka", 15.50, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Three Olives Loopy Tropical Fruit Vodka", "liquor/", "Vodka", 19.00, "Moderate", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
+values ("Three Olives Loopy Tropical Fruit Vodka", "liquor/threeolivesloopytropicalfruitvodka", "Vodka", 19.00, "Moderate", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Effen Green Apple Vodka", "liquor/", "Vodka", 20.00, "Moderate", "['sharp', 'bitter', 'fruity', 'sour']", NOW(), NOW());
+values ("Effen Green Apple Vodka", "liquor/effengreenapplevodka", "Vodka", 20.00, "Moderate", "['sharp', 'bitter', 'fruity', 'sour']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("SKYY Infusions Wild Strawberry", "liquor/", "Vodka", 25.00, "Moderate", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
+values ("SKYY Infusions Wild Strawberry", "liquor/skyyinfusionswildstrawberry", "Vodka", 25.00, "Moderate", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("SKYY Infusions Texas Grapefruit", "liquor/", "Vodka", 23.00, "Moderate", "['sharp', 'bitter', 'citrus']", NOW(), NOW());
+values ("SKYY Infusions Texas Grapefruit", "liquor/skyyinfusionstexasgrapefruit", "Vodka", 23.00, "Moderate", "['sharp', 'bitter', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Three Olives Watermelon Vodka", "liquor/", "Vodka", 21.50, "Moderate", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
+values ("Three Olives Watermelon Vodka", "liquor/threeoliveswatermelonvodka", "Vodka", 21.50, "Moderate", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Absolut Mango", "liquor/", "Vodka", 27.00, "Moderate", "['sharp', 'bitter', 'citrus', 'fruity']", NOW(), NOW());
+values ("Absolut Mango", "liquor/absolutmango", "Vodka", 27.00, "Moderate", "['sharp', 'bitter', 'citrus', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Three Olives Root Beer Vodka", "liquor/", "Vodka", 20.00, "Moderate", "['sharp', 'bitter', 'sweet', 'vanilla']", NOW(), NOW());
+values ("Three Olives Root Beer Vodka", "liquor/threeolivesrootbeervodka", "Vodka", 20.00, "Moderate", "['sharp', 'bitter', 'sweet', 'vanilla']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Effen Salted Caramel Vodka", "liquor/", "Vodka", 19.50, "Moderate", "['sharp', 'bitter', 'sweet', 'vanilla']", NOW(), NOW());
+values ("Effen Salted Caramel Vodka", "liquor/effensaltedcaramelvodka", "Vodka", 19.50, "Moderate", "['sharp', 'bitter', 'sweet', 'vanilla']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Grey Goose Vodka", "liquor/", "Vodka", 40.00, "Premium", "['sharp', 'bitter']", NOW(), NOW());
+values ("Grey Goose Vodka", "liquor/greygoosevodka", "Vodka", 40.00, "Premium", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Ketel One Vodka", "liquor/", "Vodka", 35.00, "Premium", "['sharp', 'bitter']", NOW(), NOW());
+values ("Ketel One Vodka", "liquor/ketelonevodka", "Vodka", 35.00, "Premium", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Belvedere Vodka", "liquor/", "Vodka", 37.00, "Premium", "['sharp', 'bitter']", NOW(), NOW());
+values ("Belvedere Vodka", "liquor/belvederevodka", "Vodka", 37.00, "Premium", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("CIROC Vodka", "liquor/", "Vodka", 39.00, "Premium", "['sharp', 'bitter']", NOW(), NOW());
+values ("CIROC Vodka", "liquor/cirocvodka", "Vodka", 39.00, "Premium", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Ketel One Botanical Cucumber and Mint", "liquor/", "Vodka", 37.00, "Premium", "['sharp', 'bitter', 'savory', 'crisp', 'spicy']", NOW(), NOW());
+values ("Ketel One Botanical Cucumber and Mint", "liquor/ketelonebotanicalcucumbermint", "Vodka", 37.00, "Premium", "['sharp', 'bitter', 'savory', 'crisp', 'spicy']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Ketel One Botanical Peach and Orange Blossom", "liquor/", "Vodka", 37.00, "Premium", "['sharp', 'bitter', 'fruity', 'crisp']", NOW(), NOW());
+values ("Ketel One Botanical Peach and Orange Blossom", "liquor/ketelonebotanicalpeachandorangeblossom", "Vodka", 37.00, "Premium", "['sharp', 'bitter', 'fruity', 'crisp']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("CIROC Pinapple Vodka", "liquor/", "Vodka", 47.00, "Premium", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
+values ("CIROC Pinapple Vodka", "liquor/cirocpineapplevodka", "Vodka", 47.00, "Premium", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Belvedere Bloody Mary Vodka", "liquor/", "Vodka", 41.00, "Premium", "['sharp', 'bitter', 'spicy', 'savory']", NOW(), NOW());
+values ("Belvedere Bloody Mary Vodka", "liquor/belvederebloodymaryvodka", "Vodka", 41.00, "Premium", "['sharp', 'bitter', 'spicy', 'savory']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("CIROC French vanilla Vodka", "liquor/", "Vodka", 40.00, "Premium", "['sharp', 'bitter', 'sweet', 'vanilla']", NOW(), NOW());
+values ("CIROC French vanilla Vodka", "liquor/cirocfrenchvanillavodka", "Vodka", 40.00, "Premium", "['sharp', 'bitter', 'sweet', 'vanilla']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Grey Goose L’Orange", "liquor/", "Vodka", 45.00, "Premium", "['sharp', 'bitter', 'citrus', 'fruity']", NOW(), NOW());
+values ("Grey Goose L’Orange", "liquor/greygooselorange", "Vodka", 45.00, "Premium", "['sharp', 'bitter', 'citrus', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Grey Goose Le Citron", "liquor/", "Vodka", 45.00, "Premium", "['sharp', 'bitter', 'citrus']", NOW(), NOW());
+values ("Grey Goose Le Citron", "liquor/greygooselecitron", "Vodka", 45.00, "Premium", "['sharp', 'bitter', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Belvedere Vodka Pink Grapefruit", "liquor/", "Vodka", 43.00, "Premium", "['sharp', 'bitter', 'citrus']", NOW(), NOW());
+values ("Belvedere Vodka Pink Grapefruit", "liquor/belvederevodkapinkgrapefruit", "Vodka", 43.00, "Premium", "['sharp', 'bitter', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("CIROC Coconut Vodka", "liquor/", "Vodka", 48.00, "Premium", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
+values ("CIROC Coconut Vodka", "liquor/ciroccoconutvodka", "Vodka", 48.00, "Premium", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
 
 -- tequila data
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
