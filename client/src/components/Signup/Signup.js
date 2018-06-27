@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./Signup.css";
+import { withRouter } from "react-router-dom";
 import { auth } from "../../firebase";
 import axios from "axios";
-// import firebase from "../../firebase";
 
 class Signup extends Component {
   state = {
@@ -30,6 +30,10 @@ class Signup extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
+    const {
+      history
+    } = this.props;
+
     const {
       firstName,
       middleName,
@@ -73,6 +77,7 @@ class Signup extends Component {
           dberror: null,
           fberror: null
         });
+        history.push("/welcome");
       })
       .catch(fberror => {
         this.setState({ fberror });
@@ -109,6 +114,7 @@ class Signup extends Component {
   // };
 
   render() {
+
     const {
       firstName,
       lastName,
@@ -172,13 +178,13 @@ class Signup extends Component {
             <input value={this.state.passwordVerify} onChange={this.handleInputChange} name="passwordVerify" type="password" className="form-control" id="passwordVerifyInput" rows="1" placeholder="Verify Password" />
           </div>
           <button disabled={isInvalid} onClick={this.handleFormSubmit} type="submit" className={isInvalid ? "btn btn-secondary btn-lg btn-block" : "btn btn-primary btn-lg btn-block"}>Submit</button>
-          {fberror && <p>{fberror.message}</p>}
-          {dberror && <p>{dberror.message}</p>}
+          {fberror && <p>Authentication Error: {fberror.message}</p>}
+          {dberror && <p>Database Error: {dberror.message}</p>}
         </form>
       </div>
     )
   }
 };
 
-export default Signup;
+export default withRouter(Signup);
 
