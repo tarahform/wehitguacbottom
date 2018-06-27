@@ -38,7 +38,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Smirnoff Blueberry", "", "Vodka", 10.50, "Basic", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Svedka Vanilla", "", "Vodka", 12.50, "Basic", "['sharp', 'bitter', 'vanilla', 'sweet']", NOW(), NOW());
+values ("Svedka vanilla", "", "Vodka", 12.50, "Basic", "['sharp', 'bitter', 'vanilla', 'sweet']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Smirnoff White Grape", "", "Vodka", 10.00, "Basic", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
@@ -77,7 +77,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Three Olives Vodka", "", "Vodka", 15.50, "Moderate", "['sharp', 'bitter']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Absolut Citrus", "", "Vodka", 18.00, "Moderate", "['sharp', 'bitter', 'citrus']", NOW(), NOW());
+values ("Absolut citrus", "", "Vodka", 18.00, "Moderate", "['sharp', 'bitter', 'citrus']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Three Olives Loopy Tropical Fruit Vodka", "", "Vodka", 19.00, "Moderate", "['sharp', 'bitter', 'fruity']", NOW(), NOW());
@@ -128,7 +128,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Belvedere Bloody Mary Vodka", "", "Vodka", 41.00, "Premium", "['sharp', 'bitter', 'spicy', 'savory']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("CIROC French Vanilla Vodka", "", "Vodka", 40.00, "Premium", "['sharp', 'bitter', 'sweet', 'vanilla']", NOW(), NOW());
+values ("CIROC French vanilla Vodka", "", "Vodka", 40.00, "Premium", "['sharp', 'bitter', 'sweet', 'vanilla']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Grey Goose L’Orange", "", "Vodka", 45.00, "Premium", "['sharp', 'bitter', 'citrus', 'fruity']", NOW(), NOW());
@@ -301,13 +301,13 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values("Old Grand Dad Bourbon Whiskey", "liquor/oldgranddadbourbon", "Whiskey", 24.99, "Basic", "['fruity', 'sweet']")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("2 Gingers Irish Whiskey", "liquor/2gingersoriginal", "Whiskey", 15.99, "Basic", "['smooth', 'sharp']")
+values("2 gingers Irish Whiskey", "liquor/2gingersoriginal", "Whiskey", 15.99, "Basic", "['smooth', 'sharp']")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values("Hibiki 17 Year Old Japanese Whisky", "liquor/hibiki17year", "Whiskey", 199.99, "Premium", "['honey', 'wood', 'sweet', 'rich', 'chocolate']")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Jim Beam Honey Bourbon Whiskey", "liquor/jimbeamhoneybourbonwhiskey", "Whiskey", 14.97, "Basic", "['honey', 'sweet', 'wood', 'vanilla']")
+values("Jim Beam honey Bourbon Whiskey", "liquor/jimbeamhoneybourbonwhiskey", "Whiskey", 14.97, "Basic", "['honey', 'sweet', 'wood', 'vanilla']")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values("Benchmark Bourbon", "liquor/benchmarkbourbon", "Whiskey", 12.99, "Basic", "['sweet', 'fruity', 'dry', 'smooth']")
@@ -337,7 +337,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values("Buffalo Trace Bourbon", "liquor/buffalotracebourbon", "Whiskey", 25.99, "Basic", "['sweet', 'honey', 'citrus', 'spicy', 'rich', 'wood']")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Woodford Reserve Bourbon", "liquor/woodfordreservebourbon", "Whiskey", 36.99, "Moderate", "['wood', 'spicy', 'fruity', 'rich', 'sweet', 'citrus']")
+values("woodford Reserve Bourbon", "liquor/woodfordreservebourbon", "Whiskey", 36.99, "Moderate", "['wood', 'spicy', 'fruity', 'rich', 'sweet', 'citrus']")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values("Old Overholt Rye Whiskey", "liquor/oldoverholtoriginal", "Whiskey", 29.99, "Basic", "['smooth', 'spicy']")
@@ -383,128 +383,128 @@ values("Four Roses Small Batch", "liquor/fourrosessmallbatch", "Whiskey", 43.99,
 
 --rum data
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Captain Morgan Original Spiced Rum", "liquor/captainmorganoriginalspicedrum", "Rum", 24.99, "Basic", "[Spicy, Wood]")
+values("Captain Morgan Original Spiced Rum", "liquor/captainmorganoriginalspicedrum", "Rum", 24.99, "Basic", "[spicy, wood]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Bacardi Superior Rum", "liquor/bacardisuperiorrum", "Rum", 27.09, "Basic", "[Ginger, Citrus]")
+values("Bacardi Superior Rum", "liquor/bacardisuperiorrum", "Rum", 27.09, "Basic", "[ginger, citrus]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Bacardi Gold", "liquor/bacardigold", "Rum", 27.09, "Basic", "[Sweet, Vanilla]")
+values("Bacardi Gold", "liquor/bacardigold", "Rum", 27.09, "Basic", "[sweet, vanilla]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("The Kraken Black Spiced Rum", "liquor/thekrakenblackspicedrum", "Rum", 12.99, "Basic", "[Semi-sweet, Coffee, Vanilla, Citrus, Spicy]")
+values("The Kraken Black Spiced Rum", "liquor/thekrakenblackspicedrum", "Rum", 12.99, "Basic", "[semi-sweet, coffee, vanilla, citrus, spicy]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Gosling's Black Seal 151 Proof Rum", "liquor/goslingsblackseal151proofrum", "Rum", 42.24, "Moderate", "[Smooth, Semi-sweet]")
+values("Gosling's Black Seal 151 Proof Rum", "liquor/goslingsblackseal151proofrum", "Rum", 42.24, "Moderate", "[smooth, semi-sweet]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Appleton Estate Signature Blend", "liquor/appletonestatesignatureblend", "Rum", 18.99, "Basic", "[Fruity, Semi-sweet]")
+values("Appleton Estate Signature Blend", "liquor/appletonestatesignatureblend", "Rum", 18.99, "Basic", "[fruity, semi-sweet]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Malibu Black", "liquor/malibublack", "Rum", 13.99, "Basic", "[Smooth, Semi-sweet, Fruity]")
+values("Malibu Black", "liquor/malibublack", "Rum", 13.99, "Basic", "[smooth, semi-sweet, fruity]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Castillo Silver Rum", "liquor/castillosilverrum", "Rum", 14.99, "Basic", "[Sweet, Spicy, Fruity]")
+values("Castillo Silver Rum", "liquor/castillosilverrum", "Rum", 14.99, "Basic", "[sweet, spicy, fruity]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Zaya Gran Reserva 12 Year Rum", "liquor/zayagranreserva12yearrum", "Rum", 72.09, "Premium", "[Sweet, Chocolate, Vanilla, Coffee, Rich, Smokey]")
+values("Zaya Gran Reserva 12 Year Rum", "liquor/zayagranreserva12yearrum", "Rum", 72.09, "Premium", "[sweet, chocolate, vanilla, coffee, rich, smokey]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Plantation Rum XO Reserve 20th Anniversary", "liquor/plantationrumreserve20thanniversary", "Rum", 40.99, "Moderate", "[Fruity, Rich, Vanilla, Sweet, Wood]")
+values("Plantation Rum XO Reserve 20th Anniversary", "liquor/plantationrumreserve20thanniversary", "Rum", 40.99, "Moderate", "[fruity, rich, vanilla, sweet, wood]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("The Baron Samedi Spiced Rum", "liquor/thebaronsamedispicedrum", "Rum", 10.99, "Basic", "[Spicy, Roast, Vanilla, Smooth]")
+values("The Baron Samedi Spiced Rum", "liquor/thebaronsamedispicedrum", "Rum", 10.99, "Basic", "[spicy, roast, vanilla, smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Blackheart Spiced Rum", "liquor/blackheartspicedrum", "Rum", 19.99, "Basic", "[Sweet, Spicy, Smooth]")
+values("Blackheart Spiced Rum", "liquor/blackheartspicedrum", "Rum", 19.99, "Basic", "[sweet, spicy, smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Sailor Jerry Spiced Rum", "liquor/sailorjerryspicedrum", "Rum", 49.99, "Moderate", "[Spicy, Sweet]")
+values("Sailor Jerry Spiced Rum", "liquor/sailorjerryspicedrum", "Rum", 49.99, "Moderate", "[spicy, sweet]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Mount Gay Eclipse Rum", "liquor/mountgayeclipserum", "Rum", 15.99, "Basic", "[Sweet, Spicy]")
+values("Mount Gay Eclipse Rum", "liquor/mountgayeclipserum", "Rum", 15.99, "Basic", "[sweet, spicy]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Ron Zacapa 23 Year Centenario", "liquor/ronzacapacentenario23year", "Rum", 35.99, "Moderate", "[Spicy, Ginger, Sweet, Honey, Vanilla]")
+values("Ron Zacapa 23 Year Centenario", "liquor/ronzacapacentenario23year", "Rum", 35.99, "Moderate", "[spicy, ginger, sweet, honey, vanilla]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Admiral Nelson's Spiced Rum", "liquor/admiralnelson", "Rum", 11.99, "Basic", "[Smooth, Spicy]")
+values("Admiral Nelson's Spiced Rum", "liquor/admiralnelson", "Rum", 11.99, "Basic", "[smooth, spicy]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Myers's Original Dark Rum", "liquor/myerssoriginaldarkrum", "Rum", 48.99, "Moderate", "[Sweet, Roast, Fruity, Wood]")
+values("Myers's Original Dark Rum", "liquor/myerssoriginaldarkrum", "Rum", 48.99, "Moderate", "[sweet, roast, fruity, wood]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Don Q Rum Cristal", "liquor/donqrumcristal", "Rum", 23.05, "Basic", "[Smooth, Wood]")
+values("Don Q Rum Cristal", "liquor/donqrumcristal", "Rum", 23.05, "Basic", "[smooth, wood]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Diplomatico Rum Reserva Exclusiva", "liquor/diplomaticorumreservaexclusiva", "Rum", 59.99, "Moderate", "[Fruity, Sweet, Wood, Citrus, Chocolate]")
+values("Diplomatico Rum Reserva Exclusiva", "liquor/diplomaticorumreservaexclusiva", "Rum", 59.99, "Moderate", "[fruity, sweet, wood, citrus, chocolate]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Ronrico Silver Rum", "liquor/ronricosilverrum", "Rum", 16.99, "Basic", "[Dry, Smooth]")
+values("Ronrico Silver Rum", "liquor/ronricosilverrum", "Rum", 16.99, "Basic", "[dry, smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Wray & Nephew White Overproof Rum", "liquor/wraynephewwhiteoverproofrum", "Rum", 43.09, "Moderate", "[Fruity, Sweet]")
+values("Wray & Nephew White Overproof Rum", "liquor/wraynephewwhiteoverproofrum", "Rum", 43.09, "Moderate", "[fruity, sweet]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Brugal Añejo Rum", "liquor/brugalanejorum", "Rum", 26.88, "Basic", "[Smooth, Semi-sweet]")
+values("Brugal Añejo Rum", "liquor/brugalanejorum", "Rum", 26.88, "Basic", "[smooth, semi-sweet]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Flor de Caña 4 Year Gold Rum", "liquor/flordecana4yeargoldrum", "Rum", 29.99, "Basic", "[Sweet, Fruity, Spicy, Roast, Smooth]")
+values("Flor de Caña 4 Year Gold Rum", "liquor/flordecana4yeargoldrum", "Rum", 29.99, "Basic", "[sweet, fruity, spicy, roast, smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Pyrat Rum XO Reserve", "liquor/pyratrumxoreserve", "Rum", 51.09, "Moderate", "[Semi-sweet, Honey, Citrus, Spicy, Smooth]")
+values("Pyrat Rum XO Reserve", "liquor/pyratrumxoreserve", "Rum", 51.09, "Moderate", "[semi-sweet, honey, citrus, spicy, smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Cruzan Aged Light Rum", "liquor/cruzanagedlightrum", "Rum", 13.99, "Basic", "[Smooth, Spicy, Sweet]")
+values("Cruzan Aged Light Rum", "liquor/cruzanagedlightrum", "Rum", 13.99, "Basic", "[smooth, spicy, sweet]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Rhum Barbancourt Réserve Spéciale 8 Year", "liquor/rhumbarbancourtreservespeciale8year", "Rum", 19.84, "Basic", "[Citrus, Vanilla, Spicy]")
+values("Rhum Barbancourt Réserve Spéciale 8 Year", "liquor/rhumbarbancourtreservespeciale8year", "Rum", 19.84, "Basic", "[citrus, vanilla, spicy]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Blue Chair Bay Rum Coconut", "liquor/bluechairbayrumcoconut", "Rum", 12.99, "Basic", "[Fruity, Sweet, Smooth]")
+values("Blue Chair Bay Rum Coconut", "liquor/bluechairbayrumcoconut", "Rum", 12.99, "Basic", "[fruity, sweet, smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("ABC Light Rum", "liquor/abclightrum", "Rum", 10.50, "Basic", "[Sweet, Smooth]")
+values("ABC Light Rum", "liquor/abclightrum", "Rum", 10.50, "Basic", "[sweet, smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("El Dorado 12 Year", "liquor/eldorado12year", "Rum", 55.00, "Moderate", "[Semi-sweet, Smooth]")
+values("El Dorado 12 Year", "liquor/eldorado12year", "Rum", 55.00, "Moderate", "[semi-sweet, smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Lamb's Navy Rum", "liquor/lambsnavyrum", "Rum", 26.09, "Basic", "[Smooth, Sweet]")
+values("Lamb's Navy Rum", "liquor/lambsnavyrum", "Rum", 26.09, "Basic", "[smooth, sweet]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Ron Barcelo Rum Anejo", "liquor/ronbarcelorumanejo", "Rum", 23.99, "Basic", "[Dry, Fruity, Spicy, Wood]")
+values("Ron Barcelo Rum Anejo", "liquor/ronbarcelorumanejo", "Rum", 23.99, "Basic", "[dry, fruity, spicy, wood]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Santa Teresa 1796", "liquor/santateresa1796", "Rum", 79.99, "Premium", "[Sweet, Wood, Vanilla, Rich]")
+values("Santa Teresa 1796", "liquor/santateresa1796", "Rum", 79.99, "Premium", "[sweet, wood, vanilla, rich]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Pusser's British Navy Rum", "liquor/pussersbritishnavyrum", "Rum", 43.09, "Moderate", "[Smooth, Spicy]")
+values("Pusser's British Navy Rum", "liquor/pussersbritishnavyrum", "Rum", 43.09, "Moderate", "[smooth, spicy]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Ronrico Gold Rum", "liquor/ronricogoldrum", "Rum", 16.99, "Basic", "[Dry, Smooth]")
+values("Ronrico Gold Rum", "liquor/ronricogoldrum", "Rum", 16.99, "Basic", "[dry, smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Bumbu Original Rum", "liquor/bumbuoriginalrum", "Rum", 39.99, "Moderate", "[Spicy, Sweet]")
+values("Bumbu Original Rum", "liquor/bumbuoriginalrum", "Rum", 39.99, "Moderate", "[spicy, sweet]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Ron Abuelo Rum Anejo", "liquor/ronabuelorumanejo", "Rum", 15.99, "Basic", "[Smooth, Spicy]")
+values("Ron Abuelo Rum Anejo", "liquor/ronabuelorumanejo", "Rum", 15.99, "Basic", "[smooth, spicy]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Koloa Kauai Coffee Rum Liqueur", "liquor/koloakauaicoffeerumliqueur", "Rum", 59.99, "Moderate", "[Sweet, Smooth]")
+values("Koloa Kauai coffee Rum Liqueur", "liquor/koloakauaicoffeerumliqueur", "Rum", 59.99, "Moderate", "[sweet, smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Calypso Rum Silver", "liquor/calypsorumsilver", "Rum", 10.99, "Basic", "[Sweet, Smooth]")
+values("Calypso Rum Silver", "liquor/calypsorumsilver", "Rum", 10.99, "Basic", "[sweet, smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Old New Orleans Cajun Spiced Rum", "liquor/oldneworleanscajunspicedrum", "Rum", 19.99, "Basic", "[Spicy, Ginger, Roast, Smooth]")
+values("Old New Orleans Cajun Spiced Rum", "liquor/oldneworleanscajunspicedrum", "Rum", 19.99, "Basic", "[spicy, ginger, roast, smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Atlantico Private Rum Cask", "liquor/atlanticoprivaterumcask", "Rum", 21.99, "Basic", "[Wood, Sweet, Fruity]")
+values("Atlantico Private Rum Cask", "liquor/atlanticoprivaterumcask", "Rum", 21.99, "Basic", "[wood, sweet, fruity]")
 
 -- wine data
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Apothic Crush Smooth Red Blend", "", "Red Wine", 10.00, "Basic", "['sweet', 'malty', 'fruity', 'chocolate']", NOW(), NOW());
+values ("Apothic Crush smooth Red Blend", "", "Red Wine", 10.00, "Basic", "['sweet', 'malty', 'fruity', 'chocolate']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Barefoot Merlot", "", "Red Wine", 12.00, "Basic", "['chocolate', 'fruit', 'vanilla', 'wood']", NOW(), NOW());
@@ -636,7 +636,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Cupcake Sparkling Red", "", "Bubbly", 21.00, "Moderate", "['sweet', 'fruity']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Cooks Extra Dry", "", "Bubbly", 20.00, "Moderate", "['citrus', 'fruity', 'dry']", NOW(), NOW());
+values ("Cooks Extra dry", "", "Bubbly", 20.00, "Moderate", "['citrus', 'fruity', 'dry']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Deadly Zins Zinfandel", "", "Red Wine", 30.00, "Premium", "['fruity', 'wood', 'spicy']", NOW(), NOW());
@@ -736,13 +736,13 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Blue Moon Mango Wheat", "", "Wheat", 6.00, "Basic", "['fresh', 'fruity', 'citrus', 'honey', 'semi-sweet']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Youngs Double Chocolate Stout", "", "Stout", 5.00, "Basic", "['roast', 'smokey', 'chocolate', 'malty', 'semi-sweet']", NOW(), NOW());
+values ("Youngs Double chocolate Stout", "", "Stout", 5.00, "Basic", "['roast', 'smokey', 'chocolate', 'malty', 'semi-sweet']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Founders KBS", "", "Stout", 5.00, "Basic", "['coffee', 'chocolate', 'wood', 'vanilla']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Mikkeller Vanilla Shake", "", "Stout", 5.00, "Basic", "['coffee', 'vanilla', 'chocolate', 'semi-sweet', 'smokey']", NOW(), NOW());
+values ("Mikkeller vanilla Shake", "", "Stout", 5.00, "Basic", "['coffee', 'vanilla', 'chocolate', 'semi-sweet', 'smokey']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Budweiser", "", "Domestic", 5.00, "Basic", "['crisp', 'malty', 'hoppy', 'smooth', 'fresh']", NOW(), NOW());
@@ -760,7 +760,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Angry Orchard Crisp Apple Hard Cider", "", "Cider", 12.00, "Moderate", "['fruity', 'sour', 'acidic', 'sweet']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Woodchuck Amber Hard Cider", "", "Cider", 14.00, "Moderate", "['fresh', 'fruity', 'sour', 'sweet']", NOW(), NOW());
+values ("woodchuck Amber Hard Cider", "", "Cider", 14.00, "Moderate", "['fresh', 'fruity', 'sour', 'sweet']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Three Floyds Munsterfest", "", "Pale Ale", 15.00, "Moderate", "['malty', 'crisp']", NOW(), NOW());
@@ -793,7 +793,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Lagunitas Imperial Stout", "", "Stout", 13.00, "Moderate", "['rich', 'smokey', 'roast', 'malty']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Avery Vanilla Bean Stout", "", "Stout", 12.00, "Moderate", "['vanilla', 'sweet', 'smooth']", NOW(), NOW());
+values ("Avery vanilla Bean Stout", "", "Stout", 12.00, "Moderate", "['vanilla', 'sweet', 'smooth']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Coors Light", "", "Domestic", 8.00, "Moderate", "['malty', 'hoppy', 'fresh']", NOW(), NOW());
@@ -808,7 +808,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Original Sin Hard Cider", "", "Cider", 16.00, "Premium", "['sour', 'fruity', 'citrus', 'fresh']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
-values ("Shacksbury Semi-Sweet Dry Hard Cider", "", "Cider", 16.00, "Premium", "['semi-sweet', 'fruity', 'crisp', 'fresh']", NOW(), NOW());
+values ("Shacksbury semi-sweet dry Hard Cider", "", "Cider", 16.00, "Premium", "['semi-sweet', 'fruity', 'crisp', 'fresh']", NOW(), NOW());
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description, createdAt, updatedAt)
 values ("Night Shift Whirl Pool", "", "Pale Ale", 17.00, "Premium", "['wood', 'malty', 'hoppy', 'crisp', 'citrus']", NOW(), NOW());
