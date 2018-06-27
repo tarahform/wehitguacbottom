@@ -763,31 +763,31 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values("Myers's Original Dark Rum", "", "Rum", 48.99, "Moderate", "[Sweet, Roast, Fruity, Wood]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Don Q Rum Cristal", "", "Rum", 23.05, "Basic", "[Smooth, Wood]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Diplomatico Rum Reserva Exclusiva", "", "Rum", 59.99, "Moderate", "[Fruity, Sweet, Wood, Citrus, Chocolate]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Ronrico Silver Rum", "", "Rum", 16.99, "Basic", "[Dry, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Wray & Nephew White Overproof Rum", "", "Rum", 43.09, "Moderate", "[Fruity, Sweet]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Brugal Añejo Rum", "", "Rum", 26.88, "Basic", "[Smooth, Semi-sweet]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Flor de Caña 4 Year Gold Rum", "", "Rum", 29.99, "Basic", "[Sweet, Fruity, Spicy, Roast, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Pyrat Rum XO Reserve", "", "Rum", 51.09, "Moderate", "[Semi-sweet, Honey, Citrus, Spicy, Smooth]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Cruzan Aged Light Rum", "", "Rum", 13.99, "Basic", "[Smooth, Spicy, Sweet]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Name", "", "Rum", 000, "Basic", "Description")
+values("Rhum Barbancourt Réserve Spéciale 8 Year", "", "Rum", 19.84, "Basic", "[Citrus, Vanilla, Spicy]")
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values("Name", "", "Rum", 000, "Basic", "Description")
