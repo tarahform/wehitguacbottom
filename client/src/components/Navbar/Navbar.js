@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { auth } from "../../firebase";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
-const Navbar = props => (
+const Navbar = ({ authUser }) => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <Link className="navbar-brand" to="/">
       Create-OH
     </Link>
-
-    <div>
-
+        
+ 
       <ul className="navbar-nav">
 
         <li
@@ -25,7 +25,7 @@ const Navbar = props => (
             Welcome
           </Link>
         </li>
-
+          { authUser ?
         <li
           className={
             window.location.pathname === "/Alcohol"
@@ -36,8 +36,8 @@ const Navbar = props => (
           <Link to="/alcohol" className="nav-link">
             Alcohol
           </Link>
-        </li>
-
+        </li> : ""}
+          { authUser ?
         <li
           className={
             window.location.pathname === "/recipes"
@@ -48,21 +48,9 @@ const Navbar = props => (
           <Link to="/recipes" className="nav-link">
             Recipes
           </Link>
-        </li>
-
-        <li
-          className={
-            window.location.pathname === "/about"
-              ? "nav-item active"
-              : "nav-item"
-          }
-        >
-          <Link to="/about" className="nav-link">
-            About
-          </Link>
-        </li>
-
-        <li
+        </li> : ""}
+        
+        {!authUser ? <li
           className={
             window.location.pathname === "/signin"
               ? "nav-item active"
@@ -72,8 +60,8 @@ const Navbar = props => (
           <Link to="/signin" className="nav-link">
             Sign In
           </Link>
-        </li>
-        
+        </li> : ""}
+        {!authUser ?
         <li
           className={
             window.location.pathname === "/signup"
@@ -84,9 +72,16 @@ const Navbar = props => (
           <Link to="/signup" className="nav-link">
             Sign Up
           </Link>
-        </li>
-      </ul>
-    </div>
+        </li> : ""}
+        
+        {authUser ? 
+            <li className="nav-item" onClick={auth.doSignOut}>
+            <Link to="/welcome" className="nav-link">
+            Sign Out
+          </Link>
+        </li> : ""}
+        </ul>
+    
   </nav>
 );
 
