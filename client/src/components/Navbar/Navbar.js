@@ -10,7 +10,6 @@ const Navbar = ({ authUser }) => (
       <img src="/img/Create-oh.png" />
     </Link>
         
- 
       <ul className="navbar-nav">
 
         <li

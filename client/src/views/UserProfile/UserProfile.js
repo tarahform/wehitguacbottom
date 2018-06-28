@@ -1,7 +1,13 @@
-import React from "react";
+import React, {Component} from "react";
 import "./userprofile.css";
 
-const UserProfile = () => (
+class UserProfile extends Component { 
+    state = {
+        
+    }
+
+render() {
+return (
     <div className="container-fluid" id="userProfilePage">
         <div className="row" id="userProfileRow2">
             <div className="col-md-6 border-0 aos-item" id="userProfileColLeft">
@@ -32,8 +38,19 @@ const UserProfile = () => (
                     </p>
                 </ul>
             </div>
+            <div className="card col-md-12">
+                <div className="card-header">
+                    Favorites
+                </div>
+                <div className="card-body">
+                    <h5 className="card-title">Name of Drink</h5>
+                    <p className="card-text">Maybe change this to list items instead</p>
+                </div>
+            </div>
         </div>
     </div>
 );
+}
+}
 
 export default UserProfile;
