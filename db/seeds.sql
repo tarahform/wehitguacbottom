@@ -204,7 +204,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ('DeLeon Tequila Diamonte', 'liquor/deleondiamante', 'Tequila', 31.00, 'Moderate', '["spicy", "vanilla", "wood", "honey", "smooth"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('1921 Tequila Blanco', 'liquor/1921blanco', 'Tequila', 34.00, 'Moderate', '["spice", "wood", "smooth"]');
+values ('1921 Tequila Blanco', 'liquor/1921blanco', 'Tequila', 34.00, 'Moderate', '["spicy", "wood", "smooth"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values ('Skeleto Anejo Tequila', 'liquor/skeletoanejo', 'Tequila', 26.00, 'Moderate', '["spicy", "sweet", "fruity"]');
@@ -216,7 +216,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ('3 Amigos Tequila Blanco', 'liquor/amigosblanco', 'Tequila', 30.00, 'Moderate', '["fruit", "smooth"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('Tonala Tequila Reserve 4 Yr', 'liquor/tonalareserve', 'Tequila', 29.50, 'Moderate', '["wood", "fruit", "spice", "smooth"]');
+values ('Tonala Tequila Reserve 4 Yr', 'liquor/tonalareserve', 'Tequila', 29.50, 'Moderate', '["wood", "fruit", "spicy", "smooth"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values ('Rock n Roll Tequila Mango', 'liquor/rockrollmango', 'Tequila', 30.00, 'Moderate', '["spicy", "citrus", "fruit", "sweet"]');
