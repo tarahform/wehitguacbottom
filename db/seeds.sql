@@ -331,7 +331,7 @@ values("Angel's Envy Bourbon", "liquor/angelsenvybourbon", "Whiskey", 99.99, "Pr
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values("Eagle Rare 10 Year", "liquor/eaglerare10year", "Whiskey", 23.99, "Basic", "['rich', 'sweet', 'vanilla', 'spicy', 'malty']");
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values("Johnnie Walker Blue Label", "liquor/johnniewalkerbluelabel", "Whiskey", 349.99, "Premium", "'smokey', 'rich', 'smooth', 'honey', 'fruity', 'ginger', 'chocolate'");
+values("Johnnie Walker Blue Label", "liquor/johnniewalkerbluelabel", "Whiskey", 349.99, "Premium", "['smokey', 'rich', 'smooth', 'honey', 'fruity', 'ginger', 'chocolate']");
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values("Oban 14 Year Single Malt", "liquor/oban14yearsinglemalt", "Whiskey", 142.99, "Premium", "['dry', 'honey', 'wood']");
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
