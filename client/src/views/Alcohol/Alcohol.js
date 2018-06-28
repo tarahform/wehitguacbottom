@@ -1,10 +1,48 @@
-import React from "react";
-import AlcoholNavbar from "../../components/AlcoholNavbar"
+import React, { Component } from "react";
+import AlcoholListItem from "../../components/AlcoholListItem";
+import API from "../../utils/API"
 
-const Alcohol = () => (
-  <div className="container">
-    <AlcoholNavbar />
-  </div>
-);
+class Alcohol extends Component {
+
+  state = {
+    alcohols: []
+  }
+
+  componentDidMount() {
+    this.alcoholList();
+  }
+
+  alcoholList = () => {
+    API.getAllAlcohol()
+      .then(res => this.setState({ alcohols: res.data }))
+      .catch(err => console.log(err))
+  }
+
+  render() {
+    return (
+
+      <div className="container">
+        {this.state.alcohols.map(alcohol => (
+          <AlcoholListItem
+            key={alcohol.id}
+            id={alcohol.id}
+            name={alcohol.alcohol_name}
+            image={alcohol.image_abrv}
+            category={alcohol.category}
+            price={alcohol.price}
+            description={alcohol.description}
+          />
+        ))}
+
+      </div>
+
+    )
+  }
+
+
+
+
+
+}
 
 export default Alcohol;
