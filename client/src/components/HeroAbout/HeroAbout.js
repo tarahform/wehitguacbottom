@@ -2,20 +2,19 @@ import React from "react";
 import "./HeroAbout.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
-
 const HeroAbout = props => (
   <div>
     <ScrollAnimation animateIn="fadeInDown" className="hero text-center" id="aboutContainer" style={{ backgroundImage: `url(${props.backgroundImage})` }}>
       {props.children}
     </ScrollAnimation>
 
-    <div className="container" id="devPage">
+    
       <ScrollAnimation animateIn="fadeInDown" className="row" id="developers">
         <div className="col-md-12 text-center">
           <h1 id="aboutPageh1">Developers</h1>
         </div>
       </ScrollAnimation>
-      <div className="row">
+      <div className="row" id="devPage">
         <ScrollAnimation className="col-md-3" animateIn="fadeInDown">
           <div className="card developer-image" id="devCard">
             <div className="card-body">
@@ -80,7 +79,7 @@ const HeroAbout = props => (
         </ScrollAnimation>
       </div>
     </div >
-  </div>
+
 );
 
 export default HeroAbout;

@@ -1,3 +1,8 @@
+#aboutContainer {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .hero {
   height: auto;
   width: 100%;
@@ -31,8 +36,12 @@
   margin-top: 0;
 }
 
-#devPage {
-  width: 100%;
+/* ============================================= */
+
+.fa-github, .fa-linkedin {
+  margin: 3%;
+  font-size: 20pt;
+  color: black;
 }
 
 .developer-image {
@@ -77,7 +86,7 @@
 #devCard {
   height: 400px;
   width: 400px;
-  float: right;
+  /* float: right; */
   margin: 5px;
 } 
 
