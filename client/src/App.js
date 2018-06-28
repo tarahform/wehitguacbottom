@@ -13,6 +13,7 @@ import Liquor from "./components/Liquor";
 import Signup from "./components/Signup";
 import Signin from "./components/Signin";
 import Events from "./components/Events";
+import SurveyForm from "./components/SurveyForm";
 import { firebase } from "./firebase";
 
 
@@ -45,6 +46,7 @@ class App extends Component{
             <Route exact path="/signin" component={Signin} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/events" component={Events} />
+            <Route exact path="/surveyform" component={SurveyForm} />
             <Route component={NoMatch} />
           </Switch>
           <Footer />
