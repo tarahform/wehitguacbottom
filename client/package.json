@@ -6,6 +6,7 @@
   "dependencies": {
     "aos": "^2.3.2",
     "axios": "^0.18.0",
+    "cocktail-api-search": "^1.0.21",
     "firebase": "^5.1.0",
     "google-fonts": "^1.0.0",
     "passport-facebook": "^2.1.1",

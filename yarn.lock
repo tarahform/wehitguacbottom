@@ -220,7 +220,7 @@ atob@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.1.tgz#ae2d5a729477f289d60dd7f96a6314a22dd6c22a"
 
-axios@^0.18.0:
+axios@^0.18.0, axios@latest:
   version "0.18.0"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
   dependencies:
@@ -428,6 +428,12 @@ cls-bluebird@^2.1.0:
   dependencies:
     is-bluebird "^1.0.2"
     shimmer "^1.1.0"
+
+cocktail-api-search@^1.0.21:
+  version "1.0.21"
+  resolved "https://registry.yarnpkg.com/cocktail-api-search/-/cocktail-api-search-1.0.21.tgz#939edefc81a4d703d15adf7ad40d603ffd233979"
+  dependencies:
+    axios latest
 
 code-point-at@^1.0.0:
   version "1.1.0"
