@@ -1,6 +1,5 @@
 #aboutContainer {
-  padding-left: 5%;
-  padding-right: 5%;
+  width: 100;
 }
 
 .hero {
@@ -27,7 +26,7 @@
 
 .hero h1, .hero h2 {
   color: white;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px rgb(22,25,73);
 }
 
 .hero h1 {
@@ -36,12 +35,25 @@
   margin-top: 0;
 }
 
+#developers {
+  font-size: 60px;
+  margin: 10%;
+  color: rgb(22,25,73);
+  text-shadow: 2px 2px 4px white;
+}
+
 /* ============================================= */
 
+#devPage {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .fa-github, .fa-linkedin {
-  margin: 3%;
-  font-size: 20pt;
-  color: black;
+  margin: 5px;
+  font-size: 30pt;
+  color: white;
 }
 
 img {
@@ -76,12 +88,11 @@ img {
 #devText {
   color: white;
   font-size: 16px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 #devCard {
