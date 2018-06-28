@@ -5,7 +5,6 @@ class UserProfile extends Component {
     state = {
         
     }
-
 render() {
 return (
     <div className="container-fluid" id="userProfilePage">
