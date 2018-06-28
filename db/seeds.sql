@@ -497,7 +497,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Cupcake Merlot", "wine/cupcakemerlot", "Red Wine", 20.00, "Moderate", "['spicy', 'fruity', 'chocolate']");
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ("Cupcake Red Velvet", "wine/cupcakeredvelvet", "Red Wine", 22.00, "Moderate", "['fruity, 'coffee', 'chocolate', 'vanilla', 'wood']");
+values ("Cupcake Red Velvet", "wine/cupcakeredvelvet", "Red Wine", 22.00, "Moderate", "['fruity', 'coffee', 'chocolate', 'vanilla', 'wood']");
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values ("Folly of The Beast Pinot Noir", "wine/follyofthebeastpinotnoir", "Red Wine", 20.00, "Moderate", "['fruity', 'smokey', 'wood', 'vanilla']");
