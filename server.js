@@ -8,9 +8,10 @@ var db = require("./models");
 // process.env.PORT lets the port be set by Heroku
 var PORT = process.env.PORT || 3001;
 
-// lets client side files use relative file paths
-// specifically the public folder
-app.use(express.static("public"));
+// if mode is production uses client/build for static files
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
 // Parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -19,6 +20,11 @@ app.use(bodyParser.json());
 // allows the app (express) to use the var routes
 require("./routes/apiroutes")(app);
 
+// catch all -- any routes that don't match API routes
+// get sent to the React App
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
 // Start our server so that it can begin listening to client requests.
 // sync({force: true}) = allows for testing - delete when hosting on heroku
