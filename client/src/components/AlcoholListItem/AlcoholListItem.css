@@ -35,3 +35,10 @@ ul {
 .fa-box-open {
   font-size: 50px;
 }
+
+.border-success {
+  border: 5px double;
+  box-shadow: 5px 10px green;
+}
+
+

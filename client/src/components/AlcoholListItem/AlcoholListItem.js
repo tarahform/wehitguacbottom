@@ -23,7 +23,7 @@ const AlcoholListItem = props => {
                 <img className="col-md-6" id="alcoholImage" alt={props.name} src={`../../img/alcohol/${props.image}.png`} />
                 <ul className="col-md-6">
 
-                  {description.map((flavor, i) => <li key={i}>{flavor}</li>)}
+                  {description.map((flavor, i) => <li key={i}>{flavor}.</li>)}
 
                 </ul>
               </div>
