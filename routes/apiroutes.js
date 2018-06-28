@@ -59,13 +59,13 @@ module.exports = app => {
 
     //add new users to the database
     app.post("/api/users", function (req, res) {
-        db.Alcohol.create({
-            first_name: req.body.first_name,
-            middle_name: req.body.middle_name,
-            last_name: req.body.last_name,
-            photo_link: req.body.photo_link,
+        db.User.create({
+            first_name: req.body.firstName,
+            middle_name: req.body.middleName,
+            last_name: req.body.lastName,
+            photo_link: req.body.photoLink,
             email: req.body.email,
-            phone_number: req.body.phone_number,
+            phone_number: req.body.phone,
             age: req.body.age,
         }).then(function (data) {
             res.json(data);
