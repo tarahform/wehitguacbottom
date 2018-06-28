@@ -47,17 +47,28 @@ class Recipes extends Component {
 
   render() {
     return (
-      <div className="container-fluid text-center">
-        <form onSubmit={this.handleSubmit}>
-          <input list="ingredients" name="search" value={this.state.search} onChange={this.handleInputChange} />
-          <datalist id="ingredients">
-            {this.state.ingredientList.map((ingredient, i) => <option value={ingredient} key={i} />)}
-          </datalist>
-          <input type="submit" />
-        </form>
+      <div className="container">
+        <div className="row">
+          <form onSubmit={this.handleSubmit}>
+            <input list="ingredients" name="search" value={this.state.search} onChange={this.handleInputChange} />
+            <datalist id="ingredients">
+              {this.state.ingredientList.map((ingredient, i) => <option value={ingredient} key={i} />)}
+            </datalist>
+            <input type="submit" />
+          </form>
+        </div>
+        <div className="row">
 
-        {this.state.searchResults.map(drank => <RecipeListItem key={drank.idDrink} id={drank.idDrink} name={drank.strDrink} image={drank.strDrinkThumb} />)}
+          {this.state.searchResults.map(drank => 
+          <RecipeListItem 
+          key={drank.idDrink} 
+          id={drank.idDrink} 
+          name={drank.strDrink} 
+          image={drank.strDrinkThumb} 
+          />
+        )}
 
+        </div>
       </div>
 
     )

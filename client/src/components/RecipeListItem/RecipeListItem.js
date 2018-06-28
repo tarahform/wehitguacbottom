@@ -37,13 +37,15 @@ class RecipeListItem extends Component {
   render() {
     return (
       this.state.alcoholic === "Alcoholic" ?
-        <div className="card">
-          <img className="card-img-top" src={this.props.image} alt={this.props.name} />
-          <div className="card-body">
-            <h5 className="card-title">{this.props.name}</h5>
-            {this.state.ingredients.map((ingredient, i) => <p className="card-text" key={i}>{ingredient}</p>)}
-            <p className="card-text">{this.state.instructions}</p>
-            <a href="" className="btn btn-primary">Save</a>
+        <div className="col-md-4">
+          <div className="card">
+            <img className="card-img-top" src={this.props.image} alt={this.props.name} />
+            <div className="card-body">
+              <h6 className="card-title">{this.props.name}</h6>
+              {this.state.ingredients.map((ingredient, i) => <p className="card-text" key={i}>{ingredient}</p>)}
+              <p className="card-text">{this.state.instructions}</p>
+              <a href="" className="btn btn-primary">Save</a>
+            </div>
           </div>
         </div>
         : "Are you sure you don't want alcohol?"
@@ -52,3 +54,4 @@ class RecipeListItem extends Component {
 };
 
 export default RecipeListItem;
+
