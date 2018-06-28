@@ -7,10 +7,9 @@ import { auth } from "../../firebase";
 const Navbar = ({ authUser }) => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <Link className="navbar-brand" to="/">
-      Create-OH
+      <img alt="y" src="/img/Create-oh.png" />
     </Link>
         
- 
       <ul className="navbar-nav">
 
         <li
@@ -25,6 +24,30 @@ const Navbar = ({ authUser }) => (
             Welcome
           </Link>
         </li>
+        <li
+          className={
+            window.location.pathname === "/about"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/about" className="nav-link">
+            About
+          </Link>
+        </li>
+          { authUser ?
+        <li
+          className={
+            window.location.pathname === "/UserProfile"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/userprofile" className="nav-link">
+            Profile
+          </Link>
+        </li> : ""}
+
           { authUser ?
         <li
           className={

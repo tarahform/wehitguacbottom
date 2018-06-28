@@ -3,6 +3,7 @@ import "./Signup.css";
 import { withRouter } from "react-router-dom";
 import { auth } from "../../firebase";
 import axios from "axios";
+import firebase from "firebase";
 
 class Signup extends Component {
   state = {
@@ -83,6 +84,17 @@ class Signup extends Component {
         this.setState({ fberror });
       });
 
+      const userDB = firebase.database().ref("userStats");
+      const userStat = {
+        name: this.state.firstName + "" + this.state.middleName + "" + this.state.lastName,
+        age: this.state.age
+      }
+      userDB.push(userStat);
+      this.setState({
+        name: "",
+        age: ""
+      });
+      console.log("userStat", userStat);
   }
 
   render() {
