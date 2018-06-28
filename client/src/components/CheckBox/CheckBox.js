@@ -4,9 +4,9 @@ import React from "react"
 
 const CheckBox = props => (
     <div className="form-check flavors">
-        <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-        <label className="form-check-label" htmlFor="defaultCheck1">
-            savory
+        <input className="form-check-input" type="checkbox" value="" id={props.id} />
+        <label className="form-check-label" htmlFor={props.id}>
+            {prop.label}
         </label>
     </div>
 )

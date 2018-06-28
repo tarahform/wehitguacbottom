@@ -1,0 +1,102 @@
+[
+    {
+        "id": 0,
+        "name": "sweet"
+    },
+    {
+        "id": 1,
+        "name": "semi-sweet"
+    },
+    {
+        "id": 2,
+        "name": "citrus"
+    },
+    {
+        "id": 3,
+        "name": "dry"
+    },
+    {
+        "id": 4,
+        "name": "spicy"
+    },
+    {
+        "id": 5,
+        "name": "sharp"
+    },
+    {
+        "id": 6,
+        "name": "bitter"
+    },
+    {
+        "id": 7,
+        "name": "rich"
+    },
+    {
+        "id": 8,
+        "name": "vanilla"
+    },
+    {
+        "id": 9,
+        "name": "chocolate"
+    },
+    {
+        "id": 10,
+        "name": "sour"
+    },
+    {
+        "id": 11,
+        "name": "fruity"
+    },
+    {
+        "id": 12,
+        "name": "acidic"
+    },
+    {
+        "id": 13,
+        "name": "malty"
+    },
+    {
+        "id": 14,
+        "name": "smokey"
+    },
+    {
+        "id": 15,
+        "name": "savory"
+    },
+    {
+        "id": 16,
+        "name": "crisp"
+    },
+    {
+        "id": 17,
+        "name": "smooth"
+    },
+    {
+        "id": 18,
+        "name": "wood"
+    },
+    {
+        "id": 19,
+        "name": "coffee"
+    },
+    {
+        "id": 20,
+        "name": "roast"
+    },
+    {
+        "id": 21,
+        "name": "honey"
+    },
+    {
+        "id": 22,
+        "name": "fresh"
+    },
+    {
+        "id": 23,
+        "name": "hoppy"
+    },
+    {
+        "id": 24,
+        "name": "ginger"
+    }
+]
