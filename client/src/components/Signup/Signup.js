@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./Signup.css";
-import firebase from "../../firebase";
+import { withRouter } from "react-router-dom";
+import { auth } from "../../firebase";
+import axios from "axios";
 
 class Signup extends Component {
   state = {
@@ -11,7 +13,10 @@ class Signup extends Component {
     email: "",
     phone: "",
     age: "",
-    password: ""
+    password: "",
+    passwordVerify: "",
+    dberror: null,
+    fberror: null
   };
 
   handleInputChange = event => {
@@ -24,36 +29,115 @@ class Signup extends Component {
   }
 
   handleFormSubmit = event => {
-    // When the form is submitted, prevent its default behavior, get recipes update the recipes state
     event.preventDefault();
-    const userRef = firebase.database().ref('user');
-    const user = {
-      firstName: this.state.firstName,
-      middleName: this.state.middleName,
-      lastName: this.state.lastName,
-      photoLink: this.state.photoLink,
-      email: this.state.email,
-      phone: this.state.phone,
-      age: this.state.age,
-      password: this.state.password
+    const {
+      history
+    } = this.props;
+
+    const {
+      firstName,
+      middleName,
+      lastName,
+      photoLink,
+      email,
+      phone,
+      age,
+      password
+    } = this.state;
+
+    const newUser = {
+      firstName,
+      middleName,
+      lastName,
+      photoLink,
+      email,
+      phone,
+      age
     }
-    userRef.push(user);
-    this.setState({
-      firstName: "",
-      middleName: "",
-      lastName: "",
-      photoLink: "",
-      email: "",
-      phone: "",
-      age: "",
-      password: ""
-    });
-    // API.getRecipes(this.state.recipeSearch)
-      // .then(res => this.setState({ recipes: res.data }))
-      // .catch(err => console.log(err));
-  };
+
+    auth.doCreateUserWithEmailAndPassword(email, password)
+      .then(authUser => {
+        axios.post("/user/new", newUser)
+          .then(response => {
+            console.log(response);
+          })
+          .catch(dberror => {
+            this.setState({dberror})
+          })
+        this.setState({
+          firstName: "",
+          middleName: "",
+          lastName: "",
+          photoLink: "",
+          email: "",
+          phone: "",
+          age: "",
+          password: "",
+          passwordVerify: "",
+          dberror: null,
+          fberror: null
+        });
+        history.push("/welcome");
+      })
+      .catch(fberror => {
+        this.setState({ fberror });
+      });
+
+  }
+  //   // When the form is submitted, prevent its default behavior, get recipes update the recipes state
+  //   event.preventDefault();
+  //   const userRef = firebase.database().ref('user');
+  //   const user = {
+  //     firstName: this.state.firstName,
+  //     middleName: this.state.middleName,
+  //     lastName: this.state.lastName,
+  //     photoLink: this.state.photoLink,
+  //     email: this.state.email,
+  //     phone: this.state.phone,
+  //     age: this.state.age,
+  //     password: this.state.password
+  //   }
+  //   userRef.push(user);
+  //   this.setState({
+  //     firstName: "",
+  //     middleName: "",
+  //     lastName: "",
+  //     photoLink: "",
+  //     email: "",
+  //     phone: "",
+  //     age: "",
+  //     password: ""
+  //   });
+  //   // API.getRecipes(this.state.recipeSearch)
+  //     // .then(res => this.setState({ recipes: res.data }))
+  //     // .catch(err => console.log(err));
+  // };
 
   render() {
+
+    const {
+      firstName,
+      lastName,
+      photoLink,
+      email,
+      phone,
+      age,
+      password,
+      passwordVerify,
+      dberror,
+      fberror
+    } = this.state
+
+    const isInvalid =
+      password !== passwordVerify ||
+      password === '' ||
+      email === '' ||
+      firstName === "" ||
+      lastName === "" ||
+      phone === "" ||
+      age === "" ||
+      photoLink === "";
+
     return (
       <div className="col-md-12">
         <form id="signUpForm">
@@ -89,12 +173,18 @@ class Signup extends Component {
             <label htmlFor="password" id="passwordLabel">Password</label>
             <input value={this.state.password} onChange={this.handleInputChange} name="password" type="password" className="form-control" id="passwordInput" rows="1" placeholder="Password" />
           </div>
-          <button onClick={this.handleFormSubmit} type="submit" className="btn btn-primary btn-lg btn-block">Submit</button>
+          <div className="form-group">
+            <label htmlFor="password" id="passwordLabel">Verify Password</label>
+            <input value={this.state.passwordVerify} onChange={this.handleInputChange} name="passwordVerify" type="password" className="form-control" id="passwordVerifyInput" rows="1" placeholder="Verify Password" />
+          </div>
+          <button disabled={isInvalid} onClick={this.handleFormSubmit} type="submit" className={isInvalid ? "btn btn-secondary btn-lg btn-block" : "btn btn-primary btn-lg btn-block"}>Submit</button>
+          {fberror && <p>Authentication Error: {fberror.message}</p>}
+          {dberror && <p>Database Error: {dberror.message}</p>}
         </form>
       </div>
     )
   }
 };
 
-export default Signup;
+export default withRouter(Signup);
 
