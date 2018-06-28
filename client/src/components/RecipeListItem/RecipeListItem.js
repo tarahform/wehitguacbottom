@@ -37,7 +37,7 @@ class RecipeListItem extends Component {
   render() {
     return (
       this.state.alcoholic === "Alcoholic" ?
-        <div className="card" style={{ width: "18rem" }}>
+        <div className="card">
           <img className="card-img-top" src={this.props.image} alt={this.props.name} />
           <div className="card-body">
             <h5 className="card-title">{this.props.name}</h5>
