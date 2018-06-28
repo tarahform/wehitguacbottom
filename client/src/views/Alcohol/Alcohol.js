@@ -22,18 +22,20 @@ class Alcohol extends Component {
     return (
 
       <div className="container">
-        {this.state.alcohols.map(alcohol => (
-          <AlcoholListItem
-            key={alcohol.id}
-            id={alcohol.id}
-            name={alcohol.alcohol_name}
-            image={alcohol.image_abrv}
-            category={alcohol.category}
-            price={alcohol.price}
-            description={alcohol.description}
-          />
-        ))}
+        <div className="row">
+          {this.state.alcohols.map(alcohol => (
+            <AlcoholListItem
+              key={alcohol.id}
+              id={alcohol.id}
+              name={alcohol.alcohol_name}
+              image={alcohol.image_abrv}
+              category={alcohol.category}
+              price={alcohol.price}
+              description={alcohol.description}
+            />
+          ))}
 
+        </div>
       </div>
 
     )
