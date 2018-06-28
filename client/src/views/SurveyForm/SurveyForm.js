@@ -7,13 +7,9 @@ import RadioButton from "../../components/RadioButton/RadioButton";
 
 
 
-// handleRadioButton = (id) => {
-
-// }
-
-// handleCheckBox = (id) => {
-
-// }
+handleFormSubmit = () => {
+  
+}
 
 class SurveyForm extends Component {
 
@@ -55,7 +51,7 @@ class SurveyForm extends Component {
                   label={flavor}
                 />
               ))}
-              <button className="btn btn-primary" type="submit">Submit</button>
+              <button onClick={this.handleFormSubmit} className="btn btn-primary" type="submit">Submit</button>
             </form>
           </div>
         </div>
