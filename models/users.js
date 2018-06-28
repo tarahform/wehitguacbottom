@@ -14,7 +14,7 @@ module.exports = function (sequelize, DataTypes) {
         },
         photo_link: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         email: {
             type: DataTypes.STRING,
@@ -32,10 +32,7 @@ module.exports = function (sequelize, DataTypes) {
             validate: {
                 len: [1, 3]
             }
-        },
-
-        challenge_id: DataTypes.STRING,
-        user_points: DataTypes.INTEGER,
+        }
     });
     
     return User;
