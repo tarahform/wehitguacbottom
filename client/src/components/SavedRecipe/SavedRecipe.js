@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "./RecipeListItem.css";
+import "./SavedRecipe.css";
 var axios = require("axios");
 
 
-class RecipeListItem extends Component {
+class SavedRecipe extends Component {
   state = {
     instructions: "",
     ingredients: [],
@@ -57,5 +57,5 @@ class RecipeListItem extends Component {
   }
 };
 
-export default RecipeListItem;
+export default SavedRecipe;
 

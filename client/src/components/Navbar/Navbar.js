@@ -7,7 +7,7 @@ import { auth } from "../../firebase";
 const Navbar = ({ authUser }) => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <Link className="navbar-brand" to="/">
-      <img alt="y" src="/img/Create-oh.png" />
+      <img id="logo" alt="y" src="/img/Create-oh.png" />
     </Link>
         
       <ul className="navbar-nav">

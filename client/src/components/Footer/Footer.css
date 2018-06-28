@@ -5,5 +5,9 @@ footer {
     height: 50px;
     clear: both;
   } 
+
+  .fa-facebook, .fa-twitter, .fa-instagram, .fa-google-plus {
+    color: rgb(149,149,151);
+  }
   /*End of FOOTER*/
   /* ============================================== */
