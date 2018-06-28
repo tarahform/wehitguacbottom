@@ -65,7 +65,7 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #0860AC;
+  background-color: rgb(22,25,73);
 }
 
 .developer-image:hover .overlay {
@@ -84,9 +84,8 @@
 }
 
 #devCard {
-  height: 400px;
-  width: 400px;
-  /* float: right; */
+  height: 350px;
+  width: 350px;
   margin: 5px;
 } 
 
