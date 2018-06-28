@@ -6,6 +6,7 @@ import About from "./views/About";
 import Alcohol from "./views/Alcohol";
 import Recipes from "./views/Recipes";
 import Welcome from "./views/Welcome";
+import UserProfile from "./views/UserProfile";
 import NoMatch from "./views/NoMatch";
 import SurveyForm from "./views/SurveyForm";
 import Wine from "./components/Wine";
@@ -38,6 +39,7 @@ class App extends Component{
             <Route exact path="/" component={Welcome} />
             <Route exact path="/welcome" component={Welcome} />
             <Route exact path="/about" component={About} />
+            <Route exact path="/userprofile" component={UserProfile} />
             <Route exact path="/alcohol" component={Alcohol} />
             <Route exact path="/recipes" component={Recipes} />
             <Route exact path="/wine" component={Wine} />
