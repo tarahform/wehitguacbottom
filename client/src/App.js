@@ -7,13 +7,13 @@ import Alcohol from "./views/Alcohol";
 import Recipes from "./views/Recipes";
 import Welcome from "./views/Welcome";
 import NoMatch from "./views/NoMatch";
+import SurveyForm from "./views/SurveyForm";
 import Wine from "./components/Wine";
 import Beer from "./components/Beer";
 import Liquor from "./components/Liquor";
 import Signup from "./components/Signup";
 import Signin from "./components/Signin";
 import Events from "./components/Events";
-import SurveyForm from "./components/SurveyForm";
 import { firebase } from "./firebase";
 
 
