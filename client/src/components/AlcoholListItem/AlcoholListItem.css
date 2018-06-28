@@ -1,12 +1,25 @@
 .card {
     border-radius: 2px;
-    height: 300px;
+    height: 325px;
     width: 300px;
     margin: 1rem;
     position: relative;
   }
-  .square {
-    width: 300px;
-    height: 300px;
-  }
+
+ul {
+  list-style-type: none;
+}
+
+#price {
+  text-align: center;
+}
+
+#alcoholName {
+  text-align: center;
+}
+
+#alcoholImage {
+  height: 100%;
+  width: 100%;
+}
    

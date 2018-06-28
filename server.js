@@ -18,7 +18,6 @@ app.use(bodyParser.json());
 
 // allows the app (express) to use the var routes
 require("./routes/apiroutes")(app);
-require("./routes/recipe")(app);
 
 
 // Start our server so that it can begin listening to client requests.
