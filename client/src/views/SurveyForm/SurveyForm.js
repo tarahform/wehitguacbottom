@@ -5,18 +5,16 @@ import flavors from "../../flavors.json"
 import "./SurveyForm.css";
 import RadioButton from "../../components/RadioButton/RadioButton";
 
-
-
-handleFormSubmit = () => {
-  
-}
-
 class SurveyForm extends Component {
 
   state = {
     flavors,
     subscriptions: ["Basic", "Moderate", "Premium"],
     frequencies: ["Every Month", "Every 2 Months", "Every 3 Months"]
+  }
+
+  handleFormSubmit = event => {
+    console.log("I'm Dirty Dannnnnn")
   }
 
   render() {
@@ -28,26 +26,26 @@ class SurveyForm extends Component {
               <h2>What subscription level would you like?</h2>
               {this.state.subscriptions.map((subscription, i) => (
                 <RadioButton
-                key={i}
-                id={"sub-"+i}
-                name={"sub"}
-                label={subscription}
+                  key={i}
+                  id={"sub-" + i}
+                  name={"sub"}
+                  label={subscription}
                 />
               ))}
               <h2>How often would you like your delivery?</h2>
               {this.state.frequencies.map((frequency, i) => (
                 <RadioButton
                   key={i}
-                  id={"freq-"+i}
+                  id={"freq-" + i}
                   name={"freq"}
                   label={frequency}
-                  />
+                />
               ))}
               <h2>What flavors do you like?</h2>
               {this.state.flavors.map((flavor, i) => (
                 <CheckBox
                   key={i}
-                  id={"flav-"+i}
+                  id={"flav-" + i}
                   label={flavor}
                 />
               ))}

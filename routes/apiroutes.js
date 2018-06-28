@@ -57,9 +57,15 @@ module.exports = app => {
         });
     });
 
+    app.get("/api/users", (req, res) => {
+        db.User.findAll({}).then(data => {
+            res.json(data);
+        });
+    });
+
     //add new users to the database
     app.post("/api/users", function (req, res) {
-        db.Alcohol.create({
+        db.User.create({
             first_name: req.body.first_name,
             middle_name: req.body.middle_name,
             last_name: req.body.last_name,
