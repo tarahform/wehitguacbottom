@@ -63,6 +63,18 @@ module.exports = app => {
         });
     });
 
+    app.get("/api/users/:id?", (req, res) => {
+        db.User.findAll({
+            where: {
+                id: req.params.id
+            }
+        }).then(function (data) {
+            console.log("======================");
+            console.log(data);
+            res.json(data);
+        });
+    });
+
     //add new users to the database
     app.post("/api/users", function (req, res) {
         db.User.create({
