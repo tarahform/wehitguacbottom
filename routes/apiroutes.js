@@ -10,8 +10,8 @@ module.exports = app => {
         });
     });
 
-    //get all alcohols in a specific category
-    app.get("/api/alcoholList/category/:category?", function (req, res) {
+    //get all alcohols in a specific category (this is not case senisitive)
+    app.get("/api/alcoholList/category/:category", function (req, res) {
         db.Alcohol.findAll({
             where: {
                 category: req.params.category
@@ -23,8 +23,8 @@ module.exports = app => {
         });
     });
 
-    //get all alcohols in a specific subscription
-    app.get("/api/alcoholList/subscription/:subscription?", function (req, res) {
+    //get all alcohols in a specific subscription (this is not case sensitive)
+    app.get("/api/alcoholList/subscription/:subscription", function (req, res) {
         db.Alcohol.findAll({
             where: {
                 subscription: req.params.subscription
@@ -60,7 +60,7 @@ module.exports = app => {
 
     //add new users to the database
     app.post("/api/users", function (req, res) {
-        db.User.create({
+        db.Alcohol.create({
             first_name: req.body.first_name,
             middle_name: req.body.middle_name,
             last_name: req.body.last_name,
