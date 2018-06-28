@@ -44,8 +44,9 @@
   color: black;
 }
 
-.developer-image {
+img {
   position: relative;
+  display: block;
   width: 100%;
 }
 
@@ -84,9 +85,9 @@
 }
 
 #devCard {
-  height: 350px;
-  width: 350px;
-  margin: 5px;
-} 
+  width: 375px;
+  height: 375px;
+  margin: 1%;
+}
 
 
