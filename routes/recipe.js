@@ -1,15 +1,7 @@
 // Search by ingredient
-<<<<<<< HEAD
 module.exports = app => {
     console.log("****************");
 }
-=======
-var axios = require("axios");
-var cocktailApiSearch = require("cocktail-api-search"); // ?
-
-// How do you get an image to show?
-// images --> https://www.thecocktaildb.com/images/ingredients/ice-Medium.png (350x350 pixels)
->>>>>>> 5748db711c03b73e0fdd5894b7bf23ee41151384
 
 // You can use the test API key "1" during development of your app or for educational use. 
 // However you must apply for a key a production API key via email if releasing publicly on an appstore. 
