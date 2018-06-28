@@ -8,7 +8,7 @@ const AlcoholListItem = props => {
   // console.log(description);
 
   return (
-    <div className="card">
+    <div className="card float-left">
 
       <div className="card-header" id="category">
         {props.category}
