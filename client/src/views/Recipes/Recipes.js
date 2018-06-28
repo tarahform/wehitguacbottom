@@ -50,7 +50,8 @@ class Recipes extends Component {
       <div className="container">
         <div className="row">
           <form onSubmit={this.handleSubmit}>
-            <input list="ingredients" name="search" value={this.state.search} onChange={this.handleInputChange} />
+            <label for="search">Search</label> <br />
+            <input list="ingredients" name="search" placeholder="Ingredient..." value={this.state.search} onChange={this.handleInputChange} />
             <datalist id="ingredients">
               {this.state.ingredientList.map((ingredient, i) => <option value={ingredient} key={i} />)}
             </datalist>
@@ -59,14 +60,14 @@ class Recipes extends Component {
         </div>
         <div className="row">
 
-          {this.state.searchResults.map(drank => 
-          <RecipeListItem 
-          key={drank.idDrink} 
-          id={drank.idDrink} 
-          name={drank.strDrink} 
-          image={drank.strDrinkThumb} 
-          />
-        )}
+          {this.state.searchResults.map(drank =>
+            <RecipeListItem
+              key={drank.idDrink}
+              id={drank.idDrink}
+              name={drank.strDrink}
+              image={drank.strDrinkThumb}
+            />
+          )}
 
         </div>
       </div>
