@@ -84,34 +84,6 @@ class Signup extends Component {
       });
 
   }
-  //   // When the form is submitted, prevent its default behavior, get recipes update the recipes state
-  //   event.preventDefault();
-  //   const userRef = firebase.database().ref('user');
-  //   const user = {
-  //     firstName: this.state.firstName,
-  //     middleName: this.state.middleName,
-  //     lastName: this.state.lastName,
-  //     photoLink: this.state.photoLink,
-  //     email: this.state.email,
-  //     phone: this.state.phone,
-  //     age: this.state.age,
-  //     password: this.state.password
-  //   }
-  //   userRef.push(user);
-  //   this.setState({
-  //     firstName: "",
-  //     middleName: "",
-  //     lastName: "",
-  //     photoLink: "",
-  //     email: "",
-  //     phone: "",
-  //     age: "",
-  //     password: ""
-  //   });
-  //   // API.getRecipes(this.state.recipeSearch)
-  //     // .then(res => this.setState({ recipes: res.data }))
-  //     // .catch(err => console.log(err));
-  // };
 
   render() {
 
