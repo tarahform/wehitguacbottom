@@ -1,0 +1,104 @@
+#aboutContainer {
+  width: 100;
+}
+
+.hero {
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::after {
+  display: block;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1, .hero h2 {
+  color: white;
+  text-shadow: 2px 2px 4px rgb(22,25,73);
+}
+
+.hero h1 {
+  font-size: 60px;
+  padding-top: 140px;
+  margin-top: 0;
+}
+
+#developers {
+  font-size: 60px;
+  margin: 10%;
+  color: rgb(22,25,73);
+  text-shadow: 2px 2px 4px white;
+}
+
+/* ============================================= */
+
+#devPage {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.fa-github, .fa-linkedin {
+  margin: 5px;
+  font-size: 30pt;
+  color: white;
+}
+
+img {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+#devImgLink {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(22,25,73);
+}
+
+.developer-image:hover .overlay {
+  opacity: 1;
+}
+
+#devText {
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#devCard {
+  width: 375px;
+  height: 375px;
+  margin: 1%;
+}
+
+

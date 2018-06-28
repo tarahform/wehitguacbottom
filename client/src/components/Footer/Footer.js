@@ -29,11 +29,6 @@ const Footer = () => (
                 <i className="fab fa-google-plus fa-3x"></i>
               </a>
             </li>
-            <li className="list-inline-item">
-              <a href="https://www.linkedin.com/">
-                <i className="fab fa-linkedin-in fa-3x"></i>
-              </a>
-            </li>
           </ul>
         </div>
       </div>

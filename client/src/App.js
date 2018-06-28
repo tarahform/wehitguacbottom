@@ -8,9 +8,6 @@ import Recipes from "./views/Recipes";
 import Welcome from "./views/Welcome";
 import UserProfile from "./views/UserProfile";
 import NoMatch from "./views/NoMatch";
-import Wine from "./components/Wine";
-import Beer from "./components/Beer";
-import Liquor from "./components/Liquor";
 import Signup from "./components/Signup";
 import Signin from "./components/Signin";
 import Events from "./components/Events";
@@ -41,9 +38,6 @@ class App extends Component{
             <Route exact path="/userprofile" component={UserProfile} />
             <Route exact path="/alcohol" component={Alcohol} />
             <Route exact path="/recipes" component={Recipes} />
-            <Route exact path="/wine" component={Wine} />
-            <Route exact path="/beer" component={Beer} />
-            <Route exact path="/liquor" component={Liquor} />
             <Route exact path="/signin" component={Signin} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/events" component={Events} />
