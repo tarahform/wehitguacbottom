@@ -34,17 +34,21 @@ class RecipeListItem extends Component {
       })
   }
 
+  // <i class="fas fa-heart"></i>
+
   render() {
     return (
       this.state.alcoholic === "Alcoholic" ?
         <div className="col-md-4">
-          <div className="card">
-            <img className="card-img-top" src={this.props.image} alt={this.props.name} />
+          <div className="card text-center">
+            <div className="card-header" id="category">
+              <h6>{this.props.name}<i class="far fa-heart"></i></h6>
+            </div>
             <div className="card-body">
-              <h6 className="card-title">{this.props.name}</h6>
-              {this.state.ingredients.map((ingredient, i) => <p className="card-text" key={i}>{ingredient}</p>)}
-              <p className="card-text">{this.state.instructions}</p>
-              <a href="" className="btn btn-primary">Save</a>
+              <img className="card-img-top" src={this.props.image} alt={this.props.name} />
+
+              {/* {this.state.ingredients.map((ingredient, i) => <p className="card-text" key={i}>{ingredient}</p>)}
+              <p className="card-text">{this.state.instructions}</p> */}
             </div>
           </div>
         </div>

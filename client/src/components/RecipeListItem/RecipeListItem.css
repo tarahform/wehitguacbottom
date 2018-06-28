@@ -1,6 +1,23 @@
 .card {
   border-radius: 2px;
-  height: 325px;
+  height: auto;
   width: 300px;
-  margin: 1rem 0rem;
+  margin-top: 1rem;
+}
+
+.card-header {
+  position: relative;
+}
+
+.far {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+.fas {
+  color: red;
+  position: absolute;
+  right: 1em;
+  top: 1em;
 }
