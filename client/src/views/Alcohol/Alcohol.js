@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import AlcoholListItem from "../../components/AlcoholListItem";
 import API from "../../utils/API"
 
@@ -22,15 +23,10 @@ class Alcohol extends Component {
   handleAlcoholSelect = id => {
     console.log("ive been clicked")
 
-    // ARRAY OF IDS
     const { selectedIDs } = this.state;
     console.log(selectedIDs)
-    // BOOLEAN -- TRUE OR FALSE
     const selected = selectedIDs.includes(id);
 
-    // IF THE USER HAS ALREADY SELECTED 5 DRINKS
-    // AND IF THE DRINK IS CLICKED HAS NOT BEEN SELECTED
-    // DO NOTHING (THIS DRINK CAN'T BE SELECTED UNTIL SOMETHING ELSE IS)
     if (selectedIDs.length === 5 && !selected) return;
 
     if (!selected) {
@@ -43,7 +39,7 @@ class Alcohol extends Component {
       this.setState({ selectedIDs });
       return;
     }
-    
+
   }
 
   render() {
@@ -51,20 +47,28 @@ class Alcohol extends Component {
 
       <div className="container">
         <div className="row">
-          {this.state.alcohols.map(alcohol => (
-            <AlcoholListItem
-              key={alcohol.id}
-              id={alcohol.id}
-              name={alcohol.alcohol_name}
-              image={alcohol.image_abrv}
-              category={alcohol.category}
-              price={alcohol.price}
-              description={alcohol.description}
-              selected={this.state.selectedIDs.includes(alcohol.id) ? true : false}
-              handleAlcoholSelect={() => this.handleAlcoholSelect(alcohol.id)}
-            />
-          ))}
-
+          <div className="col-md-10">
+            <div className="row">
+              {this.state.alcohols.map(alcohol => (
+                <AlcoholListItem
+                  key={alcohol.id}
+                  id={alcohol.id}
+                  name={alcohol.alcohol_name}
+                  image={alcohol.image_abrv}
+                  category={alcohol.category}
+                  price={alcohol.price}
+                  description={alcohol.description}
+                  selected={this.state.selectedIDs.includes(alcohol.id) ? true : false}
+                  handleAlcoholSelect={() => this.handleAlcoholSelect(alcohol.id)}
+                />
+              ))}
+            </div>
+          </div>
+          <div className="col-md-2">
+          <Link to={this.state.selectedIDs.length < 5 ? "#" : "/shoppingcart"}>
+            <i className={this.state.selectedIDs.length < 5 ? "fas fa-box" : "fas fa-box-open"} ></i>
+          </Link>
+          </div>
         </div>
       </div>
 
