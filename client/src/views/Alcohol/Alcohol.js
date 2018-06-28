@@ -5,7 +5,8 @@ import API from "../../utils/API"
 class Alcohol extends Component {
 
   state = {
-    alcohols: []
+    alcohols: [],
+    selectedIDs: []
   }
 
   componentDidMount() {
@@ -16,6 +17,33 @@ class Alcohol extends Component {
     API.getAllAlcohol()
       .then(res => this.setState({ alcohols: res.data }))
       .catch(err => console.log(err))
+  }
+
+  handleAlcoholSelect = id => {
+    console.log("ive been clicked")
+
+    // ARRAY OF IDS
+    const { selectedIDs } = this.state;
+    console.log(selectedIDs)
+    // BOOLEAN -- TRUE OR FALSE
+    const selected = selectedIDs.includes(id);
+
+    // IF THE USER HAS ALREADY SELECTED 5 DRINKS
+    // AND IF THE DRINK IS CLICKED HAS NOT BEEN SELECTED
+    // DO NOTHING (THIS DRINK CAN'T BE SELECTED UNTIL SOMETHING ELSE IS)
+    if (selectedIDs.length === 5 && !selected) return;
+
+    if (!selected) {
+      selectedIDs.push(id);
+      this.setState({ selectedIDs });
+      return;
+    } else {
+      const index = selectedIDs.indexOf(id);
+      selectedIDs.splice(index, 1);
+      this.setState({ selectedIDs });
+      return;
+    }
+    
   }
 
   render() {
@@ -32,6 +60,8 @@ class Alcohol extends Component {
               category={alcohol.category}
               price={alcohol.price}
               description={alcohol.description}
+              selected={this.state.selectedIDs.includes(alcohol.id) ? true : false}
+              handleAlcoholSelect={() => this.handleAlcoholSelect(alcohol.id)}
             />
           ))}
 
@@ -40,10 +70,6 @@ class Alcohol extends Component {
 
     )
   }
-
-
-
-
 
 }
 

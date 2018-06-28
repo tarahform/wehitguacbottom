@@ -9,8 +9,7 @@ const AlcoholListItem = props => {
 
   return (
     <div className="col-md-4">
-      <div className="card">
-
+      <div className={props.selected ? "card border-success" : "card"} onClick={() => props.handleAlcoholSelect(props.id)}>
         <div className="card-header" id="category">
           {props.category}
         </div>
