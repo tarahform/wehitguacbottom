@@ -14,7 +14,10 @@ class SurveyForm extends Component {
   }
 
   handleFormSubmit = event => {
+    event.preventDefault()
     console.log("I'm Dirty Dannnnnn")
+    console.log("CHECKBOX VALUES")
+    // console.log(value)
   }
 
   render() {
@@ -46,6 +49,7 @@ class SurveyForm extends Component {
                 <CheckBox
                   key={i}
                   id={"flav-" + i}
+                  value={false}
                   label={flavor}
                 />
               ))}
