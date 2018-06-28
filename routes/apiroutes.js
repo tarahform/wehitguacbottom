@@ -10,7 +10,7 @@ module.exports = app => {
         });
     });
 
-    //get all alcohols in a specific category (this is not case senisitive)
+    //get all alcohols in a specific category (this is not case senisitive, and may require spaces for certain categories)
     app.get("/api/alcoholList/category/:category", function (req, res) {
         db.Alcohol.findAll({
             where: {
@@ -36,25 +36,24 @@ module.exports = app => {
         });
     });
 
-
-    /*  Need to find all descriptions
-        Map through result
-        Map through each individual description array
-        res.json(all description arrays that contain a given key word)
-    */
     //get all alcohols with a specific flavor description
     app.get("/api/alcoholList/description/:flavor", function (req, res) {
         db.Alcohol.findAll({
-            attributes: ["id","alcohol_name","description"]
+            attributes: ["id", "alcohol_name", "description"]
         }).then(function (data) {
             console.log("======================");
-            data.map(data => {
-                console.log(data.description);
-
+            let newData = [];
+            data.map(dataMap => {
+                console.log(dataMap.description);
+                let parseDes = JSON.parse(dataMap.description);
+                console.log(parseDes);
+                let found = parseDes.indexOf(req.params.flavor);
+                if (found !== -1) {
+                    newData.push(dataMap);
+                }
             });
-            // console.log(data);
-            // var newData = JSON.parse(data);
-            res.json(JSON.parse(data[0].description));
+            console.log(newData);
+            res.json(newData);
         });
     });
 
