@@ -474,7 +474,7 @@ aws4@^1.2.1, aws4@^1.6.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.7.0.tgz#d4d0e9b9dbfca77bf08eeb0a8a471550fe39e289"
 
-axios@^0.18.0:
+axios@^0.18.0, axios@latest:
   version "0.18.0"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
   dependencies:
@@ -1644,6 +1644,12 @@ coa@~1.0.1:
   resolved "https://registry.yarnpkg.com/coa/-/coa-1.0.4.tgz#a9ef153660d6a86a8bdec0289a5c684d217432fd"
   dependencies:
     q "^1.1.2"
+
+cocktail-api-search@^1.0.21:
+  version "1.0.21"
+  resolved "https://registry.yarnpkg.com/cocktail-api-search/-/cocktail-api-search-1.0.21.tgz#939edefc81a4d703d15adf7ad40d603ffd233979"
+  dependencies:
+    axios latest
 
 code-point-at@^1.0.0:
   version "1.1.0"
@@ -3235,6 +3241,10 @@ globby@^6.1.0:
     object-assign "^4.0.1"
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
+
+google-fonts@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/google-fonts/-/google-fonts-1.0.0.tgz#202e287a0c6272e3d651ac7e00c8f5aefc85b099"
 
 got@^6.7.1:
   version "6.7.1"

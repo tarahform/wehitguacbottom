@@ -240,10 +240,10 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Gran Patron Platinum", "liquor/granpatronplatinum", "Tequila", 45.00, "Premium", "['citrus', 'fruit', 'smooth', 'spicy']");
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ("Grand Mayan Extra Anejo", "liquor/", "Tequila", 46.00, "Premium", "['sweet', 'smooth']");
+values ("Grand Mayan Extra Anejo", "liquor/granmayananejo", "Tequila", 46.00, "Premium", "['sweet', 'smooth']");
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ("Los Azulejos Tequila", "liquor/granmayananejo", "Tequila", 42.00, "Premium", "['wood', 'bitter', 'vanilla', 'sweet']");
+values ("Los Azulejos Tequila", "liquor/losazulejostequilanejo", "Tequila", 42.00, "Premium", "['wood', 'bitter', 'vanilla', 'sweet']");
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values ("Amor Mio Tequila Extra Anejo", "liquor/amormioanejo", "Tequila", 41.00, "Premium", "['wood', 'vanilla', 'sweet', 'bitter']");
@@ -430,7 +430,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ("Barefoot Zinfandel", "wine/barefootzinfandel", "Red Wine", 12.00, "Basic", "['fruity', 'spicy']");
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ("Meiomi Pinot Nior", "wine/", "Red Wine", 14.00, "Basic", "['fruity', 'chocolate', 'vanilla', 'wood']");
+values ("Meiomi Pinot Nior", "wine/meiomipinotnoir", "Red Wine", 14.00, "Basic", "['fruity', 'chocolate', 'vanilla', 'wood']");
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values ("Motto Unabashed Zinfandel California", "wine/mottounabashedzinfandel", "Red Wine", 15.00, "Basic", "['fruity', 'spicy', 'vanilla']");
