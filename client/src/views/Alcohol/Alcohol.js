@@ -63,7 +63,7 @@ class Alcohol extends Component {
 
       <div className="container">
         <div className="jumbotron text-center" id="alcoholJumbotron">
-          <h1> Please Select 5 Alcohols to <img id="alcoholLogoImage" alt="Create-OH" src="/img/Create-oh.png" /> Order </h1>
+          <h1 id="alcoholH1">Please Select 5 Alcohols to <img id="alcoholLogoImage" alt="Create-OH" src="/img/Create-oh.png" /> Order </h1>
         </div>
         <div className="row">
           <div className="col-md-10">

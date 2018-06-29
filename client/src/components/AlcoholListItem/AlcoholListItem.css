@@ -33,16 +33,6 @@ ul {
   width: 100%;
 }
 
-.fa-box {
-  font-size: 50px;
-  color: rgb(22,25,73);
-}
-
-.fa-box-open {
-  font-size: 50px;
-  color: rgb(173,175,192);
-}
-
 .border-dark {
   border: 5px double;
   box-shadow: 5px 10px rgb(22,25,73);

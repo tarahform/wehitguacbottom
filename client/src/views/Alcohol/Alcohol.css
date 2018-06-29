@@ -1,9 +1,29 @@
 #alcoholJumbotron {
     color: white;
     background-color: rgb(173,175,192);
+    border-radius: 15px 50px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-#alcoholLogoImage {
+img {
     width: 225px;
     height: 100px;
 }
+
+#alcoholH1 {
+    color: white;
+    font-family: 'Unica One', cursive;
+}
+
+.fas.fa-box-open {
+    font-size: 50px;
+    color: rgb(173,175,192);
+}
+
+.fas.fa-box {
+    font-size: 50px;
+    color: rgb(22,25,73);
+}
+
