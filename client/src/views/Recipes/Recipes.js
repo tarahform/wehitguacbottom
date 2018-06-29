@@ -81,7 +81,7 @@ class Recipes extends Component {
   render() {
     return (
       <div className="container" id="searchContainer">
-        <div className="jumbotron">
+        <div className="jumbotron" id="searchJumbotron">
           <div className="row">
             <div className="col-md-12">
               <h1>Have alcohol but no recipes???</h1>
