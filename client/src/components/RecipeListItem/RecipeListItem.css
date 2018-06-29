@@ -9,14 +9,36 @@
   position: relative;
 }
 
-.far {
+.far.fa-heart.not-red-heart {
   position: absolute;
   right: 1em;
   top: 1em;
 }
 
-.fas {
+.fas.fa-heart.red-heart {
   position: absolute;
   right: 1em;
   top: 1em;
+  color: red;
 }
+
+#seeFullRecipe {
+ background: rgb(22,25,73);
+ color: rgb(173,175,192);
+ font-family: 'Raleway', sans-serif; 
+}
+
+#recipeImg{
+  display: block;
+  width: 260px;
+  height: 260px;
+}
+
+#recipeHeader {
+  font-family: 'Raleway', sans-serif; 
+}
+
+#recipeCard {
+  border-radius: 15px;
+}
+

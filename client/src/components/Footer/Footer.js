@@ -34,7 +34,7 @@ const Footer = () => (
       </div>
       <div className="row">
         <div className="col-xs-12 col-sm-12 col-md-12 text-center">
-          <p> &copy; Create-OH 2018</p>
+          <p id="footerP"> &copy; Create-OH 2018</p>
         </div>
       </div>
     </footer>

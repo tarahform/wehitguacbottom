@@ -107,3 +107,10 @@
   font-size: 20pt;
 }
 
+#developers, #devBio {
+  font-family: 'Raleway', sans-serif;
+}
+
+#howItWorksH1, #missionH1 {
+  font-family: 'Raleway', sans-serif;
+}

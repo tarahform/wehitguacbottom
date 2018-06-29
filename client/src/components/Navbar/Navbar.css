@@ -6,3 +6,7 @@ nav {
   height: 45px;
   width: 100px;
 }
+
+.nav-link {
+  font-family: 'Raleway', sans-serif;
+}
