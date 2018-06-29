@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import About from "./views/About";
 import Alcohol from "./views/Alcohol";
 import Recipes from "./views/Recipes";
+import FullRecipe from "./views/FullRecipe";
 import Welcome from "./views/Welcome";
 import UserProfile from "./views/UserProfile";
 import NoMatch from "./views/NoMatch";
@@ -26,6 +27,7 @@ class App extends Component{
         ? this.setState({ authUser })
         : this.setState({ authUser: null });
     });
+    // the user is logged in query the db for the users information email 
   }
   render() {
     return(
@@ -39,6 +41,7 @@ class App extends Component{
             <Route exact path="/userprofile" component={UserProfile} />
             <Route exact path="/alcohol" component={Alcohol} />
             <Route exact path="/recipes" component={Recipes} />
+            <Route exact path="/fullrecipe" component={FullRecipe} />
             <Route exact path="/signin" component={Signin} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/events" component={Events} />
