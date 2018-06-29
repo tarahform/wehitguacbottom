@@ -44,12 +44,9 @@ class RecipeListItem extends Component {
             </div>
             <div className="card-body">
               <img className="card-img-top" src={this.props.image} alt={this.props.name} />
-
-              {/* {this.state.ingredients.map((ingredient, i) => <p className="card-text" key={i}>{ingredient}</p>)}
-              <p className="card-text">{this.state.instructions}</p> */}
             </div>
             <div className="card-footer">
-            See Full Recipe
+            <button bsStyle="primary" bsSize="large" id="seeFullRecipe" type="submit">See Full Recipe </button>
             </div>
           </div>
         </div>

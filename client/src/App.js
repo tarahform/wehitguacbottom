@@ -9,6 +9,7 @@ import FullRecipe from "./views/FullRecipe";
 import Welcome from "./views/Welcome";
 import UserProfile from "./views/UserProfile";
 import NoMatch from "./views/NoMatch";
+import ShoppingCart from "./views/ShoppingCart";
 import SurveyForm from "./views/SurveyForm";
 import Signup from "./components/Signup";
 import Signin from "./components/Signin";
@@ -46,7 +47,11 @@ class App extends Component {
             <Route exact path="/" component={Welcome} />
             <Route exact path="/welcome" component={Welcome} />
             <Route exact path="/about" component={About} />
-
+            <Route exact path="/shoppingcart" component={ShoppingCart} />
+            <Route exact path="/signin" component={Signin} />
+            <Route exact path="/signup" component={Signup} />
+            <Route exact path="/events" component={Events} />
+            <Route exact path="/surveyform" component={SurveyForm} />
             <Route
               exact path="/userprofile"
               render={props => (
@@ -60,11 +65,6 @@ class App extends Component {
               <Recipes {...props} userData={this.state.userData} />
             )} />
             <Route exact path="/fullrecipe" component={FullRecipe} />
-
-            <Route exact path="/signin" component={Signin} />
-            <Route exact path="/signup" component={Signup} />
-            <Route exact path="/events" component={Events} />
-            <Route exact path="/surveyform" component={SurveyForm} />
             <Route component={NoMatch} />
           </Switch>
           <Footer />

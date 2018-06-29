@@ -56,10 +56,11 @@
   color: white;
 }
 
-img {
+#devImg {
   position: relative;
   display: block;
   width: 100%;
+  height: 100%;
 }
 
 #devImgLink {
@@ -101,4 +102,8 @@ img {
   margin: 1%;
 }
 
+#devName {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20pt;
+}
 
