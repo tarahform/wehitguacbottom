@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import "./Signup.css";
 import { withRouter } from "react-router-dom";
 import { auth } from "../../firebase";
-import axios from "axios";
+import API from "../../utils/API";
+
 
 class Signup extends Component {
+  
   state = {
     firstName: "",
     middleName: "",
@@ -56,11 +58,7 @@ class Signup extends Component {
 
     auth.doCreateUserWithEmailAndPassword(email, password)
       .then(authUser => {
-        axios.post("/api/users", newUser)
-          .then(response => {
-            console.log(response);
-            return axios.post("/api/favorites/create")
-          })
+        API.createUser(newUser)
           .catch(dberror => {
             this.setState({ dberror })
           })
