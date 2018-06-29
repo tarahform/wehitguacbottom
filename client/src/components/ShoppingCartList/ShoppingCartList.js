@@ -7,15 +7,15 @@ const ShoppingCartList = props => {
     return (
 
         <table className="col-md-9 shoppingCartTable">
-            <tr id="shoppingCartHeader">
-                <th id="shoppingCartImage"> (Image) </th>
-                <th id="shoppingCartItem"> Item </th>
-                <th id="Price"> Price </th>
+            <tr>
+                <th className="col-md-3" id="shoppingCartImage"> (Image) </th>
+                <th className="col-md-3" id="shoppingCartItem"> Item </th>
+                <th className="col-md-3" id="Price"> Price </th>
             </tr>
             <tr id="shoppingCartAlcoholList">
-                <td> hi </td>
-                <td> hi </td>
-                <td> hi </td>
+                <td className="col-md-3"> hi</td>
+                <td className="col-md-3">hi</td>
+                <td className="col-md-3"> hi </td>
             </tr>
         </table>
     )

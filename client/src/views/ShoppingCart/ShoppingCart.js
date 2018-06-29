@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AlcoholListItem from "../../components/AlcoholListItem";
+import Alcohol from "../../views/Alcohol";
 import API from "../../utils/API";
 import ShoppingCartList from "../../components/ShoppingCartList";
 
@@ -35,15 +36,12 @@ class ShoppingCart extends Component {
 
     render() {
         return (
+    
+                    <ShoppingCartList
+                        
+                        
+                    />
 
-            <div className="container">
-
-                <ShoppingCartList
-
-                />
-
-               
-            </div>
         )
     }
 
