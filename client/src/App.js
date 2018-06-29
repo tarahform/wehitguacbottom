@@ -8,6 +8,7 @@ import Recipes from "./views/Recipes";
 import Welcome from "./views/Welcome";
 import UserProfile from "./views/UserProfile";
 import NoMatch from "./views/NoMatch";
+import SurveyForm from "./views/SurveyForm";
 import Signup from "./components/Signup";
 import Signin from "./components/Signin";
 import Events from "./components/Events";
@@ -41,6 +42,7 @@ class App extends Component{
             <Route exact path="/signin" component={Signin} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/events" component={Events} />
+            <Route exact path="/surveyform" component={SurveyForm} />
             <Route component={NoMatch} />
           </Switch>
           <Footer />

@@ -57,19 +57,21 @@ module.exports = app => {
         });
     });
 
-    //get all users in database
     app.get("/api/users", (req, res) => {
         db.User.findAll({}).then(data => {
-        res.json(data);
+            res.json(data);
         });
     });
 
-    //get one user by column value
-    app.get("/api/user/:column/:value", (req, res) => {
-        db.User.findOne({
-            where: req.params
-        }).then(data => {
-        res.json(data);
+    app.get("/api/users/:column/:value", function (req, res) {
+        db.User.findAll({
+            where: {
+                [req.params.column]: req.params.value 
+            }
+        }).then(function (data) {
+            console.log("======================");
+            console.log(data);
+            res.json(data);
         });
     });
 
