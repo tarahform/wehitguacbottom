@@ -25,6 +25,7 @@
 .hero h1, .hero h2 {
   color: white;
   text-shadow: 2px 2px 4px #000000;
+  font-family: 'Unica One', cursive;
 }
 
 .hero h1 {
@@ -32,3 +33,8 @@
   padding-top: 140px;
   margin-top: 0;
 }
+
+/* font-family: 'Quicksand', sans-serif; */
+/* font-family: 'Unica One', cursive; */
+
+

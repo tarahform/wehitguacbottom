@@ -38,3 +38,9 @@ ul {
   box-shadow: 5px 10px rgb(22,25,73);
 }
 
+#alcoholName {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+}
+
+

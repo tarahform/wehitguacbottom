@@ -2,3 +2,13 @@
     padding-left: 30%;
     padding-right: 30%;
   }
+
+  #signUpRow {
+    margin: 5%;
+    padding: 5%;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .btn.btn-primary {
+    background: #242454;
+  }
