@@ -6,6 +6,7 @@
 
 #searchJumbotron {
     background: rgb(22,25,73);
+    border-radius: 15px 50px;
 }
 
 h1, h2 {
@@ -33,9 +34,18 @@ form {
     align-content: center;
 }
 
-#search {
-    margin: 5pt;
-    background: rgb(173,175,192);;
-    border-radius: 5%;
+#searchIngred {
+    margin: 2.5pt;
+    background: rgb(173,175,192);
     color: rgb(22,25,73);
+    font-family: 'Raleway', sans-serif; 
+
 }
+
+#searchInput {
+    margin: 2.5pt;
+}
+
+#recipeH1, #recipeh2 {
+    font-family: 'Raleway', sans-serif; 
+} 

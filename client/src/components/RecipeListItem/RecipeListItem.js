@@ -38,15 +38,15 @@ class RecipeListItem extends Component {
     return (
       this.state.alcoholic === "Alcoholic" ?
         <div className="col-md-4">
-          <div className="card text-center">
+          <div className="card text-center" id="recipeCard">
             <div className="card-header" id="category">
-              <h6>{this.props.name}<i id="favorite" onClick={() => this.props.handleFavorite(this.props.id)} className={this.props.favorite ? "fas fa-heart" : "far fa-heart"}></i></h6>
+              <h6 id="recipeHeader">{this.props.name}<i id="favorite" onClick={() => this.props.handleFavorite(this.props.id)} className={this.props.favorite ? "fas fa-heart red-heart" : "far fa-heart not-red-heart"}></i></h6>
             </div>
             <div className="card-body">
-              <img className="card-img-top" src={this.props.image} alt={this.props.name} />
+              <img className="card-img-top" id="recipeImg" src={this.props.image} alt={this.props.name} />
             </div>
             <div className="card-footer">
-            <button bsStyle="primary" bsSize="large" id="seeFullRecipe" type="submit">See Full Recipe </button>
+            <button className="btn btn-primary btn-lg btn-block" id="seeFullRecipe" block>See Full Recipe</button>
             </div>
           </div>
         </div>
