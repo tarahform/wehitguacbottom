@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Recipes.css";
+import "./FullRecipe.css";
 import RecipeListItem from "../../components/RecipeListItem";
 var axios = require("axios");
 

@@ -48,6 +48,9 @@ class RecipeListItem extends Component {
               {/* {this.state.ingredients.map((ingredient, i) => <p className="card-text" key={i}>{ingredient}</p>)}
               <p className="card-text">{this.state.instructions}</p> */}
             </div>
+            <div className="card-footer">
+            See Full Recipe
+            </div>
           </div>
         </div>
         : ""
