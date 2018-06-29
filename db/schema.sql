@@ -3,19 +3,6 @@ create database createoh_db;
 
 use createoh_db;
 
-create table users(
-    id INT NOT NULL AUTO_INCREMENT,
-    first_name VARCHAR(255) NOT NULL,
-    middle_name VARCHAR(255) NOT NULL,
-    last_name VARCHAR(255) NOT NULL,
-    photo_link VARCHAR(255),
-    email VARCHAR(255) NOT NULL,
-    phone_number VARCHAR(10) NOT NULL,
-    age INT(3),
-    shoppingcart VARCHAR(255) NOT NULL DEFAULT '[]',
-    primary key (id)
-);
-
 create table alcohol(
     id INT NOT NULL AUTO_INCREMENT,
     alcohol_name VARCHAR(255) NOT NULL,
