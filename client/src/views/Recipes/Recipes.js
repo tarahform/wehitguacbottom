@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import RecipeListItem from "../../components/RecipeListItem";
-var axios = require("axios");
+import API from "../../utils/API";
+import axios from "axios";
 
 
 class Recipes extends Component {
@@ -12,8 +13,7 @@ class Recipes extends Component {
   }
 
   componentDidMount() {
-    var listIngredientsUrl = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list";
-    axios.get(listIngredientsUrl)
+    API.getIngredientsList()
       .then(response => {
         // object.values inside of the map function creates and array of arrays instead of an array of objects
         // -- object.values just creates an array that contains the values of everything inside the object
@@ -22,12 +22,18 @@ class Recipes extends Component {
         this.setState({ ingredientList })
       })
       .then(() => {
-        return axios.get("/api/favorite/get/1")
+        if (this.props.userData) {
+          return API.getFavoriteRecipeList(this.props.userData.id)
+        } else {
+          return false
+        }
       })
       .then(response => {
-        var favoriteRecipes = response.data.favoriteRecipes.slice(2, -2).split(", ");
-        this.setState({ favoriteRecipes })
-        //  console.log(favoriteRecipes)
+        if (response) {
+          var favoriteRecipes = response.data.favoriteRecipes.slice(2, -2).split(", ");
+          this.setState({ favoriteRecipes })
+          //  console.log(favoriteRecipes)
+        }
       })
   }
 
@@ -35,8 +41,7 @@ class Recipes extends Component {
     event.preventDefault();
     // console.log("Clicked")
     // console.log(this.state.search)
-    var searchByIngredientsUrl = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${this.state.search}`;
-    axios.get(searchByIngredientsUrl)
+    API.getDrinkByIngredient(this.state.search)
       .then(response => {
         var searchResults = response.data.drinks;
         this.setState({ searchResults })

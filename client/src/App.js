@@ -13,22 +13,30 @@ import Signup from "./components/Signup";
 import Signin from "./components/Signin";
 import Events from "./components/Events";
 import { firebase } from "./firebase";
+import API from "./utils/API";
 
 
-
-class App extends Component{
+class App extends Component {
   state = {
-    authUser: null
+    authUser: null,
+    userData: null
   }
   componentDidMount() {
     firebase.auth.onAuthStateChanged(authUser => {
-      authUser
-        ? this.setState({ authUser })
-        : this.setState({ authUser: null });
+      if (authUser) {
+        API.getUser("email", authUser.email)
+          .then(response => {
+            const userData = response.data[0];
+            this.setState({ authUser, userData })
+          })
+      } else {
+        this.setState({ authUser: null, userData: null });
+      }
     });
   }
+
   render() {
-    return(
+    return (
       <Router>
         <div>
           <Navbar authUser={this.state.authUser} />
@@ -36,9 +44,18 @@ class App extends Component{
             <Route exact path="/" component={Welcome} />
             <Route exact path="/welcome" component={Welcome} />
             <Route exact path="/about" component={About} />
-            <Route exact path="/userprofile" component={UserProfile} />
-            <Route exact path="/alcohol" component={Alcohol} />
-            <Route exact path="/recipes" component={Recipes} />
+            <Route
+              exact path="/userprofile"
+              render={props => (
+                <UserProfile {...props} userData={this.state.userData} />
+              )}
+            />
+            <Route exact path="/alcohol" render={props => (
+              <Alcohol {...props} userData={this.state.userData} />
+            )} />
+            <Route exact path="/recipes" render={props => (
+              <Recipes {...props} userData={this.state.userData} />
+            )} />
             <Route exact path="/signin" component={Signin} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/events" component={Events} />
