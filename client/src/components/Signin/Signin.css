@@ -2,3 +2,8 @@
     padding-left: 30%;
     padding-right: 30%;
   }
+
+#emailLabel, #passwordLabel, #signInBtn, p {
+  font-family: 'Quicksand', sans-serif;
+}
+

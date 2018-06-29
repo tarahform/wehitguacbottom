@@ -72,7 +72,7 @@ class Signin extends Component {
                   <input value={this.state.password} onChange={this.handleInputChange} name="password" type="password" className="form-control" id="loginPasswordInput" placeholder="Enter Password" />
                 </div>
                 <div className="form-group">
-                  <button disabled={isInvalid} onClick={this.handleFormSubmit} type="submit" className={isInvalid ? "btn btn-secondary" : "btn btn-primary"}> Sign In </button>
+                  <button disabled={isInvalid} onClick={this.handleFormSubmit} type="submit" id="signInBtn" className={isInvalid ? "btn btn-secondary" : "btn btn-primary"}> Sign In </button>
                 </div>
                 {error && <p>Authentication Error: {error.message}</p>}
               </form>

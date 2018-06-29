@@ -11,7 +11,8 @@ class RecipeListItem extends Component {
   }
 
   componentDidMount() {
-    var searchByIDUrl = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${this.props.id}`;
+    // var recipeId = ; --> this.props.match
+    var searchByIDUrl = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${recipeId}`;
     // console.log(searchByIDUrl)
 
     axios.get(searchByIDUrl)
@@ -36,7 +37,7 @@ class RecipeListItem extends Component {
 
   render() {
     return (
-      this.state.alcoholic === "Alcoholic" ?
+      // display however I want
         <div className="col-md-4">
           <div className="card text-center">
             <div className="card-header" id="category">
@@ -49,7 +50,6 @@ class RecipeListItem extends Component {
             </div>
           </div>
         </div>
-        : ""
     )
   }
 };
