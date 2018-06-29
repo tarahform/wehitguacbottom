@@ -1,9 +1,14 @@
 #signinPage {
-    padding-left: 30%;
-    padding-right: 30%;
+    padding: 10%;
   }
 
 #emailLabel, #passwordLabel, #signInBtn, p {
   font-family: 'Quicksand', sans-serif;
 }
+
+.btn.btn-primary {
+  background: #242454;
+}
+
+
 

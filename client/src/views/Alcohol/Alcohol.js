@@ -83,7 +83,7 @@ class Alcohol extends Component {
               ))}
             </div>
           </div>
-          <div className="col-md-2">
+          <div className="col-md-2 text-center">
             <Link to={this.state.shoppingcart.length < 5 ? "#" : "/shoppingcart"}>
               <i className={this.state.shoppingcart.length < 5 ? "fas fa-box-open" : "fas fa-box" } ></i>
             </Link>
