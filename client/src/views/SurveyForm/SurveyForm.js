@@ -13,8 +13,9 @@ class SurveyForm extends Component {
     frequencies: ["Every Month", "Every 2 Months", "Every 3 Months"]
   }
 
-  changeValue = id => {
+  handleClick = box => {
     console.log("clicked")
+    console.log(box.value);
   }
 
   handleFormSubmit = event => {
@@ -53,7 +54,7 @@ class SurveyForm extends Component {
                 <CheckBox
                   key={i}
                   id={"flav-" + i}
-                  changeValue={this.changeValue(i)}
+                  onClick={this.handleClick(i)}
                   label={flavor}
                 />
               ))}
