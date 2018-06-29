@@ -4,7 +4,7 @@ import "./AlcoholListItem.css";
 const AlcoholListItem = props => {
   // console.log(props.description);
   // console.log(props.description.slice(2, -2));
-  const description = props.description.slice(2, -2).split("', '");
+  const description = props.description.slice(2, -2).split('", "');
   // console.log(description);
 
   return (
@@ -23,7 +23,7 @@ const AlcoholListItem = props => {
                 <img className="col-md-6" id="alcoholImage" alt={props.name} src={`../../img/alcohol/${props.image}.png`} />
                 <ul className="col-md-6" id="alcoholDescription">
 
-                  {description.map((flavor, i) => <li key={i}>{flavor} .</li>)}
+                  {description.map((flavor, i) => <li key={i}>{flavor}.</li>)}
 
                 </ul>
               </div>

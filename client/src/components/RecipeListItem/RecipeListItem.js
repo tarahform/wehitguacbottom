@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./RecipeListItem.css";
 var axios = require("axios");
 
@@ -28,7 +29,7 @@ class RecipeListItem extends Component {
         }
         this.setState({
 
-          
+
           instructions: drink.strInstructions,
           ingredients,
           alcoholic: drink.strAlcoholic
@@ -48,7 +49,12 @@ class RecipeListItem extends Component {
               <img className="card-img-top" id="recipeImg" src={this.props.image} alt={this.props.name} />
             </div>
             <div className="card-footer">
-            <button className="btn btn-primary btn-lg btn-block" id="seeFullRecipe" block>See Full Recipe</button>
+
+              <button className="btn btn-primary btn-lg btn-block" id="seeFullRecipe" block>
+                <Link to="/fullrecipe" style={{ textDecoration: "none" }}>
+                  <p id="linkP">See Full Recipe</p></Link>
+                </button>
+
             </div>
           </div>
         </div>
