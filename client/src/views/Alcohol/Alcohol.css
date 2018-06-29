@@ -1,9 +1,9 @@
-.jumbotron {
+#alcoholJumbotron {
     color: white;
     background-color: rgb(173,175,192);
 }
 
-img {
+#alcoholLogoImage {
     width: 225px;
     height: 100px;
 }

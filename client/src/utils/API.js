@@ -35,5 +35,14 @@ export default {
   getDrinkByIngredient: function (ingredient) {
     var searchByIngredientsUrl = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ingredient}`;
     return axios.get(searchByIngredientsUrl)
+  },
+
+  //updates user shopping cart as they select alcohols
+  updateShoppingCart: function (userId, shoppingcart) {
+    return axios.put("/api/shoppingcart/update", {
+      id: userId,
+      shoppingcart: JSON.stringify(shoppingcart)
+
+    })
   }
 };

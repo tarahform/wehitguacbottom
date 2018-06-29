@@ -3,62 +3,67 @@ import { Link } from "react-router-dom";
 import AlcoholListItem from "../../components/AlcoholListItem";
 import API from "../../utils/API";
 import "./Alcohol.css";
-var axios = require("axios")
 
 class Alcohol extends Component {
 
   state = {
     alcohols: [],
-    selectedIDs: []
+    shoppingcart: []
   }
 
   componentDidMount() {
-    this.alcoholList();
-  }
-  
-  // ** 
-  // componentWillUnmount() {
-  //   axios.post("/user/shoppingcart", { selectedIDs })
-  //     .then(res => {
-  //       console.log(res);
-  //       console.log(res.data);
-  //     }).catch(err => console.log(err))
-  // }
+    
+    let alcohols;
+    let shoppingcart = this.state.shoppingcart;
 
-  alcoholList = () => {
-    API.getAllAlcohol()
-      .then(res => this.setState({ alcohols: res.data }))
-      .catch(err => console.log(err))
+      API.getAllAlcohol()
+        .then(res => alcohols = res.data )
+        .then(() => {
+          if(this.props.userData && this.props.userData.shoppingcart) {
+           shoppingcart = JSON.parse(this.props.userData.shoppingcart) 
+          }
+          this.setState({ alcohols, shoppingcart })
+        })
+        .catch(err => console.log(err))
   }
 
-  handleAlcoholSelect = id => {
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.userData && nextProps.userData.shoppingcart) {
+      this.setState({shoppingcart: JSON.parse(nextProps.userData.shoppingcart) })
+    }
+  }
+
+
+
+  handleAlcoholSelect = alcoholId => {
     console.log("ive been clicked")
+    if(!this.props.userData) return;
 
-    const { selectedIDs } = this.state;
-    console.log(selectedIDs)
-    const selected = selectedIDs.includes(id);
+    const { shoppingcart } = this.state;
+    // console.log(shoppingcart)
+    const selected = shoppingcart.includes(alcoholId);
 
-    if (selectedIDs.length === 5 && !selected) return;
+    if (shoppingcart.length === 5 && !selected) return;
 
     if (!selected) {
-      selectedIDs.push(id);
-      this.setState({ selectedIDs });
-      return;
+      shoppingcart.push(alcoholId);
     } else {
-      const index = selectedIDs.indexOf(id);
-      selectedIDs.splice(index, 1);
-      this.setState({ selectedIDs });
-      return;
+      const index = shoppingcart.indexOf(alcoholId);
+      shoppingcart.splice(index, 1);
     }
 
+    API.updateShoppingCart(this.props.userData.id, shoppingcart)
+      .then(() => this.props.updateUserDataInApp(this.props.userData.email))
+    
   }
 
   render() {
+    console.log(this.state.shoppingcart)
     return (
 
       <div className="container">
-        <div className="jumbotron text-center">
-          <h1> Please Select 5 Alcohols to <img alt="Create-OH" src="/img/Create-oh.png" /> Order </h1>
+        <div className="jumbotron text-center" id="alcoholJumbotron">
+          <h1> Please Select 5 Alcohols to <img id="alcoholLogoImage" alt="Create-OH" src="/img/Create-oh.png" /> Order </h1>
         </div>
         <div className="row">
           <div className="col-md-10">
@@ -72,16 +77,16 @@ class Alcohol extends Component {
                   category={alcohol.category}
                   price={alcohol.price}
                   description={alcohol.description}
-                  selected={this.state.selectedIDs.includes(alcohol.id) ? true : false}
+                  selected={this.state.shoppingcart.includes(alcohol.id) ? true : false}
                   handleAlcoholSelect={() => this.handleAlcoholSelect(alcohol.id)}
                 />
               ))}
             </div>
           </div>
           <div className="col-md-2">
-          <Link to={this.state.selectedIDs.length < 5 ? "#" : "/shoppingcart"}>
-            <i className={this.state.selectedIDs.length < 5 ? "fas fa-box-open" : "fas fa-box"} ></i>
-          </Link>
+            <Link to={this.state.shoppingcart.length < 5 ? "#" : "/shoppingcart"}>
+              <i className={this.state.shoppingcart.length < 5 ? "fas fa-box-open" : "fas fa-box"} ></i>
+            </Link>
           </div>
         </div>
       </div>

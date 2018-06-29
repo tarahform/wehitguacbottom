@@ -29,6 +29,7 @@ class App extends Component {
         API.getUser("email", authUser.email)
           .then(response => {
             const userData = response.data[0];
+            console.log(userData)
             this.setState({ authUser, userData })
           })
       } else {
@@ -36,6 +37,14 @@ class App extends Component {
       }
     });
     // the user is logged in query the db for the users information email 
+  }
+
+  updateUserDataInApp = (email) => {
+    API.getUser("email", email)
+      .then(response => {
+        const userData = response.data[0];
+        this.setState({ userData })
+      })
   }
 
   render() {
@@ -59,7 +68,7 @@ class App extends Component {
               )}
             />
             <Route exact path="/alcohol" render={props => (
-              <Alcohol {...props} userData={this.state.userData} />
+              <Alcohol {...props} userData={this.state.userData} updateUserDataInApp={this.updateUserDataInApp}/>
             )} />
             <Route exact path="/recipes" render={props => (
               <Recipes {...props} userData={this.state.userData} />
