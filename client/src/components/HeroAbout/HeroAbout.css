@@ -27,12 +27,14 @@
 .hero h1, .hero h2 {
   color: white;
   text-shadow: 2px 2px 4px rgb(22,25,73);
+  font-family: 'Unica One', cursive;
 }
 
 .hero h1 {
   font-size: 60px;
   padding-top: 140px;
   margin-top: 0;
+  font-family: 'Unica One', cursive;
 }
 
 #developers {
@@ -40,7 +42,10 @@
   margin: 10%;
   color: rgb(22,25,73);
   text-shadow: 2px 2px 4px rgb(173,175,192);
+  font-family: 'Unica One', cursive;
 }
+
+
 
 /* ============================================= */
 
@@ -94,6 +99,7 @@
   align-items: center;
   padding-left: 10%;
   padding-right: 10%;
+  font-family: 'Quicksand', sans-serif;
 }
 
 #devCard {
@@ -108,9 +114,10 @@
 }
 
 #developers, #devBio {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 #howItWorksH1, #missionH1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Unica One', cursive;
 }
+

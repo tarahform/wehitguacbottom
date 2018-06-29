@@ -27,6 +27,8 @@ class RecipeListItem extends Component {
           }
         }
         this.setState({
+
+          
           instructions: drink.strInstructions,
           ingredients,
           alcoholic: drink.strAlcoholic
