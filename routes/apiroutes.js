@@ -63,10 +63,10 @@ module.exports = app => {
         });
     });
 
-    app.get("/api/users/:id?", (req, res) => {
+    app.get("/api/users/:column/:value", function (req, res) {
         db.User.findAll({
             where: {
-                id: req.params.id
+                [req.params.column]: req.params.value 
             }
         }).then(function (data) {
             console.log("======================");
