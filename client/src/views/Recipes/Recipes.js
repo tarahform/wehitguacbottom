@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Recipes.css";
 import RecipeListItem from "../../components/RecipeListItem";
 var axios = require("axios");
 
@@ -74,18 +75,31 @@ class Recipes extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <form onSubmit={this.handleSubmit}>
-            <label htmlFor="search">Search</label> <br />
-            <input list="ingredients" name="search" placeholder="Ingredient..." value={this.state.search} onChange={this.handleInputChange} />
-            <datalist id="ingredients">
-              {this.state.ingredientList.map((ingredient, i) => <option value={ingredient} key={i} />)}
-            </datalist>
-            <input type="submit" />
-          </form>
+      <div className="container" id="searchContainer">
+        <div className="jumbotron">
+          <div className="row">
+            <div className="col-md-12">
+              <h1>Have alcohol but no recipes???</h1>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-12">
+              <h2>No problem, we got you covered!</h2>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-12">
+              <form onSubmit={this.handleSubmit}> <br />
+                <input list="ingredients" name="search" placeholder="Search by ingredient..." value={this.state.search} onChange={this.handleInputChange} />
+                <datalist id="ingredients">
+                  {this.state.ingredientList.map((ingredient, i) => <option value={ingredient} key={i} />)}
+                </datalist>
+                <button bsStyle="primary" bsSize="large" id="search" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
         </div>
-        <div className="row">
+        <div className="row" id="recipeRow">
 
           {this.state.searchResults.map(drank =>
             <RecipeListItem
@@ -97,10 +111,8 @@ class Recipes extends Component {
               handleFavorite={this.handleFavorite}
             />
           )}
-
         </div>
       </div>
-
     )
   }
 };
