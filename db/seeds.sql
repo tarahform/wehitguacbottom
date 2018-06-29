@@ -38,7 +38,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ('Smirnoff Blueberry', 'liquor/smirnoffblueberry', 'Vodka', 10.50, 'Basic', '["sharp", "bitter", "fruity"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('Svedka vanilla', 'liquor/svedkavanilla', 'Vodka', 12.50, 'Basic', '["sharp", "bitter", "vanilla", "sweet"]');
+values ('Svedka Vanilla', 'liquor/svedkavanilla', 'Vodka', 12.50, 'Basic', '["sharp", "bitter", "vanilla", "sweet"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values ('Smirnoff White Grape', 'liquor/smirnoffwhitegrape', 'Vodka', 10.00, 'Basic', '["sharp", "bitter", "fruity"]');
@@ -125,7 +125,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ('Belvedere Bloody Mary Vodka', 'liquor/belvederebloodymaryvodka', 'Vodka', 41.00, 'Premium', '["sharp", "bitter", "spicy", "savory"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('CIROC French vanilla Vodka', 'liquor/cirocfrenchvanillavodka', 'Vodka', 40.00, 'Premium', '["sharp", "bitter", "sweet", "vanilla"]');
+values ('CIROC French Vanilla Vodka', 'liquor/cirocfrenchvanillavodka', 'Vodka', 40.00, 'Premium', '["sharp", "bitter", "sweet", "vanilla"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values ('Grey Goose L’Orange', 'liquor/greygooselorange', 'Vodka', 45.00, 'Premium', '["sharp", "bitter", "citrus", "fruity"]');
@@ -213,13 +213,13 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ('Eagle Shot Tequila', 'liquor/eagleshot', 'Tequila', 25.00, 'Moderate', '["spicy", "smooth"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('3 Amigos Tequila Blanco', 'liquor/amigosblanco', 'Tequila', 30.00, 'Moderate', '["fruit", "smooth"]');
+values ('3 Amigos Tequila Blanco', 'liquor/amigosblanco', 'Tequila', 30.00, 'Moderate', '["fruity", "smooth"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('Tonala Tequila Reserve 4 Yr', 'liquor/tonalareserve', 'Tequila', 29.50, 'Moderate', '["wood", "fruit", "spicy", "smooth"]');
+values ('Tonala Tequila Reserve 4 Yr', 'liquor/tonalareserve', 'Tequila', 29.50, 'Moderate', '["wood", "fruity", "spicy", "smooth"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('Rock n Roll Tequila Mango', 'liquor/rockrollmango', 'Tequila', 30.00, 'Moderate', '["spicy", "citrus", "fruit", "sweet"]');
+values ('Rock n Roll Tequila Mango', 'liquor/rockrollmango', 'Tequila', 30.00, 'Moderate', '["spicy", "citrus", "fruity", "sweet"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values ('Mi Casa Tequila Blanco', 'liquor/micasablanco', 'Tequila', 28.00, 'Moderate', '["smooth", "spicy"]');
@@ -237,7 +237,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ('Clase Azul Reposado Tequila', 'liquor/claseazulreposado', 'Tequila', 42.00, 'Premium', '["vanilla", "sweet", "spicy", "wood", "smooth"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('Gran Patron Platinum', 'liquor/granpatronplatinum', 'Tequila', 45.00, 'Premium', '["citrus", "fruit", "smooth", "spicy"]');
+values ('Gran Patron Platinum', 'liquor/granpatronplatinum', 'Tequila', 45.00, 'Premium', '["citrus", "fruity", "smooth", "spicy"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values ('Grand Mayan Extra Anejo', 'liquor/granmayananejo', 'Tequila', 46.00, 'Premium', '["sweet", "smooth"]');
@@ -252,10 +252,10 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ('Patron Extra Anejo 5 Year', 'liquor/patronanejo5year', 'Tequila', 47.00, 'Premium', '["vanilla", "honey", "smooth"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('Clase Azul Ultra', 'liquor/claseazulultra', 'Tequila', 48.00, 'Premium', '["wood", "fruit", "sweet", "vanilla", "smooth"]');
+values ('Clase Azul Ultra', 'liquor/claseazulultra', 'Tequila', 48.00, 'Premium', '["wood", "fruity", "sweet", "vanilla", "smooth"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('DeLeon Leona Tequila', 'liquor/deleonleona', 'Tequila', 49.00, 'Premium', '["fruit", "sweet", "spicy", "vanilla", "wood"]');
+values ('DeLeon Leona Tequila', 'liquor/deleonleona', 'Tequila', 49.00, 'Premium', '["fruity", "sweet", "spicy", "vanilla", "wood"]');
 
 -- whiskey data
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
@@ -413,7 +413,7 @@ values('Bumbu Original Rum', 'liquor/bumbuoriginalrum', 'Rum', 39.99, 'Moderate'
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values('Ron Abuelo Rum Anejo', 'liquor/ronabuelorumanejo', 'Rum', 15.99, 'Basic', '["smooth", "spicy"]');
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values('Koloa Kauai coffee Rum Liqueur', 'liquor/koloakauaicoffeerumliqueur', 'Rum', 59.99, 'Moderate', '["sweet", "smooth"]');
+values('Koloa Kauai Coffee Rum Liqueur', 'liquor/koloakauaicoffeerumliqueur', 'Rum', 59.99, 'Moderate', '["sweet", "smooth"]');
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values('Calypso Rum Silver', 'liquor/calypsorumsilver', 'Rum', 10.99, 'Basic', '["sweet", "smooth"]');
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
@@ -422,10 +422,10 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values('Atlantico Private Rum Cask', 'liquor/atlanticoprivaterumcask', 'Rum', 21.99, 'Basic', '["wood", "sweet", "fruity"]');
 -- wine data
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('Apothic Crush smooth Red Blend', 'wine/apothiccrush', 'Red Wine', 10.00, 'Basic', '["sweet", "malty", "fruity", "chocolate"]');
+values ('Apothic Crush Smooth Red Blend', 'wine/apothiccrush', 'Red Wine', 10.00, 'Basic', '["sweet", "malty", "fruity", "chocolate"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('Barefoot Merlot', 'wine/barefootmerlot', 'Red Wine', 12.00, 'Basic', '["chocolate", "fruit", "vanilla", "wood"]');
+values ('Barefoot Merlot', 'wine/barefootmerlot', 'Red Wine', 12.00, 'Basic', '["chocolate", "fruity", "vanilla", "wood"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values ('Barefoot Zinfandel', 'wine/barefootzinfandel', 'Red Wine', 12.00, 'Basic', '["fruity", "spicy"]');
@@ -590,7 +590,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ('Meiomi Rose', 'wine/meiomirose', 'Rose', 30.00, 'Premium', '["dry", "fruity", "acidic"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('Krug Rose 21st Edition', 'wine/krugrosebrut', 'Rose', 299.00, 'Premium', '["rich", "fruit", "honey", "coffee"]');
+values ('Krug Rose 21st Edition', 'wine/krugrosebrut', 'Rose', 299.00, 'Premium', '["rich", "fruity", "honey", "coffee"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values ('Bollinger Rose', 'wine/bollingerbrutrose', 'Rose', 140.00, 'Premium', '["acidic", "rich", "fruity"]');
@@ -651,13 +651,13 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ('Blue Moon Mango Wheat', 'beer/bluemoonmangowheat', 'Wheat', 6.00, 'Basic', '["fresh", "fruity", "citrus", "honey", "semi-sweet"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('Youngs Double chocolate Stout', 'beer/youngsdoublechocolatestout', 'Stout', 5.00, 'Basic', '["roast", "smokey", "chocolate", "malty", "semi-sweet"]');
+values ('Youngs Double Chocolate Stout', 'beer/youngsdoublechocolatestout', 'Stout', 5.00, 'Basic', '["roast", "smokey", "chocolate", "malty", "semi-sweet"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values ('Founders KBS', 'beer/founderskbs', 'Stout', 5.00, 'Basic', '["coffee", "chocolate", "wood", "vanilla"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('Mikkeller vanilla Shake', 'beer/mikkellervanillashake', 'Stout', 5.00, 'Basic', '["coffee", "vanilla", "chocolate", "semi-sweet", "smokey"]');
+values ('Mikkeller Vanilla Shake', 'beer/mikkellervanillashake', 'Stout', 5.00, 'Basic', '["coffee", "vanilla", "chocolate", "semi-sweet", "smokey"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values ('Budweiser', 'beer/budweiser', 'Domestic', 5.00, 'Basic', '["crisp", "malty", "hoppy", "smooth", "fresh"]');
@@ -708,7 +708,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ('Lagunitas Imperial Stout', 'beer/lagunitasimperialstout', 'Stout', 13.00, 'Moderate', '["rich", "smokey", "roast", "malty"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('Avery vanilla Bean Stout', 'beer/averyvanillabeanstout', 'Stout', 12.00, 'Moderate', '["vanilla", "sweet", "smooth"]');
+values ('Avery Vanilla Bean Stout', 'beer/averyvanillabeanstout', 'Stout', 12.00, 'Moderate', '["vanilla", "sweet", "smooth"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values ('Coors Light', 'beer/coorslight', 'Domestic', 8.00, 'Moderate', '["malty", "hoppy", "fresh"]');
@@ -723,7 +723,7 @@ insert into alcohol (alcohol_name, image_abrv, category, price, subscription, de
 values ('Original Sin Hard Cider', 'beer/originalsinhardcider', 'Cider', 16.00, 'Premium', '["sour", "fruity", "citrus", "fresh"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
-values ('Shacksbury semi-sweet dry Hard Cider', 'beer/shacksburysemidry', 'Cider', 16.00, 'Premium', '["semi-sweet", "fruity", "crisp", "fresh"]');
+values ('Shacksbury semi-sweet Dry Hard Cider', 'beer/shacksburysemidry', 'Cider', 16.00, 'Premium', '["semi-sweet", "fruity", "crisp", "fresh"]');
 
 insert into alcohol (alcohol_name, image_abrv, category, price, subscription, description)
 values ('Night Shift Whirlpool Pale Ale', 'beer/nightshiftwhirlpool', 'Pale Ale', 17.00, 'Premium', '["wood", "malty", "hoppy", "crisp", "citrus"]');
