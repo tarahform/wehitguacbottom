@@ -24,30 +24,18 @@
   z-index: 2;
 }
 
-.hero h1, .hero h2 {
-  color: white;
-  text-shadow: 2px 2px 4px rgb(22,25,73);
-  font-family: 'Unica One', cursive;
-}
+/* ============================================= */
 
-.hero h1 {
-  font-size: 60px;
-  padding-top: 140px;
-  margin-top: 0;
+#developTitle {
   font-family: 'Unica One', cursive;
-}
-
-#developers {
   font-size: 60px;
   margin: 10%;
-  color: rgb(22,25,73);
-  text-shadow: 2px 2px 4px rgb(173,175,192);
-  font-family: 'Unica One', cursive;
 }
 
-
-
-/* ============================================= */
+#h1Develop {
+  color: rgb(22,25,73);
+  text-shadow: 2px 2px 4px rgb(173,175,192);
+}
 
 #devPage {
   display: flex;

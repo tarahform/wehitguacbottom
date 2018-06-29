@@ -12,8 +12,8 @@ const HeroAbout = props => (
 
     <div className="row d-flex align-items-center" id="devPage">
       <ScrollAnimation animateIn="fadeInDown" className="row">
-        <div className="col-md-12 text-center">
-          <h1 id="developers">Developers</h1>
+        <div className="col-md-12 text-center" id="developTitle">
+          <h1 id="h1Develop">Developers</h1>
         </div>
       </ScrollAnimation>
     </div>

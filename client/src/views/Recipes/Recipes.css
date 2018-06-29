@@ -5,22 +5,26 @@
 }
 
 #searchJumbotron {
-    background: rgb(22,25,73);
+    color: white;
+    background-color: rgb(173,175,192);
     border-radius: 15px 50px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-h1, h2 {
-    color: rgb(173,175,192);
-}
-
-h1 {
+#recipeH1 {
     font-size: 40pt;
     text-shadow: 2px 2px 4px black;
+    color: white;
+    font-family: 'Unica One', cursive;
 }
 
-h2 {
+#recipeh2 {
     font-size: 30pt;
     text-shadow: 2px 2px 4px black;
+    color: white;
+    font-family: 'Unica One', cursive;
 }
 
 #recipeRow {
@@ -36,8 +40,8 @@ form {
 
 #searchIngred {
     margin: 2.5pt;
-    background: rgb(173,175,192);
-    color: rgb(22,25,73);
+    background: rgb(22,25,73);
+    color: rgb(173,175,192);
     font-family: 'Raleway', sans-serif; 
 
 }
