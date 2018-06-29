@@ -10,16 +10,8 @@ class SurveyForm extends Component {
     flavors,
     subscriptions: ["Basic", "Moderate", "Premium"],
     frequencies: ["Every Month", "Every 2 Months", "Every 3 Months"],
-    subChecks: [
-      false,
-      false,
-      false
-    ],
-    freqChecks: [
-      false,
-      false,
-      false
-    ],
+    subOption: "Basic",
+    freqOption: "Every Month",
     flavChecks: [
       false,
       false,
@@ -49,18 +41,59 @@ class SurveyForm extends Component {
     ]
   }
 
-  handleRadioClick = event => {
-    event.preventDefault();
-    console.log("radio click")
-    console.log("-------------------");
-    console.log("name-");
-    console.log(event.target.name)
-    console.log("checked-");
-    console.log(event.target.checked)
-    console.log("id-");
-    console.log(event.target.id)
-    console.log("=====================")
+  handleRadioClick1 = event => {
+    // event.preventDefault();
+    // console.log("radio click")
+    // console.log("-------------------");
+    // console.log("name-");
+    // console.log(event.target.name)
+    // console.log("checked-");
+    // console.log(event.target.checked)
+    // console.log("id-");
+    // console.log(event.target.id)
+    // console.log("=====================")
+
+    // let newSubChecks = [...this.state.subChecks]
+    // console.log(newSubChecks)
+    // if (!newSubChecks[event.target.id]) {
+    //   newSubChecks[event.target.id] = true
+    // } else {
+    //   newSubChecks[event.target.id] = false
+    // }
+    // this.setState({ subChecks: newSubChecks })
+    // console.log(this.state.subChecks)
+    this.setState({
+      subOption: event.target.value
+    });
+    console.log(this.state.subOption);
   }
+
+  handleRadioClick2 = event => {
+    // event.preventDefault();
+    // console.log("radio click")
+    // console.log("-------------------");
+    // console.log("name-");
+    // console.log(event.target.name)
+    // console.log("checked-");
+    // console.log(event.target.checked)
+    // console.log("id-");
+    // console.log(event.target.id)
+    // console.log("=====================")
+
+    // let newFreqChecks = [...this.state.freqChecks]
+    // if (!newFreqChecks[event.target.id]) {
+    //   newFreqChecks[event.target.id] = true
+    // } else {
+    //   newFreqChecks[event.target.id] = false
+    // }
+    // this.setState({ freqChecks: newFreqChecks })
+    // console.log(this.state.freqChecks)
+    this.setState({
+      freqOption: event.target.value
+    });
+    console.log(this.state.freqOption);
+  }
+
 
   handleBoxClick = event => {
     console.log("box click")
@@ -75,14 +108,19 @@ class SurveyForm extends Component {
       newFlavChecks[event.target.id] = false
     }
     this.setState({ flavChecks: newFlavChecks })
-
+    console.log(this.state.flavChecks)
   }
 
   handleFormSubmit = event => {
     event.preventDefault()
-    console.log("I'm Dirty Dannnnnn")
+    console.log("SUB-RADIO")
+    console.log(this.state.subOption) 
+    
+    console.log("FREQ-RADIO")
+    console.log(this.state.freqOption)
+    
     console.log("CHECKBOX VALUES")
-    console.log(event.target.type)
+    console.log(this.state.flavChecks)
   }
 
   render() {
@@ -97,8 +135,9 @@ class SurveyForm extends Component {
                   key={i}
                   id={i}
                   name={"sub"}
-                  checked={this.state.subChecks[i]}
-                  handleRadioClick={this.handleRadioClick}
+                  value={subscription}
+                  checked={this.state.subOption === subscription}
+                  handleRadioClick={this.handleRadioClick1}
                   label={subscription}
                 />
               ))}
@@ -108,8 +147,9 @@ class SurveyForm extends Component {
                   key={i}
                   id={i}
                   name={"freq"}
-                  checked={this.state.freqChecks[i]}
-                  handleRadioClick={this.handleRadioClick}
+                  value={frequency}
+                  checked={this.state.freqOption === frequency}
+                  handleRadioClick={this.handleRadioClick2}
                   label={frequency}
                 />
               ))}
