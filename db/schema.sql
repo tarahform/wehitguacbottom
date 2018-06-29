@@ -12,7 +12,7 @@ create table users(
     email VARCHAR(255) NOT NULL,
     phone_number INT(10),
     age INT(3),
-    shoppingcart VARCHAR(255) NOT NULL DEFAULT '[]'
+    shoppingcart VARCHAR(255) NOT NULL DEFAULT '[]',
     primary key (id)
 );
 
