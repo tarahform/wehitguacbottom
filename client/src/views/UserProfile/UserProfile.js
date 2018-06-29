@@ -1,10 +1,22 @@
 import React, {Component} from "react";
 import "./userprofile.css";
+import API from "../../utils/API"
 
 class UserProfile extends Component { 
     state = {
-        
+        user: []
     }
+
+    componentDidMount() {
+        this.userInfo();
+    }
+
+    userInfo= () => {
+        API.getUser()
+          .then(res => this.setState({ user: res.data }))
+          .catch(err => console.log(err))
+        }
+
 render() {
 return (
     <div className="container-fluid" id="userProfilePage">
@@ -24,7 +36,7 @@ return (
             <div className="col-md-6 media-body" id="userProfileColRight">
                 <ul id="userInfo">
                     <p>Name:
-                    <span id="userName"></span>
+                    <span userInfo={this.state.firstName} id="userName"></span>
                     </p>
                     <p>Age:
                     <span id="userAge"></span>
