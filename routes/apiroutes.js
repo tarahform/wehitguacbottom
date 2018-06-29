@@ -73,7 +73,7 @@ module.exports = app => {
     });
 
     // get favorites based on userid
-    app.get("/api/user/:UserId/favorites", (req, res) => {
+    app.get("/api/favorite/get/:UserId", (req, res) => {
         db.Favorite.findOne({
             where: { UserId: req.params.UserId }
         })

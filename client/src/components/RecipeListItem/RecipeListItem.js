@@ -42,7 +42,7 @@ class RecipeListItem extends Component {
         <div className="col-md-4">
           <div className="card text-center">
             <div className="card-header" id="category">
-              <h6>{this.props.name}<i id="favorite" className="far fa-heart"></i></h6>
+              <h6>{this.props.name}<i id="favorite" onClick={() => this.props.handleFavorite(this.props.id, this.props.favorite)} className={this.props.favorite ? "fas fa-heart" : "far fa-heart"}></i></h6>
             </div>
             <div className="card-body">
               <img className="card-img-top" src={this.props.image} alt={this.props.name} />

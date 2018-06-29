@@ -7,7 +7,8 @@ class Recipes extends Component {
   state = {
     search: "",
     ingredientList: [],
-    searchResults: []
+    searchResults: [],
+    favoriteRecipes: []
   }
 
   componentDidMount() {
@@ -20,6 +21,14 @@ class Recipes extends Component {
         var ingredientList = response.data.drinks.map(ingredient => Object.values(ingredient)[0]);
         this.setState({ ingredientList })
       })
+      .then(() => {
+        return axios.get("/api/favorite/get/1")
+      })
+      .then(response => {
+        var favoriteRecipes = response.data.favoriteRecipes.slice(2, -2).split(", ");
+        this.setState({ favoriteRecipes })
+        //  console.log(favoriteRecipes)
+      })
   }
 
   handleSubmit = (event) => {
@@ -29,7 +38,17 @@ class Recipes extends Component {
     var searchByIngredientsUrl = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${this.state.search}`;
     axios.get(searchByIngredientsUrl)
       .then(response => {
-        this.setState({ searchResults: response.data.drinks })
+        var searchResults = response.data.drinks
+          .map(drink => {
+            var drinkId = drink.idDrink;
+            if (this.state.favoriteRecipes.includes(drinkId)) {
+              drink.favorite = true;
+            } else {
+              drink.favorite = false;
+            }
+            return drink;
+          });
+        this.setState({ searchResults })
       })
   }
 
@@ -43,14 +62,23 @@ class Recipes extends Component {
     });
   };
 
+  handleFavorite = (drinkId, favorite) => {
+    // console.log("clicked")
+    const {favoriteRecipes} = this.state;
+    if (favorite) {
 
+    } else {
+      // + makes sure drinkId is an integer
+      favoriteRecipes.push(+drinkId)
+    }
+  }
 
   render() {
     return (
       <div className="container">
         <div className="row">
           <form onSubmit={this.handleSubmit}>
-            <label for="search">Search</label> <br />
+            <label htmlFor="search">Search</label> <br />
             <input list="ingredients" name="search" placeholder="Ingredient..." value={this.state.search} onChange={this.handleInputChange} />
             <datalist id="ingredients">
               {this.state.ingredientList.map((ingredient, i) => <option value={ingredient} key={i} />)}
@@ -66,6 +94,8 @@ class Recipes extends Component {
               id={drank.idDrink}
               name={drank.strDrink}
               image={drank.strDrinkThumb}
+              favorite={drank.favorite}
+              handleFavorite={this.handleFavorite}
             />
           )}
 
