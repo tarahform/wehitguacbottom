@@ -34,6 +34,10 @@ module.exports = function (sequelize, DataTypes) {
             }
         }
     });
-    
+
+    User.associate = models => {
+        User.hasOne(models.Favorite)
+    }
+
     return User;
 }
