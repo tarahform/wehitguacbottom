@@ -113,13 +113,13 @@ class SurveyForm extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault()
-    console.log("SUB-RADIO")
+    console.log("=====SUB-RADIO=====")
     console.log(this.state.subOption) 
     
-    console.log("FREQ-RADIO")
+    console.log("=====FREQ-RADIO=====")
     console.log(this.state.freqOption)
     
-    console.log("CHECKBOX VALUES")
+    console.log("=====CHECKBOX VALUES=====")
     console.log(this.state.flavChecks)
   }
 

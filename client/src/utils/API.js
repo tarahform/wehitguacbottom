@@ -11,6 +11,9 @@ export default {
     return axios.get(`/api/users/${column}/${value}`);
   },
 
+  //GETS ALCOHOLS USING THE CHOSES SUBSCRIPTION AND FLAVORS
+  
+
   //Create User in User table and Create User in fav table
   createUser: function (newUser) {
     return axios.post("/api/users", newUser)
