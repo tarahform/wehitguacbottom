@@ -95,7 +95,7 @@ class Recipes extends Component {
           <div className="row">
             <div className="col-md-12">
               <form onSubmit={this.handleSubmit}> <br />
-                <input class="form-control form-control-lg" list="ingredients" id="searchInput" name="search" placeholder="Search by ingredient..." value={this.state.search} onChange={this.handleInputChange} />
+                <input className="form-control form-control-lg" list="ingredients" id="searchInput" name="search" placeholder="Search by ingredient..." value={this.state.search} onChange={this.handleInputChange} />
                 <datalist id="ingredients">
                   {this.state.ingredientList.map((ingredient, i) => <option value={ingredient} key={i} />)}
                 </datalist><br />
