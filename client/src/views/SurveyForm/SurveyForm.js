@@ -50,6 +50,7 @@ class SurveyForm extends Component {
   }
 
   handleRadioClick = event => {
+    event.preventDefault();
     console.log("radio click")
     console.log("-------------------");
     console.log("name-");
@@ -59,14 +60,6 @@ class SurveyForm extends Component {
     console.log("id-");
     console.log(event.target.id)
     console.log("=====================")
-
-    let newFlavChecks = [...this.state.flavChecks]
-    if(!newFlavChecks[event.target.id]){
-      newFlavChecks[event.target.id] = true
-    } else {
-      newFlavChecks[event.target.id] = false
-    }
-    this.setState({flavChecks: newFlavChecks})
   }
 
   handleBoxClick = event => {
@@ -74,6 +67,15 @@ class SurveyForm extends Component {
     console.log(event.target.name)
     console.log(event.target.id);
     console.log(event.target.checked)
+
+    let newFlavChecks = [...this.state.flavChecks]
+    if (!newFlavChecks[event.target.id]) {
+      newFlavChecks[event.target.id] = true
+    } else {
+      newFlavChecks[event.target.id] = false
+    }
+    this.setState({ flavChecks: newFlavChecks })
+
   }
 
   handleFormSubmit = event => {
