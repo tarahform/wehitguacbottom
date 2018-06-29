@@ -25,7 +25,6 @@ module.exports = app => {
         db.Alcohol.findAll({
             attributes: ["id", "alcohol_name", "description"]
         }).then(data => {
-            console.log("======================");
             let newData = [];
             data.map(dataMap => {
                 console.log(dataMap.description);
