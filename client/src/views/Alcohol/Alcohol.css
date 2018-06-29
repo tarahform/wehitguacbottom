@@ -1,9 +1,24 @@
-#alcoholJumbotron {
+.jumbotron {
     color: white;
     background-color: rgb(173,175,192);
 }
 
-#alcoholLogoImage {
+img {
     width: 225px;
     height: 100px;
+}
+
+#alcoholH1 {
+    color: white;
+    font-family: 'Raleway', sans-serif; 
+}
+
+.fas.fa-box-open {
+    font-size: 50px;
+    color: rgb(173,175,192);
+}
+
+.fas.fa-box {
+    font-size: 50px;
+    color: rgb(22,25,73);
 }
