@@ -19,21 +19,32 @@ module.exports = app => {
             res.json(data);
         });
     });
-    app.get("/api/alcoholList/category/:value1/:value2/:value3/:value4/:value5", (req, res) => {
-        db.Alcohol.findAll({
-            where: {
-                category: req.params.value
-            }
-        }).then(data => {
-            res.json(data);
-        });
-    });
+
+    // app.get("/api/alcoholList/category/:value1/:value2/:value3/:value4/:value5", (req, res) => {
+    //     db.Alcohol.findAll({
+    //         where: {
+    //             category: req.params.value
+    //         }
+    //     }).then(data => {
+    //         res.json(data);
+    //     });
+    // });
 
     //get all alcohols with a specific flavor description
-    app.get("/api/alcoholList/description/flavor/:flavor1/:flavor2?/:flavor3?/:flavor4?/:flavor5?/:flavor6?/:flavor7?/:flavor8?/:flavor9?/:flavor10?/:flavor11?/:flavor12?/:flavor13?/:flavor14?/:flavor15?/:flavor16?/:flavor17?/:flavor18?/:flavor19?/:flavor20?/:flavor21?/:flavor22?/:flavor23?/:flavor24?/:flavor25?", (req, res) => {
+    app.get("/api/alcoholList/survey/filter/:subscription/:flavor1/:flavor2?/:flavor3?/:flavor4?/:flavor5?/:flavor6?/:flavor7?/:flavor8?/:flavor9?/:flavor10?/:flavor11?/:flavor12?/:flavor13?/:flavor14?/:flavor15?/:flavor16?/:flavor17?/:flavor18?/:flavor19?/:flavor20?/:flavor21?/:flavor22?/:flavor23?/:flavor24?/:flavor25?", (req, res) => {
+        let condition;
+        if (req.params.subscription === "basic") {
+            condition = "basic";
+        } else if (req.params.subscription === "moderate") {
+            condition = JSON.parse('["basic", "moderate"]');
+        } else if (req.params.subscription === "premium") {
+            condition = JSON.parse('["basic", "moderate", "premium"]');
+        }
         console.log(req.params.flavor);
         db.Alcohol.findAll({
-            attributes: ["id", "alcohol_name", "description"]
+            where: {
+                subscription: condition
+            }
         }).then(data => {
             console.log("Flavor Route");
             let newData = [];
