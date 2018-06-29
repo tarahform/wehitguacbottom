@@ -10,45 +10,135 @@ module.exports = app => {
         });
     });
 
-    //get all alcohols in a specific category (this is not case senisitive, and may require spaces for certain categories)
-    app.get("/api/alcoholList/category/:category", function (req, res) {
+    app.get("/api/alcoholList/:column/:value", (req, res) => {
         db.Alcohol.findAll({
             where: {
-                category: req.params.category
+                [req.params.column]: req.params.value
             }
-        }).then(function (data) {
-            console.log("======================");
-            console.log(data);
+        }).then(data => {
             res.json(data);
         });
     });
-
-    //get all alcohols in a specific subscription (this is not case sensitive)
-    app.get("/api/alcoholList/subscription/:subscription", function (req, res) {
+    app.get("/api/alcoholList/category/:value1/:value2/:value3/:value4/:value5", (req, res) => {
         db.Alcohol.findAll({
             where: {
-                subscription: req.params.subscription
+                category: req.params.value
             }
-        }).then(function (data) {
-            console.log("======================");
-            console.log(data);
+        }).then(data => {
             res.json(data);
         });
     });
 
     //get all alcohols with a specific flavor description
-    app.get("/api/alcoholList/description/:flavor", function (req, res) {
+    app.get("/api/alcoholList/description/flavor/:flavor1/:flavor2?/:flavor3?/:flavor4?/:flavor5?/:flavor6?/:flavor7?/:flavor8?/:flavor9?/:flavor10?/:flavor11?/:flavor12?/:flavor13?/:flavor14?/:flavor15?/:flavor16?/:flavor17?/:flavor18?/:flavor19?/:flavor20?/:flavor21?/:flavor22?/:flavor23?/:flavor24?/:flavor25?", (req, res) => {
+        console.log(req.params.flavor);
         db.Alcohol.findAll({
             attributes: ["id", "alcohol_name", "description"]
-        }).then(function (data) {
-            console.log("======================");
+        }).then(data => {
+            console.log("Flavor Route");
             let newData = [];
             data.map(dataMap => {
                 console.log(dataMap.description);
                 let parseDes = JSON.parse(dataMap.description);
                 console.log(parseDes);
-                let found = parseDes.indexOf(req.params.flavor);
-                if (found !== -1) {
+                let found1 = parseDes.indexOf(req.params.flavor1);
+                let found2 = parseDes.indexOf(req.params.flavor2);
+                let found3 = parseDes.indexOf(req.params.flavor3);
+                let found4 = parseDes.indexOf(req.params.flavor4);
+                let found5 = parseDes.indexOf(req.params.flavor5);
+                let found6 = parseDes.indexOf(req.params.flavor6);
+                let found7 = parseDes.indexOf(req.params.flavor7);
+                let found8 = parseDes.indexOf(req.params.flavor8);
+                let found9 = parseDes.indexOf(req.params.flavor9);
+                let found10 = parseDes.indexOf(req.params.flavor10);
+                let found11 = parseDes.indexOf(req.params.flavor11);
+                let found12 = parseDes.indexOf(req.params.flavor12);
+                let found13 = parseDes.indexOf(req.params.flavor13);
+                let found14 = parseDes.indexOf(req.params.flavor14);
+                let found15 = parseDes.indexOf(req.params.flavor15);
+                let found16 = parseDes.indexOf(req.params.flavor16);
+                let found17 = parseDes.indexOf(req.params.flavor17);
+                let found18 = parseDes.indexOf(req.params.flavor18);
+                let found19 = parseDes.indexOf(req.params.flavor19);
+                let found20 = parseDes.indexOf(req.params.flavor20);
+                let found21 = parseDes.indexOf(req.params.flavor21);
+                let found22 = parseDes.indexOf(req.params.flavor22);
+                let found23 = parseDes.indexOf(req.params.flavor23);
+                let found24 = parseDes.indexOf(req.params.flavor24);
+                let found25 = parseDes.indexOf(req.params.flavor25);
+                if (found1 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found2 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found3 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found4 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found5 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found6 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found7 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found8 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found9 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found10 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found11 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found12 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found13 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found14 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found15 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found16 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found17 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found18 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found19 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found20 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found21 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found22 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found23 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found24 !== -1) {
+                    newData.push(dataMap);
+                }
+                if (found25 !== -1) {
                     newData.push(dataMap);
                 }
             });
@@ -70,8 +160,8 @@ module.exports = app => {
             .then(data => {
                 console.log("update: ", data)
                 res.json(data);
-            })
-    })
+            });
+    });
 
     app.get("/api/users", (req, res) => {
         db.User.findAll({}).then(data => {
@@ -79,18 +169,18 @@ module.exports = app => {
         });
     });
 
-    app.get("/api/users/:column/:value", function (req, res) {
+    app.get("/api/users/:column/:value", (req, res) => {
         db.User.findAll({
             where: {
                 [req.params.column]: req.params.value
             }
-        }).then(function (data) {
+        }).then(data => {
             res.json(data);
         });
     });
 
     //add new users to the database
-    app.post("/api/users", function (req, res) {
+    app.post("/api/users", (req, res) => {
         db.User.create({
             first_name: req.body.firstName,
             middle_name: req.body.middleName,
@@ -99,7 +189,7 @@ module.exports = app => {
             email: req.body.email,
             phone_number: req.body.phone,
             age: req.body.age,
-        }).then(function (data) {
+        }).then(data => {
             res.json(data);
         });
     });
@@ -112,8 +202,8 @@ module.exports = app => {
             .then(data => {
                 // console.log(data)
                 res.json(data);
-            })
-    })
+            });
+    });
 
     // post favorites based on userid
     app.post("/api/favorite/create", (req, res) => {
@@ -124,8 +214,8 @@ module.exports = app => {
             .then(data => {
                 // console.log("saved: ", data)
                 res.json(data);
-            })
-    })
+            });
+    });
 
     // put/delete favoriteRecipes in array in the favorites table
     app.put("/api/favorite/update", (req, res) => {
@@ -140,8 +230,8 @@ module.exports = app => {
             .then(data => {
                 console.log("update: ", data)
                 res.json(data);
-            })
-    })
+            });
+    });
 
 
 }
