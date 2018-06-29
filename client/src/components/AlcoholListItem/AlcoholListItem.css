@@ -1,9 +1,14 @@
 .card {
     border-radius: 2px;
-    height: 325px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     margin: 1rem 0rem;
-  }
+}
+
+.title-holder {
+  height: 2em;
+  padding-bottom: 1em;
+}
 
 ul {
   list-style-type: none;
@@ -17,8 +22,29 @@ ul {
   text-align: center;
 }
 
+#alcoholDescription {
+  font-family: 'Dancing Script', cursive;
+  color: rgb(149,149,151);
+  font-size: 15px;
+}
+
 #alcoholImage {
   height: 100%;
   width: 100%;
 }
-   
+
+.fa-box {
+  font-size: 50px;
+  color: rgb(22,25,73);
+}
+
+.fa-box-open {
+  font-size: 50px;
+  color: rgb(173,175,192);
+}
+
+.border-dark {
+  border: 5px double;
+  box-shadow: 5px 10px rgb(22,25,73);
+}
+
