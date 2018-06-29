@@ -1,6 +1,10 @@
-.jumbotron {
+#alcoholJumbotron {
     color: white;
     background-color: rgb(173,175,192);
+    border-radius: 15px 50px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 img {
@@ -10,7 +14,7 @@ img {
 
 #alcoholH1 {
     color: white;
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Unica One', cursive;
 }
 
 .fas.fa-box-open {
@@ -22,3 +26,4 @@ img {
     font-size: 50px;
     color: rgb(22,25,73);
 }
+
