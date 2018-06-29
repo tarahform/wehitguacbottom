@@ -31,13 +31,19 @@ class ShoppingCart extends Component {
                 .then(response => this.setState({ shoppingcart: JSON.parse(response.data[0].shoppingcart) }))
         }
     }
-    
+
 
     render() {
         return (
-            <ShoppingCartList
 
-            />
+            <div className="container">
+
+                <ShoppingCartList
+
+                />
+
+               
+            </div>
         )
     }
 

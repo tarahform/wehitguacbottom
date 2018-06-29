@@ -5,11 +5,19 @@ import "../AlcoholListItem"
 const ShoppingCartList = props => {
 
     return (
-        <div className="col-md-8">
-            <div className="card-body">
-                    {props.selectedIDs}
-            </div>
-        </div>
+
+        <table className="col-md-9 shoppingCartTable">
+            <tr id="shoppingCartHeader">
+                <th id="shoppingCartImage"> (Image) </th>
+                <th id="shoppingCartItem"> Item </th>
+                <th id="Price"> Price </th>
+            </tr>
+            <tr id="shoppingCartAlcoholList">
+                <td> hi </td>
+                <td> hi </td>
+                <td> hi </td>
+            </tr>
+        </table>
     )
 }
 
