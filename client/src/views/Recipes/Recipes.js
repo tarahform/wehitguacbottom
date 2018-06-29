@@ -38,16 +38,7 @@ class Recipes extends Component {
     var searchByIngredientsUrl = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${this.state.search}`;
     axios.get(searchByIngredientsUrl)
       .then(response => {
-        var searchResults = response.data.drinks
-          .map(drink => {
-            var drinkId = drink.idDrink;
-            if (this.state.favoriteRecipes.includes(drinkId)) {
-              drink.favorite = true;
-            } else {
-              drink.favorite = false;
-            }
-            return drink;
-          });
+        var searchResults = response.data.drinks;
         this.setState({ searchResults })
       })
   }
@@ -62,15 +53,23 @@ class Recipes extends Component {
     });
   };
 
-  handleFavorite = (drinkId, favorite) => {
+  handleFavorite = (drinkId) => {
     // console.log("clicked")
-    const {favoriteRecipes} = this.state;
-    if (favorite) {
-
+    const { favoriteRecipes } = this.state;
+    if (this.state.favoriteRecipes.includes(drinkId)) {
+      // splice takes two arguments --> (starting index, how many elements to remove from the starting index) and removed them from anywhere in the array
+      // removes from the right, if negative no elements are removed
+      // get index of the drink in the favorite recipes array
+      // then splice => 1 element
+      favoriteRecipes.splice(favoriteRecipes.indexOf(drinkId), 1)
     } else {
-      // + makes sure drinkId is an integer
-      favoriteRecipes.push(+drinkId)
+      favoriteRecipes.push(drinkId)
     }
+    axios.put("/api/favorite/update", {
+      UserId: 1,
+      favoriteRecipes: JSON.stringify(favoriteRecipes)
+    })
+    this.setState({ favoriteRecipes })
   }
 
   render() {
@@ -94,7 +93,7 @@ class Recipes extends Component {
               id={drank.idDrink}
               name={drank.strDrink}
               image={drank.strDrinkThumb}
-              favorite={drank.favorite}
+              favorite={this.state.favoriteRecipes.includes(drank.idDrink)}
               handleFavorite={this.handleFavorite}
             />
           )}
