@@ -20,32 +20,6 @@ module.exports = app => {
         });
     });
 
-    //get all alcohols in a specific category (this is not case senisitive, and may require spaces for certain categories)
-    // app.get("/api/alcoholList/category/:category", function (req, res) {
-    //     db.Alcohol.findAll({
-    //         where: {
-    //             category: req.params.category
-    //         }
-    //     }).then(function (data) {
-    //         console.log("======================");
-    //         console.log(data);
-    //         res.json(data);
-    //     });
-    // });
-
-    //get all alcohols in a specific subscription (this is not case sensitive)
-    // app.get("/api/alcoholList/subscription/:subscription", function (req, res) {
-    //     db.Alcohol.findAll({
-    //         where: {
-    //             subscription: req.params.subscription
-    //         }
-    //     }).then(function (data) {
-    //         console.log("======================");
-    //         console.log(data);
-    //         res.json(data);
-    //     });
-    // });
-
     //get all alcohols with a specific flavor description
     app.get("/api/alcoholList/description/flavor/:flavor", (req, res) => {
         db.Alcohol.findAll({
