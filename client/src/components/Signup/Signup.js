@@ -61,6 +61,7 @@ class Signup extends Component {
         axios.post("/api/users", newUser)
           .then(response => {
             console.log(response);
+            return axios.post("/api/favorites/create")
           })
           .catch(dberror => {
             this.setState({dberror})
