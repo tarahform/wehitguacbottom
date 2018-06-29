@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import CheckBox from "../../components/CheckBox";
-// import RadioButton from "../../components/RadioButton";
+import RadioButton from "../../components/RadioButton";
 import flavors from "../../flavors.json"
 import "./SurveyForm.css";
-import RadioButton from "../../components/RadioButton/RadioButton";
 
 class SurveyForm extends Component {
 
@@ -13,16 +12,21 @@ class SurveyForm extends Component {
     frequencies: ["Every Month", "Every 2 Months", "Every 3 Months"]
   }
 
-  handleClick = box => {
-    console.log("clicked")
-    console.log(box.value);
+  handleRadioClick = event => {
+    console.log("radio click")
+    console.log(event.target)
+  }
+
+  handleBoxClick = event => {
+    console.log("box click")
+    console.log(event.target.id)
   }
 
   handleFormSubmit = event => {
     event.preventDefault()
     console.log("I'm Dirty Dannnnnn")
     console.log("CHECKBOX VALUES")
-    console.log(this.value)
+    console.log(event.target.type)
   }
 
   render() {
@@ -37,6 +41,7 @@ class SurveyForm extends Component {
                   key={i}
                   id={"sub-" + i}
                   name={"sub"}
+                  handleRadioClick={this.handleRadioClick}
                   label={subscription}
                 />
               ))}
@@ -46,6 +51,7 @@ class SurveyForm extends Component {
                   key={i}
                   id={"freq-" + i}
                   name={"freq"}
+                  handleRadioClick={this.handleRadioClick}
                   label={frequency}
                 />
               ))}
@@ -54,7 +60,7 @@ class SurveyForm extends Component {
                 <CheckBox
                   key={i}
                   id={"flav-" + i}
-                  onClick={this.handleClick(i)}
+                  handleBoxClick={this.handleBoxClick}
                   label={flavor}
                 />
               ))}
