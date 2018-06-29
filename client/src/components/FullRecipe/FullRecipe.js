@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./RecipeListItem.css";
+import "./FullRecipe.css";
 var axios = require("axios");
 
 
@@ -44,12 +44,8 @@ class RecipeListItem extends Component {
             </div>
             <div className="card-body">
               <img className="card-img-top" src={this.props.image} alt={this.props.name} />
-
-              {/* {this.state.ingredients.map((ingredient, i) => <p className="card-text" key={i}>{ingredient}</p>)}
-              <p className="card-text">{this.state.instructions}</p> */}
-            </div>
-            <div className="card-footer">
-            See Full Recipe
+              {this.state.ingredients.map((ingredient, i) => <p className="card-text" key={i}>{ingredient}</p>)}
+              <p className="card-text">{this.state.instructions}</p>
             </div>
           </div>
         </div>

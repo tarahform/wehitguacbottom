@@ -3,6 +3,7 @@ var bodyParser = require("body-parser");
 var mysql2 = require("mysql2");
 var app = express();
 var db = require("./models");
+var path = require("path");
 
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku

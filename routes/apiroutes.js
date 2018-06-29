@@ -57,19 +57,82 @@ module.exports = app => {
         });
     });
 
+    app.get("/api/users", (req, res) => {
+        db.User.findAll({}).then(data => {
+            res.json(data);
+        });
+    });
+
+    app.get("/api/users/:column/:value", function (req, res) {
+        db.User.findAll({
+            where: {
+                [req.params.column]: req.params.value 
+            }
+        }).then(function (data) {
+            res.json(data);
+        });
+    });
+
     //add new users to the database
     app.post("/api/users", function (req, res) {
-        db.Alcohol.create({
-            first_name: req.body.first_name,
-            middle_name: req.body.middle_name,
-            last_name: req.body.last_name,
-            photo_link: req.body.photo_link,
+        db.User.create({
+            first_name: req.body.firstName,
+            middle_name: req.body.middleName,
+            last_name: req.body.lastName,
+            photo_link: req.body.photoLink,
             email: req.body.email,
-            phone_number: req.body.phone_number,
+            phone_number: req.body.phone,
             age: req.body.age,
         }).then(function (data) {
             res.json(data);
         });
     });
+
+    // get favorites based on userid
+    app.get("/api/favorite/get/:UserId", (req, res) => {
+        db.Favorite.findOne({
+            where: { UserId: req.params.UserId }
+        })
+            .then(data => {
+                // console.log(data)
+                res.json(data);
+            })
+    })
+
+    // post favorites based on userid
+    app.post("/api/favorite/create", (req, res) => {
+        db.Favorite.create({
+            UserId: req.body.UserId,
+            favoriteRecipes: "[]"
+        })
+            .then(data => {
+                // console.log("saved: ", data)
+                res.json(data);
+            })
+    })
+
+    // put/delete favoriteRecipes in array in the favorites table
+    app.put("/api/favorite/update", (req, res) => {
+        db.Favorite.update({
+            favoriteRecipes: req.body.favoriteRecipes
+        }, {
+            where: {
+                UserId: req.body.UserId
+            }
+            }
+        )
+            .then(data => {
+                console.log("update: ", data)
+                res.json(data);
+            })
+    })
+
+
 }
+
+
+
+
+
+
 
