@@ -8,6 +8,7 @@ import Recipes from "./views/Recipes";
 import Welcome from "./views/Welcome";
 import UserProfile from "./views/UserProfile";
 import NoMatch from "./views/NoMatch";
+import SurveyForm from "./views/SurveyForm";
 import Signup from "./components/Signup";
 import Signin from "./components/Signin";
 import Events from "./components/Events";

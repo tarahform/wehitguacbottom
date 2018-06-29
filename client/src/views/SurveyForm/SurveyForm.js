@@ -13,11 +13,15 @@ class SurveyForm extends Component {
     frequencies: ["Every Month", "Every 2 Months", "Every 3 Months"]
   }
 
+  changeValue = id => {
+    console.log("clicked")
+  }
+
   handleFormSubmit = event => {
     event.preventDefault()
     console.log("I'm Dirty Dannnnnn")
     console.log("CHECKBOX VALUES")
-    // console.log(value)
+    console.log(this.value)
   }
 
   render() {
@@ -49,7 +53,7 @@ class SurveyForm extends Component {
                 <CheckBox
                   key={i}
                   id={"flav-" + i}
-                  value={false}
+                  changeValue={this.changeValue(i)}
                   label={flavor}
                 />
               ))}
