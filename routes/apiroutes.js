@@ -69,8 +69,6 @@ module.exports = app => {
                 [req.params.column]: req.params.value 
             }
         }).then(function (data) {
-            console.log("======================");
-            console.log(data);
             res.json(data);
         });
     });
