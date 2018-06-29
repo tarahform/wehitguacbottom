@@ -7,7 +7,8 @@ class Recipes extends Component {
   state = {
     search: "",
     ingredientList: [],
-    searchResults: []
+    searchResults: [],
+    favoriteRecipes: []
   }
 
   componentDidMount() {
@@ -20,6 +21,14 @@ class Recipes extends Component {
         var ingredientList = response.data.drinks.map(ingredient => Object.values(ingredient)[0]);
         this.setState({ ingredientList })
       })
+      .then(() => {
+        return axios.get("/api/favorite/get/1")
+      })
+      .then(response => {
+        var favoriteRecipes = response.data.favoriteRecipes.slice(2, -2).split(", ");
+        this.setState({ favoriteRecipes })
+        //  console.log(favoriteRecipes)
+      })
   }
 
   handleSubmit = (event) => {
@@ -29,7 +38,8 @@ class Recipes extends Component {
     var searchByIngredientsUrl = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${this.state.search}`;
     axios.get(searchByIngredientsUrl)
       .then(response => {
-        this.setState({ searchResults: response.data.drinks })
+        var searchResults = response.data.drinks;
+        this.setState({ searchResults })
       })
   }
 
@@ -43,14 +53,31 @@ class Recipes extends Component {
     });
   };
 
-
+  handleFavorite = (drinkId) => {
+    // console.log("clicked")
+    const { favoriteRecipes } = this.state;
+    if (this.state.favoriteRecipes.includes(drinkId)) {
+      // splice takes two arguments --> (starting index, how many elements to remove from the starting index) and removed them from anywhere in the array
+      // removes from the right, if negative no elements are removed
+      // get index of the drink in the favorite recipes array
+      // then splice => 1 element
+      favoriteRecipes.splice(favoriteRecipes.indexOf(drinkId), 1)
+    } else {
+      favoriteRecipes.push(drinkId)
+    }
+    axios.put("/api/favorite/update", {
+      UserId: 1,
+      favoriteRecipes: JSON.stringify(favoriteRecipes)
+    })
+    this.setState({ favoriteRecipes })
+  }
 
   render() {
     return (
       <div className="container">
         <div className="row">
           <form onSubmit={this.handleSubmit}>
-            <label for="search">Search</label> <br />
+            <label htmlFor="search">Search</label> <br />
             <input list="ingredients" name="search" placeholder="Ingredient..." value={this.state.search} onChange={this.handleInputChange} />
             <datalist id="ingredients">
               {this.state.ingredientList.map((ingredient, i) => <option value={ingredient} key={i} />)}
@@ -66,6 +93,8 @@ class Recipes extends Component {
               id={drank.idDrink}
               name={drank.strDrink}
               image={drank.strDrinkThumb}
+              favorite={this.state.favoriteRecipes.includes(drank.idDrink)}
+              handleFavorite={this.handleFavorite}
             />
           )}
 

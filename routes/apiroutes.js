@@ -89,5 +89,52 @@ module.exports = app => {
             res.json(data);
         });
     });
+
+    // get favorites based on userid
+    app.get("/api/favorite/get/:UserId", (req, res) => {
+        db.Favorite.findOne({
+            where: { UserId: req.params.UserId }
+        })
+            .then(data => {
+                // console.log(data)
+                res.json(data);
+            })
+    })
+
+    // post favorites based on userid
+    app.post("/api/favorite/create", (req, res) => {
+        db.Favorite.create({
+            UserId: req.body.UserId,
+            favoriteRecipes: "[]"
+        })
+            .then(data => {
+                // console.log("saved: ", data)
+                res.json(data);
+            })
+    })
+
+    // put/delete favoriteRecipes in array in the favorites table
+    app.put("/api/favorite/update", (req, res) => {
+        db.Favorite.update({
+            favoriteRecipes: req.body.favoriteRecipes
+        }, {
+            where: {
+                UserId: req.body.UserId
+            }
+            }
+        )
+            .then(data => {
+                console.log("update: ", data)
+                res.json(data);
+            })
+    })
+
+
 }
+
+
+
+
+
+
 
