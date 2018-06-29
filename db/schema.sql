@@ -10,7 +10,7 @@ create table users(
     last_name VARCHAR(255) NOT NULL,
     photo_link VARCHAR(255),
     email VARCHAR(255) NOT NULL,
-    phone_number INT(10),
+    phone_number VARCHAR(10) NOT NULL,
     age INT(3),
     shoppingcart VARCHAR(255) NOT NULL DEFAULT '[]',
     primary key (id)
