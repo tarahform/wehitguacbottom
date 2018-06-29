@@ -31,6 +31,10 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: false,
             validate: {
                 len: [1, 3]
+            },
+       shoppingcart: {
+            type: DataTypes.STRING,
+            defaultValue: null
             }
         }
     });
