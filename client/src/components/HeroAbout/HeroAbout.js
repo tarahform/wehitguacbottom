@@ -23,7 +23,7 @@ const HeroAbout = props => (
       <ScrollAnimation className="col-md-3" animateIn="fadeInDown">
         <div className="card developer-image" id="devCard">
           <div className="card-body">
-            <img src="./img/developers/HalleConger.jpg" className="image img-fluid" alt="Nick" />
+            <img src="./img/developers/HalleConger.jpg" className="image img-fluid" id="devImg" alt="Halle Conger" />
           </div>
           <div className="overlay text-center" id="devText">
             <div className="text">Halle is a full stack developer who's passion for coding is only dwarfed by her love of Starbucks and purse
@@ -38,7 +38,7 @@ const HeroAbout = props => (
       <ScrollAnimation className="col-md-3" animateIn="fadeInDown">
         <div className="card developer-image" id="devCard">
           <div className="card-body">
-            <img src="./img/developers/NicholasEdwards.jpg" className="image img-fluid" alt="Nick" />
+            <img src="./img/developers/NicholasEdwards.jpg" className="image img-fluid" id="devImg" alt="Nick Edwards" />
           </div>
           <div className="overlay text-center" id="devText">
             <div className="text">Nick is full stack web developer having developed a keen interest in his craft at young age. When he is not writing code
@@ -52,7 +52,7 @@ const HeroAbout = props => (
       <ScrollAnimation className="col-md-3" animateIn="fadeInDown">
         <div className="card developer-image" id="devCard">
           <div className="card-body">
-            <img src="./img/developers/TarahPerry.jpg" className="image img-fluid" alt="Tarah" />
+            <img src="./img/developers/TarahPerry.jpg" className="image img-fluid" id="devImg" alt="Tarah Perry" />
           </div>
           <div className="overlay text-center" id="devText">
             <div className="text">Tarah is web developer from Austin, Texas. Her background is in cave research. In her spare time Tarah can
@@ -66,7 +66,7 @@ const HeroAbout = props => (
       <ScrollAnimation className="col-md-3" animateIn="fadeInDown">
         <div className="card developer-image" id="devCard">
           <div className="card-body">
-            <img src="./img/developers/DanielAlamo.jpg" className="image img-fluid" alt="Dan" />
+            <img src="./img/developers/DanielAlamo.jpg" className="image img-fluid" id="devImg" alt="Daniel Alamo" />
           </div>
           <div className="overlay text-center" id="devText">
             <div className="text">Daniel is a Full Stack Web Developer who loves long jogs on the beach. Daniel loves humor. The dryer the
