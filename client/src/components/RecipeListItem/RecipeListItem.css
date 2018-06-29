@@ -27,6 +27,11 @@
  background: rgb(22,25,73);
  color: rgb(173,175,192);
  font-family: 'Quicksand', sans-serif;
+ justify-content: center;
+}
+
+#linkP {
+ font-size: 15pt;
 }
 
 #recipeImg{
@@ -42,6 +47,8 @@
 #recipeCard {
   border-radius: 15px;
 }
+
+
 
 
 
