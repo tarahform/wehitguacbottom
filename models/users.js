@@ -36,6 +36,10 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             defaultValue: null
             }
+        },
+        shoppingcart: {
+            type: DataTypes.STRING,
+            defaultValue: "[]" 
         }
     });
 
