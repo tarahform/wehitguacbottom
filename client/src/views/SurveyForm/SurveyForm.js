@@ -9,17 +9,71 @@ class SurveyForm extends Component {
   state = {
     flavors,
     subscriptions: ["Basic", "Moderate", "Premium"],
-    frequencies: ["Every Month", "Every 2 Months", "Every 3 Months"]
+    frequencies: ["Every Month", "Every 2 Months", "Every 3 Months"],
+    subChecks: [
+      false,
+      false,
+      false
+    ],
+    freqChecks: [
+      false,
+      false,
+      false
+    ],
+    flavChecks: [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
   }
 
   handleRadioClick = event => {
     console.log("radio click")
-    console.log(event.target)
+    console.log("-------------------");
+    console.log("name-");
+    console.log(event.target.name)
+    console.log("checked-");
+    console.log(event.target.checked)
+    console.log("id-");
+    console.log(event.target.id)
+    console.log("=====================")
+
+    let newFlavChecks = [...this.state.flavChecks]
+    if(!newFlavChecks[event.target.id]){
+      newFlavChecks[event.target.id] = true
+    } else {
+      newFlavChecks[event.target.id] = false
+    }
+    this.setState({flavChecks: newFlavChecks})
   }
 
   handleBoxClick = event => {
     console.log("box click")
-    console.log(event.target.id)
+    console.log(event.target.name)
+    console.log(event.target.id);
+    console.log(event.target.checked)
   }
 
   handleFormSubmit = event => {
@@ -39,8 +93,9 @@ class SurveyForm extends Component {
               {this.state.subscriptions.map((subscription, i) => (
                 <RadioButton
                   key={i}
-                  id={"sub-" + i}
+                  id={i}
                   name={"sub"}
+                  checked={this.state.subChecks[i]}
                   handleRadioClick={this.handleRadioClick}
                   label={subscription}
                 />
@@ -49,8 +104,9 @@ class SurveyForm extends Component {
               {this.state.frequencies.map((frequency, i) => (
                 <RadioButton
                   key={i}
-                  id={"freq-" + i}
+                  id={i}
                   name={"freq"}
+                  checked={this.state.freqChecks[i]}
                   handleRadioClick={this.handleRadioClick}
                   label={frequency}
                 />
@@ -59,7 +115,9 @@ class SurveyForm extends Component {
               {this.state.flavors.map((flavor, i) => (
                 <CheckBox
                   key={i}
-                  id={"flav-" + i}
+                  id={i}
+                  name={"flav"}
+                  checked={this.state.flavChecks[i]}
                   handleBoxClick={this.handleBoxClick}
                   label={flavor}
                 />
