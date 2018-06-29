@@ -57,6 +57,22 @@ module.exports = app => {
         });
     });
 
+    //updates user shopping cart as they select alcohols
+    app.put("/api/shoppingcart/update", (req, res) => {
+        db.User.update({
+            shoppingcart: req.body.shoppingcart
+        }, {
+                where: {
+                    id: req.body.id
+                }
+            }
+        )
+            .then(data => {
+                console.log("update: ", data)
+                res.json(data);
+            })
+    })
+
     app.get("/api/users", (req, res) => {
         db.User.findAll({}).then(data => {
             res.json(data);
@@ -66,7 +82,7 @@ module.exports = app => {
     app.get("/api/users/:column/:value", function (req, res) {
         db.User.findAll({
             where: {
-                [req.params.column]: req.params.value 
+                [req.params.column]: req.params.value
             }
         }).then(function (data) {
             res.json(data);
@@ -116,9 +132,9 @@ module.exports = app => {
         db.Favorite.update({
             favoriteRecipes: req.body.favoriteRecipes
         }, {
-            where: {
-                UserId: req.body.UserId
-            }
+                where: {
+                    UserId: req.body.UserId
+                }
             }
         )
             .then(data => {
