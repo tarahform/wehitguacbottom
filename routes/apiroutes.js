@@ -10,37 +10,47 @@ module.exports = app => {
         });
     });
 
-    //get all alcohols in a specific category (this is not case senisitive, and may require spaces for certain categories)
-    app.get("/api/alcoholList/category/:category", function (req, res) {
+    app.get("/api/alcoholList/:column/:value", (req, res) => {
         db.Alcohol.findAll({
             where: {
-                category: req.params.category
+                [req.params.column]: req.params.value
             }
-        }).then(function (data) {
-            console.log("======================");
-            console.log(data);
+        }).then(data => {
             res.json(data);
         });
     });
+
+    //get all alcohols in a specific category (this is not case senisitive, and may require spaces for certain categories)
+    // app.get("/api/alcoholList/category/:category", function (req, res) {
+    //     db.Alcohol.findAll({
+    //         where: {
+    //             category: req.params.category
+    //         }
+    //     }).then(function (data) {
+    //         console.log("======================");
+    //         console.log(data);
+    //         res.json(data);
+    //     });
+    // });
 
     //get all alcohols in a specific subscription (this is not case sensitive)
-    app.get("/api/alcoholList/subscription/:subscription", function (req, res) {
-        db.Alcohol.findAll({
-            where: {
-                subscription: req.params.subscription
-            }
-        }).then(function (data) {
-            console.log("======================");
-            console.log(data);
-            res.json(data);
-        });
-    });
+    // app.get("/api/alcoholList/subscription/:subscription", function (req, res) {
+    //     db.Alcohol.findAll({
+    //         where: {
+    //             subscription: req.params.subscription
+    //         }
+    //     }).then(function (data) {
+    //         console.log("======================");
+    //         console.log(data);
+    //         res.json(data);
+    //     });
+    // });
 
     //get all alcohols with a specific flavor description
-    app.get("/api/alcoholList/description/:flavor", function (req, res) {
+    app.get("/api/alcoholList/description/flavor/:flavor", (req, res) => {
         db.Alcohol.findAll({
             attributes: ["id", "alcohol_name", "description"]
-        }).then(function (data) {
+        }).then(data => {
             console.log("======================");
             let newData = [];
             data.map(dataMap => {
@@ -70,8 +80,8 @@ module.exports = app => {
             .then(data => {
                 console.log("update: ", data)
                 res.json(data);
-            })
-    })
+            });
+    });
 
     app.get("/api/users", (req, res) => {
         db.User.findAll({}).then(data => {
@@ -79,18 +89,18 @@ module.exports = app => {
         });
     });
 
-    app.get("/api/users/:column/:value", function (req, res) {
+    app.get("/api/users/:column/:value", (req, res) => {
         db.User.findAll({
             where: {
                 [req.params.column]: req.params.value
             }
-        }).then(function (data) {
+        }).then(data => {
             res.json(data);
         });
     });
 
     //add new users to the database
-    app.post("/api/users", function (req, res) {
+    app.post("/api/users", (req, res) => {
         db.User.create({
             first_name: req.body.firstName,
             middle_name: req.body.middleName,
@@ -99,7 +109,7 @@ module.exports = app => {
             email: req.body.email,
             phone_number: req.body.phone,
             age: req.body.age,
-        }).then(function (data) {
+        }).then(data => {
             res.json(data);
         });
     });
@@ -112,8 +122,8 @@ module.exports = app => {
             .then(data => {
                 // console.log(data)
                 res.json(data);
-            })
-    })
+            });
+    });
 
     // post favorites based on userid
     app.post("/api/favorite/create", (req, res) => {
@@ -124,8 +134,8 @@ module.exports = app => {
             .then(data => {
                 // console.log("saved: ", data)
                 res.json(data);
-            })
-    })
+            });
+    });
 
     // put/delete favoriteRecipes in array in the favorites table
     app.put("/api/favorite/update", (req, res) => {
@@ -140,8 +150,8 @@ module.exports = app => {
             .then(data => {
                 console.log("update: ", data)
                 res.json(data);
-            })
-    })
+            });
+    });
 
 
 }
