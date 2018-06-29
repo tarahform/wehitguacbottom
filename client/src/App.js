@@ -26,6 +26,7 @@ class App extends Component{
         ? this.setState({ authUser })
         : this.setState({ authUser: null });
     });
+    // the user is logged in query the db for the users information email 
   }
   render() {
     return(
