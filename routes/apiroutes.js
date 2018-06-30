@@ -20,6 +20,26 @@ module.exports = app => {
         });
     });
 
+    //search alcohol by id
+    app.get("/api/alcohol/:id1/:id2?/:id3?/:id4?/:id5?", (req, res) => {
+        const ids = [];
+        
+        for (let id in req.params) {
+            if (id) ids.push(req.params[id])
+            console.log(id)
+        }
+        console.log(req.params)
+        console.log(ids)
+
+        db.Alcohol.findAll({
+            where: {
+                id: ids
+            }
+        }).then(data => {
+            res.json(data);
+        });
+    });
+
     //get all alcohols with a specific flavor description
     app.get("/api/alcoholList/survey/filter/:subscription/:flavor1/:flavor2?/:flavor3?/:flavor4?/:flavor5?/:flavor6?/:flavor7?/:flavor8?/:flavor9?/:flavor10?/:flavor11?/:flavor12?/:flavor13?/:flavor14?/:flavor15?/:flavor16?/:flavor17?/:flavor18?/:flavor19?/:flavor20?/:flavor21?/:flavor22?/:flavor23?/:flavor24?/:flavor25?", (req, res) => {
         let subCondition;

@@ -29,7 +29,7 @@ class App extends Component {
         API.getUser("email", authUser.email)
           .then(response => {
             const userData = response.data[0];
-            console.log(userData)
+            // console.log(userData)
             this.setState({ authUser, userData })
           })
       } else {
@@ -56,7 +56,6 @@ class App extends Component {
             <Route exact path="/" component={Welcome} />
             <Route exact path="/welcome" component={Welcome} />
             <Route exact path="/about" component={About} />
-            <Route exact path="/shoppingcart" component={ShoppingCart} />
             <Route exact path="/signin" component={Signin} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/events" component={Events} />
@@ -67,6 +66,9 @@ class App extends Component {
                 <UserProfile {...props} userData={this.state.userData} />
               )}
             />
+            <Route exact path="/shoppingcart" render={props => (
+              <ShoppingCart {...props} userData={this.state.userData} updateUserDataInApp={this.updateUserDataInApp}/>
+            )} />
             <Route exact path="/alcohol" render={props => (
               <Alcohol {...props} userData={this.state.userData} updateUserDataInApp={this.updateUserDataInApp}/>
             )} />

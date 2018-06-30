@@ -2,23 +2,46 @@ import React from "react";
 import "./ShoppingCartList.css";
 import "../AlcoholListItem"
 
-const ShoppingCartList = props => {
-
+const ShoppingCartList = ({alcohols}) => {
+    console.log(alcohols)
     return (
 
-        <table className="col-md-9 shoppingCartTable">
-            <tr>
-                <th className="col-md-3" id="shoppingCartImage"> (Image) </th>
-                <th className="col-md-3" id="shoppingCartItem"> Item </th>
-                <th className="col-md-3" id="Price"> Price </th>
-            </tr>
-            <tr id="shoppingCartAlcoholList">
-                <td className="col-md-3"> hi</td>
-                <td className="col-md-3">hi</td>
-                <td className="col-md-3"> hi </td>
-            </tr>
-        </table>
+        <div className="row">
+            <table className="col-md-9 shoppingCartTable">
+                <thead>
+                    <tr>
+                        <th id="shoppingCartImage"> Image </th>
+                        <th id="shoppingCartItem"> Item </th>
+                        <th id="Price"> Price </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="shoppingCartAlcoholList">
+                        <td> {alcohols.name}</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table className="col-md-3 checkoutTable">
+                <thead>
+                    <tr>
+                        <th id="checkoutHead"> Checkout </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
     )
+
 }
+
 
 export default ShoppingCartList;
