@@ -85,16 +85,24 @@ class SurveyForm extends Component {
     console.log(this.state.flavChecks)
 
     let surveyFlavFilter = [...this.state.surveyFlav]
+
     for (let i = 0; i < this.state.flavChecks.length; i++) {
       if (this.state.flavChecks[i] === true) {
         surveyFlavFilter.push(this.state.flavors[i])
-        this.setState({surveyFlav: surveyFlavFilter})
+        this.setState({ surveyFlav: surveyFlavFilter })
       }
     }
-    
+
+    let flavorString = ""
+
+    for (let i = 0; i < surveyFlavFilter.length; i++) {
+      flavorString += surveyFlavFilter[i]+"/"
+    }
+
+    console.log(flavorString)
     console.log(surveyFlavFilter)
 
-    API.surveyFilter(this.state.subOption, )
+    API.surveyFilter(this.state.subOption, flavorString)
       .then(res => console.log(res))
       .then(console.log(this.state.subOption))
       .catch(err => console.log(err))
