@@ -72,7 +72,7 @@ class Recipes extends Component {
       favoriteRecipes.push(drinkId)
     }
     axios.put("/api/favorite/update", {
-      UserId: 1,
+      UserId: this.props.userData.id,
       favoriteRecipes: JSON.stringify(favoriteRecipes)
     })
     this.setState({ favoriteRecipes })

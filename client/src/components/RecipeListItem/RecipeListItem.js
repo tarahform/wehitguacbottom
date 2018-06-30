@@ -17,7 +17,7 @@ class RecipeListItem extends Component {
 
     axios.get(searchByIDUrl)
       .then(response => {
-        // console.log(response.data.drinks[0])
+        // console.log(response.data)
         var drink = response.data.drinks[0];
         var ingredients = [];
         for (var i = 1; i < 16; i++) {
@@ -36,6 +36,7 @@ class RecipeListItem extends Component {
   }
 
   render() {
+    // console.log(this.props)
     return (
       this.state.alcoholic === "Alcoholic" ?
         <div className="col-md-4">

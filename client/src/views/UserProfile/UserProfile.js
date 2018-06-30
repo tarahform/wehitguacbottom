@@ -4,14 +4,23 @@ import "./userprofile.css";
 
 class UserProfile extends Component {
     state = {
-
+        userData: null
     }
 
     componentDidMount() {
+        if (this.props.userData) {
+            this.setState({ userData: this.props.userData })
+        }
+    }
 
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.userData) {
+            this.setState({ userData: nextProps.userData })
+        }
     }
 
     render() {
+        // console.log(this.state.userData)
         return (
 
             <div className="container-fluid" id="userProfilePage">
@@ -29,25 +38,25 @@ class UserProfile extends Component {
                         </div>
                     </div>
                     <div className="col-md-6 media-body" id="userProfileColRight">
-                        {/* <ul id="userInfo">
+                        <ul id="userInfo">
                             <p>Name:
-                    <span name="user" id="userName">{userData ? userData.first_name + " " + userData.middle_name + " " + userData.last_name : ""}</span>
+                    <span name="user" id="userName">{this.state.userData ? this.state.userData.first_name + " " + this.state.userData.middle_name + " " + this.state.userData.last_name : ""}</span>
                             </p>
                             <p>Age:
-                    <span id="userAge">{userData ? userData.age : ""}</span>
+                    <span id="userAge">{this.state.userData ? this.state.userData.age : ""}</span>
                             </p>
                             <p>Member Since:
-                    <span id="memberSince">{userData ? userData.createdAt : ""}</span>
+                    <span id="memberSince">{this.state.userData ? this.state.userData.createdAt : ""}</span>
                             </p>
                             <p>Membership Type:
                     <span id="memType"></span>
                             </p>
-                        </ul> */}
+                        </ul>
                     </div>
                     <div className="row">
                         <div className="col-md-12">
 
-                            <SavedRecipe />
+                            <SavedRecipe userData={this.state.userData} />
 
                         </div>
                     </div>
