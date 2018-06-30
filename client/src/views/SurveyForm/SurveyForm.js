@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import CheckBox from "../../components/CheckBox";
 import RadioButton from "../../components/RadioButton";
-import flavors from "../../flavors.json"
+import flavors from "../../flavors.json";
+import API from "../../utils/API";
 import "./SurveyForm.css";
 
 class SurveyForm extends Component {
@@ -12,6 +13,7 @@ class SurveyForm extends Component {
     frequencies: ["Every Month", "Every 2 Months", "Every 3 Months"],
     subOption: "Basic",
     freqOption: "Every Month",
+    surveyFlav: [],
     flavChecks: [
       false,
       false,
@@ -42,26 +44,6 @@ class SurveyForm extends Component {
   }
 
   handleRadioClick1 = event => {
-    // event.preventDefault();
-    // console.log("radio click")
-    // console.log("-------------------");
-    // console.log("name-");
-    // console.log(event.target.name)
-    // console.log("checked-");
-    // console.log(event.target.checked)
-    // console.log("id-");
-    // console.log(event.target.id)
-    // console.log("=====================")
-
-    // let newSubChecks = [...this.state.subChecks]
-    // console.log(newSubChecks)
-    // if (!newSubChecks[event.target.id]) {
-    //   newSubChecks[event.target.id] = true
-    // } else {
-    //   newSubChecks[event.target.id] = false
-    // }
-    // this.setState({ subChecks: newSubChecks })
-    // console.log(this.state.subChecks)
     this.setState({
       subOption: event.target.value
     });
@@ -69,25 +51,6 @@ class SurveyForm extends Component {
   }
 
   handleRadioClick2 = event => {
-    // event.preventDefault();
-    // console.log("radio click")
-    // console.log("-------------------");
-    // console.log("name-");
-    // console.log(event.target.name)
-    // console.log("checked-");
-    // console.log(event.target.checked)
-    // console.log("id-");
-    // console.log(event.target.id)
-    // console.log("=====================")
-
-    // let newFreqChecks = [...this.state.freqChecks]
-    // if (!newFreqChecks[event.target.id]) {
-    //   newFreqChecks[event.target.id] = true
-    // } else {
-    //   newFreqChecks[event.target.id] = false
-    // }
-    // this.setState({ freqChecks: newFreqChecks })
-    // console.log(this.state.freqChecks)
     this.setState({
       freqOption: event.target.value
     });
@@ -100,6 +63,7 @@ class SurveyForm extends Component {
     console.log(event.target.name)
     console.log(event.target.id);
     console.log(event.target.checked)
+    console.log(event.target.label)
 
     let newFlavChecks = [...this.state.flavChecks]
     if (!newFlavChecks[event.target.id]) {
@@ -114,13 +78,26 @@ class SurveyForm extends Component {
   handleFormSubmit = event => {
     event.preventDefault()
     console.log("=====SUB-RADIO=====")
-    console.log(this.state.subOption) 
-    
+    console.log(this.state.subOption)
     console.log("=====FREQ-RADIO=====")
     console.log(this.state.freqOption)
-    
     console.log("=====CHECKBOX VALUES=====")
     console.log(this.state.flavChecks)
+
+    let surveyFlavFilter = [...this.state.surveyFlav]
+    for (let i = 0; i < this.state.flavChecks.length; i++) {
+      if (this.state.flavChecks[i] === true) {
+        surveyFlavFilter.push(this.state.flavors[i])
+        this.setState({surveyFlav: surveyFlavFilter})
+      }
+    }
+    
+    console.log(surveyFlavFilter)
+
+    API.surveyFilter(this.state.subOption, )
+      .then(res => console.log(res))
+      .then(console.log(this.state.subOption))
+      .catch(err => console.log(err))
   }
 
   render() {

@@ -12,9 +12,9 @@ export default {
   },
 
   //GETS ALCOHOLS USING THE CHOSES SUBSCRIPTION AND FLAVORS
-  // surveyFilter: function (subcription, flavors) {
-  //   return  axios.get(`/api/`)
-  // },
+  surveyFilter: function (subcription, flavors) {
+    return  axios.get(`/api/alcoholList/survey/filter/${subcription}/${flavors}`);
+  },
 
   //Create User in User table and Create User in fav table
   createUser: function (newUser) {
