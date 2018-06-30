@@ -73,7 +73,7 @@ class App extends Component {
             <Route exact path="/recipes" render={props => (
               <Recipes {...props} userData={this.state.userData} />
             )} />
-            <Route exact path="/fullrecipe" component={FullRecipe} />
+            <Route path="/fullrecipe/:id" component={FullRecipe} />
             <Route component={NoMatch} />
           </Switch>
           <Footer />

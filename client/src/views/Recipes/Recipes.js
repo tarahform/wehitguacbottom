@@ -114,6 +114,7 @@ class Recipes extends Component {
               image={drank.strDrinkThumb}
               favorite={this.state.favoriteRecipes.includes(drank.idDrink)}
               handleFavorite={this.handleFavorite}
+              seeFullRecipe={this.seeFullRecipe}
             />
           )}
         </div>
