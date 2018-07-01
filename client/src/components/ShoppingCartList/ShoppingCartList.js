@@ -17,7 +17,7 @@ const ShoppingCartList = ({alcohols}) => {
                 </thead>
                 <tbody>
                     <tr id="shoppingCartAlcoholList">
-                        <td> {alcohols.name}</td>
+                        <td> </td>
                         <td> </td>
                         <td> </td>
                     </tr>
