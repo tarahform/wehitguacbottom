@@ -1,0 +1,58 @@
+#fullRecipeContainer, #fullRecipeRow1, #fullRecipeCol1, #fullRecipeRow2 {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+} 
+
+#fullRecipeCol3, #fullRecipeCol2 {
+    justify-content: center;
+    align-content: center;
+}
+
+#recipeDescriptions {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#fullRecipeImage {
+    position: relative;
+    width: 400px;
+    height: auto;
+    border-radius: 25%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#recipeName {
+    color: rgb(22,25,73);
+    text-shadow: 2px 2px 4px rgb(173,175,192);
+    font-family: 'Unica One', cursive;
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#ingredientsForRecipe {
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(22,25,73);
+}
+
+#instructionsForRecipe {
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(22,25,73);
+  line-height: 2;
+}
+
+#space1 {
+    margin-top: 10pt;
+
+}
+
+#space2 {
+    margin-bottom: 10pt;
+}
+

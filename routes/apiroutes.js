@@ -43,12 +43,12 @@ module.exports = app => {
     //get all alcohols with a specific flavor description
     app.get("/api/alcoholList/survey/filter/:subscription/:flavor1/:flavor2?/:flavor3?/:flavor4?/:flavor5?/:flavor6?/:flavor7?/:flavor8?/:flavor9?/:flavor10?/:flavor11?/:flavor12?/:flavor13?/:flavor14?/:flavor15?/:flavor16?/:flavor17?/:flavor18?/:flavor19?/:flavor20?/:flavor21?/:flavor22?/:flavor23?/:flavor24?/:flavor25?", (req, res) => {
         let subCondition;
-        if (req.params.subscription === "basic") {
-            subCondition = "basic";
-        } else if (req.params.subscription === "moderate") {
-            subCondition = JSON.parse('["basic", "moderate"]');
-        } else if (req.params.subscription === "premium") {
-            subCondition = JSON.parse('["basic", "moderate", "premium"]');
+        if (req.params.subscription === "Basic") {
+            subCondition = "Basic";
+        } else if (req.params.subscription === "Moderate") {
+            subCondition = JSON.parse('["Basic", "Moderate"]');
+        } else if (req.params.subscription === "Premium") {
+            subCondition = JSON.parse('["Basic", "Moderate", "Premium"]');
         }
         console.log(req.params.flavor);
         db.Alcohol.findAll({
