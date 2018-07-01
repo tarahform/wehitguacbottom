@@ -53,15 +53,14 @@ class UserProfile extends Component {
                             </p>
                         </ul>
                     </div>
-                    <div className="row">
-                        <div className="col-md-12">
+                </div>
+                <div className="row">
 
-                            <SavedRecipe userData={this.state.userData} />
+                    <SavedRecipe userData={this.state.userData} />
 
-                        </div>
-                    </div>
                 </div>
             </div>
+
         )
     }
 };

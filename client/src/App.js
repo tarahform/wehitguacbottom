@@ -29,7 +29,7 @@ class App extends Component {
         API.getUser("email", authUser.email)
           .then(response => {
             const userData = response.data[0];
-            console.log(userData)
+            // console.log(userData)
             this.setState({ authUser, userData })
           })
       } else {

@@ -19,6 +19,7 @@ class RecipeListItem extends Component {
       .then(response => {
         // console.log(response.data)
         var drink = response.data.drinks[0];
+        // console.log("THIS: ", drink)
         var ingredients = [];
         for (var i = 1; i < 16; i++) {
           var ingred = drink["strMeasure" + i] + drink["strIngredient" + i];

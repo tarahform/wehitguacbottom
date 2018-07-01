@@ -19,7 +19,7 @@ class SavedRecipe extends Component {
             // console.log(response.data.favoriteRecipes)
             var favoriteRecipes = JSON.parse(response.data.favoriteRecipes);
             this.setState({ favoriteRecipes })
-            //  console.log(favoriteRecipes)
+            //  console.log("My favorite recipes: ", favoriteRecipes)
           }
         })
     }
@@ -48,8 +48,7 @@ class SavedRecipe extends Component {
     // console.log(this.state.favoriteRecipes)
     return (
       // map through this.state.favoriteRecipes the same way I do in recipes.js
-      <div className="row" id="favoriteRecipeRow">
-
+      <div className="col-md-4">
         {this.state.favoriteRecipes.map(drank =>
           <RecipeListItem
             key={drank}
