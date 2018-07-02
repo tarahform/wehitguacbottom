@@ -4,7 +4,7 @@ import "./AlcoholListItem.css";
 const AlcoholListItem = props => {
   // console.log(props.description);
   // console.log(props.description.slice(2, -2));
-  console.log(props.description)
+  // console.log(props.description)
   const description = props.description.slice(2, -2).split('", "');
   // console.log(description);
 

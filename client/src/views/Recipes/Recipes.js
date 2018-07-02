@@ -31,7 +31,10 @@ class Recipes extends Component {
       })
       .then(response => {
         if (response) {
-          var favoriteRecipes = response.data.favoriteRecipes.slice(2, -2).split(", ").filter(id => id !== "");
+          var favoriteRecipes = response.data.favoriteRecipes.slice(2, -2).split(", ").filter(id => id !== "").forEach(id => {
+            // console.log("id: ", id)
+            return id.replace(/\\/gi, "")
+          });
           this.setState({ favoriteRecipes })
           //  console.log(favoriteRecipes)
         }

@@ -17,7 +17,12 @@ class SavedRecipe extends Component {
         .then(response => {
           if (response) {
             // console.log(response.data.favoriteRecipes)
-            var favoriteRecipes = JSON.parse(response.data.favoriteRecipes).filter(id => id !== "");
+            var favoriteRecipes = JSON.parse(response.data.favoriteRecipes).filter(id => id !== "").map(id => {
+              // console.log("id saved recipe: ", id)
+              // console.log(typeof id)
+              return `${id}`.replace(/\\/gi, "")
+            });
+            // .forEach(id => id.replaceAll("\\\\", ""));
             this.setState({ favoriteRecipes })
             //  console.log("My favorite recipes: ", favoriteRecipes)
           }
@@ -53,19 +58,19 @@ class SavedRecipe extends Component {
       // map through this.state.favoriteRecipes the same way I do in recipes.js
       <div className="col-12">
         <div className="row" id="savedRecipesRow">
-        {this.state.favoriteRecipes.map(drank => {
-          if (drank !== "") {
-            return <RecipeListItem
-              key={drank}
-              id={drank}
-              handleFavorite={this.handleFavorite}
-              favorite={true}
-            />
-          } else {
-            return ""
+          {this.state.favoriteRecipes.map(drank => {
+            if (drank !== "") {
+              return <RecipeListItem
+                key={drank}
+                id={drank}
+                handleFavorite={this.handleFavorite}
+                favorite={true}
+              />
+            } else {
+              return ""
+            }
           }
-        }
-        )}
+          )}
         </div>
       </div>
     )

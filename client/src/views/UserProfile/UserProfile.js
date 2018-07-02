@@ -26,10 +26,10 @@ class UserProfile extends Component {
             <div className="container" id="userProfilePage">
                 <div className="jumbotron" id="userProfileJumbo">
                     <div className="row justify-content-center" id="userProfileRow2">
-                        <div className="col-md-6 border-0 aos-item" id="userProfileColLeft">
+                        <div className="col-md-6 border-0 justify-content-center" id="userProfileColLeft">
                             <div className="card border-0" id="userPictureDiv">
-                                <div className="card-body border-0" id="userProfilePhotoCard">
-                                    <img src="./user.png" alt="Avatar" className="image img-fluid rounded-circle" id="userPicture" />
+                                <div className="card-body border-0 justify-content-center" id="userProfilePhotoCard">
+                                    <img src="/img/user.png" alt="Avatar" className="image img-fluid rounded-circle" id="userPicture" />
                                 </div>
                                 <div className="overlay border-0" id="userOverlay">
                                     <div className="userProfilePhotoBtn">

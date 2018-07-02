@@ -67,7 +67,7 @@ class App extends Component {
               <Route
                 exact path="/userprofile"
                 render={props => (
-                  <UserProfile {...props} userData={this.state.userData} />
+                  <UserProfile {...props} userData={this.state.userData} updateUserDataInApp={this.updateUserDataInApp}/>
                 )}
               />
               <Route exact path="/shoppingcart" render={props => (
