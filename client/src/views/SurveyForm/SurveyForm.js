@@ -3,6 +3,7 @@ import CheckBox from "../../components/CheckBox";
 import RadioButton from "../../components/RadioButton";
 import flavors from "../../flavors.json";
 import API from "../../utils/API";
+import { Link } from "react-router-dom";
 import "./SurveyForm.css";
 
 class SurveyForm extends Component {
@@ -96,7 +97,7 @@ class SurveyForm extends Component {
     let flavorString = ""
 
     for (let i = 0; i < surveyFlavFilter.length; i++) {
-      flavorString += surveyFlavFilter[i]+"/"
+      flavorString += surveyFlavFilter[i] + "/"
     }
 
     localStorage.setItem("subscription", this.state.subOption)
@@ -107,12 +108,14 @@ class SurveyForm extends Component {
 
     API.surveyFilter(this.state.subOption, flavorString)
       .then(res => console.log(res))
-      .then(console.log(this.state.subOption))
-      .then(flavorString = "")
+      .then(() => console.log(this.state.subOption))
+      .then(() => flavorString = "")
+      .then(() => this.props.history.push("/alcohol"))
       .catch(err => console.log(err))
   }
 
   render() {
+    console.log(this.props)
     return (
       <div className="container">
         <div className="row">
@@ -153,7 +156,9 @@ class SurveyForm extends Component {
                   label={flavor}
                 />
               ))}
-              <button onClick={this.handleFormSubmit} className="btn btn-primary" type="submit">Submit</button>
+              <Link to="/alcohol" style={{ textDecoration: "none" }}>
+                <button onClick={this.handleFormSubmit} className="btn btn-primary" type="submit">Submit</button>
+              </Link>
             </form>
           </div>
         </div>
