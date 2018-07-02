@@ -40,7 +40,7 @@ class RecipeListItem extends Component {
     // console.log(this.props)
     return (
       this.state.alcoholic === "Alcoholic" ?
-        <div className="col-md-4 col-sm-6">
+        <div className="col-md-4 col-sm-6" id="recipeListItemCol">
           <div className="card text-center" id="recipeCard">
             <div className="card-header" id="recipeCategory">
               <h6 id="recipeHeader">{this.state.name}<i id="favorite" onClick={() => this.props.handleFavorite(this.props.id)} className={this.props.favorite ? "fas fa-heart red-heart" : "far fa-heart not-red-heart"}></i></h6>
