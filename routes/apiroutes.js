@@ -23,7 +23,7 @@ module.exports = app => {
     //search alcohol by id
     app.get("/api/alcohol/:id1/:id2?/:id3?/:id4?/:id5?", (req, res) => {
         const ids = [];
-        
+
         for (let id in req.params) {
             if (id) ids.push(req.params[id])
             console.log(id)
@@ -164,6 +164,7 @@ module.exports = app => {
                 }
             });
             console.log(newData);
+            newData = newData.filter((item, index, inputArray) => inputArray.indexOf(item) === index);
             res.json(newData);
         });
     });

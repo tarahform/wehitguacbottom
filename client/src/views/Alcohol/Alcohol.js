@@ -16,7 +16,7 @@ class Alcohol extends Component {
     let alcohols;
     let shoppingcart = this.state.shoppingcart;
 
-    API.getAllAlcohol()
+    // API.getAllAlcohol()
     // .then(res => alcohols = res.data )
     // .then(() => {
     //   if(this.props.userData && this.props.userData.shoppingcart) {
@@ -28,6 +28,7 @@ class Alcohol extends Component {
 
     let userSub = localStorage.getItem("subscription")
     let userFlav = localStorage.getItem("flavorString")
+    console.log(userFlav)
 
     API.surveyFilter(userSub, userFlav)
       .then(res => alcohols = res.data)
