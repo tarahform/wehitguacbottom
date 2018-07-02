@@ -111,17 +111,22 @@ class SurveyForm extends Component {
       // .then(() => console.log(this.state.subOption))
       .then(() => flavorString = "")
       .then(() => this.props.history.push("/alcohol"))
-      // .catch(err => console.log(err))
+    // .catch(err => console.log(err))
   }
 
   render() {
     // console.log(this.props)
     return (
-      <div className="container">
+      <div className="container" id="surveyContainer">
+        <div className="jumbotron text-center" id="surveyJumbotron">
+          <h1 id="surveyH1"> Please Answer The Following Questions </h1>
+        </div>
         <div className="row">
-          <div className="col-md-12">
-            <form>
-              <h2>What subscription level would you like?</h2>
+        <div className="col-md-1">
+        </div>
+          <div className="col-md-10">
+            <form id="surveyFormQuestions">
+              <h2 id="surveyQuestion1">What subscription level would you like?</h2>
               {this.state.subscriptions.map((subscription, i) => (
                 <RadioButton
                   key={i}
@@ -133,7 +138,7 @@ class SurveyForm extends Component {
                   label={subscription}
                 />
               ))}
-              <h2>How often would you like your delivery?</h2>
+              <h2 id="surveyQuestion2">How often would you like your delivery?</h2>
               {this.state.frequencies.map((frequency, i) => (
                 <RadioButton
                   key={i}
@@ -145,7 +150,7 @@ class SurveyForm extends Component {
                   label={frequency}
                 />
               ))}
-              <h2>What flavors do you like?</h2>
+              <h2 id="surveyQuestion3">What flavors do you like?</h2>
               {this.state.flavors.map((flavor, i) => (
                 <CheckBox
                   key={i}
@@ -157,10 +162,12 @@ class SurveyForm extends Component {
                 />
               ))}
               <Link to="/alcohol" style={{ textDecoration: "none" }}>
-                <button onClick={this.handleFormSubmit} className="btn btn-primary" type="submit">Submit</button>
+                <button onClick={this.handleFormSubmit} className="btn btn-primary" type="submit" id="submitSurveyButton">Submit</button>
               </Link>
             </form>
           </div>
+          <div className="col-md-1">
+        </div>
         </div>
       </div>
     )

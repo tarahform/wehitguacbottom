@@ -19,7 +19,7 @@ class Recipes extends Component {
         // object.values inside of the map function creates and array of arrays instead of an array of objects
         // -- object.values just creates an array that contains the values of everything inside the object
         // -- [0] returns the first element of the array --> the array here only has one element, which is a single ingredient
-        var ingredientList = response.data.drinks.map(ingredient => Object.values(ingredient)[0]);
+        let ingredientList = response.data.drinks.map(ingredient => Object.values(ingredient)[0]);
         this.setState({ ingredientList })
       })
       .then(() => {
@@ -31,13 +31,37 @@ class Recipes extends Component {
       })
       .then(response => {
         if (response) {
-          var favoriteRecipes = response.data.favoriteRecipes.slice(2, -2).split(", ").filter(id => id !== "")
-          this.setState({ favoriteRecipes })
+          let favoriteRecipes = response.data.favoriteRecipes.slice(2, -2).split(", ").filter(id => id !== "");
+          this.setState({ favoriteRecipes: favoriteRecipes })
           //  console.log(favoriteRecipes)
         }
       })
   }
 
+  componentWillReceiveProps(nextProps) {
+    API.getIngredientsList()
+      .then(response => {
+        // object.values inside of the map function creates and array of arrays instead of an array of objects
+        // -- object.values just creates an array that contains the values of everything inside the object
+        // -- [0] returns the first element of the array --> the array here only has one element, which is a single ingredient
+        let ingredientList = response.data.drinks.map(ingredient => Object.values(ingredient)[0]);
+        this.setState({ ingredientList })
+      })
+      .then(() => {
+        if (nextProps.userData) {
+          return API.getFavoriteRecipeList(nextProps.userData.id)
+        } else {
+          return false
+        }
+      })
+      .then(response => {
+        if (response) {
+          let favoriteRecipes = response.data.favoriteRecipes.slice(2, -2).split(", ").filter(id => id !== "");
+          this.setState({ favoriteRecipes })
+          //  console.log(favoriteRecipes)
+        }
+      })
+  }
 
   handleSubmit = (event) => {
     event.preventDefault();

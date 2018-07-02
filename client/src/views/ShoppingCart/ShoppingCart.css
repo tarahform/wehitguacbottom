@@ -17,10 +17,6 @@
     font-size: 50px;
 }
 
-#checkOutRow {
-    margin-top: 20px;
-}
-
 #placeOrderButton {
     font-family: 'Unica One', cursive;
     border: rgb(173,175,192) 2px solid;
@@ -29,4 +25,9 @@
     width: 200px;
     height: 50px;
     font-size: 20px;
+}
+
+#totalAmountSum {
+    font-family: 'Unica One', cursive;  
+    font-size: 50px;
 }

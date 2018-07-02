@@ -7,7 +7,8 @@ class ShoppingCart extends Component {
 
     state = {
         shoppingcart: [],
-        alcohols: []
+        alcohols: [],
+        total: 0
     }
 
     // this will happen no matter how you got to this page
@@ -16,7 +17,19 @@ class ShoppingCart extends Component {
             API.getUser("email", this.props.userData.email)
                 .then(response => this.setState({ shoppingcart: JSON.parse(response.data[0].shoppingcart) }))
                 .then(() => API.findDrinksInCart(this.state.shoppingcart))
-                .then(response => this.setState({ alcohols: response.data }))
+                .then(response => {
+                    let totalHandler = 0.00
+                    response.data.map(alcohol => {
+                        totalHandler += parseFloat(alcohol.price)
+                        // console.log(alcohol.price)
+                        // console.log(totalHandler)
+                    })
+                    this.setState({
+                        alcohols: response.data,
+                        total: totalHandler.toFixed(2)
+                    })
+                })
+                // .then(() => this.state.alcohols.map(alcohol => (this.setState({total: this.state.total+alcohol.price}))))
                 .catch(err => console.log(err))
         }
     }
@@ -28,9 +41,19 @@ class ShoppingCart extends Component {
             API.getUser("email", nextProps.userData.email)
                 .then(response => this.setState({ shoppingcart: JSON.parse(response.data[0].shoppingcart) }))
                 .then(() => API.findDrinksInCart(this.state.shoppingcart))
-                .then(response => this.setState({ alcohols: response.data }))
+                .then(response => {
+                    let totalHandler = 0.00
+                    response.data.map(alcohol => {
+                        totalHandler += parseFloat(alcohol.price)
+                        // console.log(alcohol.price)
+                        // console.log(totalHandler)
+                    })
+                    this.setState({
+                        alcohols: response.data,
+                        total: totalHandler.toFixed(2)
+                    })
+                })
                 .catch(err => console.log(err))
-
         }
     }
 
@@ -60,11 +83,11 @@ class ShoppingCart extends Component {
                     </div>
                     <div className="col-md-4 text-center" id="checkOutCol2">
                         <h1 id="totalAmountSum">
-                            
+                            ${this.state.total}
                         </h1>
                     </div>
                     <div className="col-md-4 text-center" id="checkOutCol3">
-                        <button type="button" id="placeOrderButton" class="btn btn-primary"> Place Order </button>
+                        <button type="button" id="placeOrderButton" className="btn btn-primary"> Place Order </button>
                     </div>
                 </div>
 

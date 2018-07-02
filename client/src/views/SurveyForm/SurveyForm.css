@@ -1,0 +1,28 @@
+#surveyQuestion1, #surveyQuestion2, #surveyQuestion3 {
+    font-family: 'Unica One', cursive;
+    padding-top: 20px;
+    color: rgb(22,25,73);
+}
+
+#surveyFormQuestions {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#surveyJumbotron {
+    color: white;
+    background-color: rgb(22,25,73);
+    border-radius: 15px 50px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Unica One', cursive;
+}
+
+#submitSurveyButton {
+    font-family: 'Unica One', cursive;
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+}
+
