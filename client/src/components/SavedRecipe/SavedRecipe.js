@@ -10,6 +10,21 @@ class SavedRecipe extends Component {
     favoriteRecipes: []
   }
 
+  componentDidMount() {
+    if (this.props.userData) {
+      API.getFavoriteRecipeList(this.props.userData.id)
+        .then(response => {
+          if (response) {
+            // console.log(response.data.favoriteRecipes)
+            var favoriteRecipes = JSON.parse(response.data.favoriteRecipes).filter(id => id !== "");
+            // .forEach(id => id.replaceAll("\\\\", ""));
+            this.setState({ favoriteRecipes })
+            //  console.log("My favorite recipes: ", favoriteRecipes)
+          }
+        })
+    }
+  }
+
   // component will receive props
   componentWillReceiveProps(nextProps) {
     if (nextProps.userData) {
@@ -17,11 +32,7 @@ class SavedRecipe extends Component {
         .then(response => {
           if (response) {
             // console.log(response.data.favoriteRecipes)
-            var favoriteRecipes = JSON.parse(response.data.favoriteRecipes).filter(id => id !== "").map(id => {
-              // console.log("id saved recipe: ", id)
-              // console.log(typeof id)
-              return `${id}`.replace(/\\/gi, "")
-            });
+            var favoriteRecipes = JSON.parse(response.data.favoriteRecipes).filter(id => id !== "");
             // .forEach(id => id.replaceAll("\\\\", ""));
             this.setState({ favoriteRecipes })
             //  console.log("My favorite recipes: ", favoriteRecipes)
@@ -33,6 +44,8 @@ class SavedRecipe extends Component {
   handleFavorite = (drinkId) => {
     // console.log("clicked")
     const { favoriteRecipes } = this.state;
+    console.log(favoriteRecipes);
+    console.log(drinkId);
     if (this.state.favoriteRecipes.includes(drinkId)) {
       // splice takes two arguments --> (starting index, how many elements to remove from the starting index) and removed them from anywhere in the array
       // removes from the right, if negative no elements are removed

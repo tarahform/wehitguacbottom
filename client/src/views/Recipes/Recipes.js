@@ -31,8 +31,8 @@ class Recipes extends Component {
       })
       .then(response => {
         if (response) {
-          let favoriteRecipes = response.data.favoriteRecipes.slice(2, -2).split(", ").filter(id => id !== "");
-          this.setState({ favoriteRecipes: favoriteRecipes })
+          let favoriteRecipes = JSON.parse(response.data.favoriteRecipes).filter(id => id !== "");
+          this.setState({ favoriteRecipes })
           //  console.log(favoriteRecipes)
         }
       })
@@ -56,7 +56,9 @@ class Recipes extends Component {
       })
       .then(response => {
         if (response) {
-          let favoriteRecipes = response.data.favoriteRecipes.slice(2, -2).split(", ").filter(id => id !== "");
+          let favoriteRecipes = JSON.parse(response.data.favoriteRecipes).filter(id => id !== "");
+          console.log("favoriteRecipes", favoriteRecipes);
+          
           this.setState({ favoriteRecipes })
           //  console.log(favoriteRecipes)
         }
