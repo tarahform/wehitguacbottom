@@ -25,6 +25,7 @@
     "cocktail-api-search": "^1.0.21",
     "express": "^4.15.4",
     "google-fonts": "^1.0.0",
+    "moment": "^2.22.2",
     "mysql2": "^1.5.3",
     "passport-facebook": "^2.1.1",
     "passport-google-oauth": "^1.0.0",

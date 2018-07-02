@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SavedRecipe from "../../components/SavedRecipe";
 import "./userprofile.css";
+import moment from "moment"
 
 class UserProfile extends Component {
     state = {
@@ -41,16 +42,16 @@ class UserProfile extends Component {
                         <div className="col-md-6 media-body" id="userProfileColRight">
                             <ul id="userInfo">
                                 <p>Name:
-                    <span name="user" id="userName">{this.state.userData ? this.state.userData.first_name + " " + this.state.userData.middle_name + " " + this.state.userData.last_name : ""}</span>
+                    <span name="user" id="userName"> {this.state.userData ? this.state.userData.first_name + " " + this.state.userData.middle_name + " " + this.state.userData.last_name : ""}</span>
                                 </p>
                                 <p>Age:
-                    <span id="userAge">{this.state.userData ? this.state.userData.age : ""}</span>
+                    <span id="userAge"> {this.state.userData ? this.state.userData.age : ""}</span>
                                 </p>
                                 <p>Member Since:
-                    <span id="memberSince">{this.state.userData ? this.state.userData.createdAt : ""}</span>
+                    <span id="memberSince"> {this.state.userData ? moment(this.state.userData.createdAt).format("LLL") : ""}</span>
                                 </p>
                                 <p>Membership Type:
-                    <span id="memType"></span>
+                    <span id="memType"> {localStorage.getItem("subscription")} </span>
                                 </p>
                             </ul>
                         </div>
