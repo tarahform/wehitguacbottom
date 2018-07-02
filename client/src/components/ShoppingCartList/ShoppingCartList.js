@@ -7,7 +7,7 @@ const ShoppingCartList = props => {
 
     return (
 
-        <div className="container" id="shoppingCartContainer">
+        <div id="shoppingCartSection">
 
             <hr />
 
