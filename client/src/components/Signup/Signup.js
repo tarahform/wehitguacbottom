@@ -62,6 +62,7 @@ class Signup extends Component {
           .catch(dberror => {
             this.setState({ dberror })
           })
+
         this.setState({
           firstName: "",
           middleName: "",
@@ -75,6 +76,8 @@ class Signup extends Component {
           dberror: null,
           fberror: null
         });
+
+        this.props.updateUserDataInApp(email)
         history.push("/userprofile");
       })
       .catch(fberror => {
