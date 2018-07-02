@@ -35,21 +35,35 @@ class ShoppingCart extends Component {
 
     render() {
         return (
+
             <div className="container">
-            
-                    <ShoppingCartList
-                        alcohols={this.state.alcohols}
-                    />
-                  
+                <div className="jumbotron text-center" id="alcoholJumbotron">
+                    <h1> Your Shopping Cart </h1>
+                </div>
+                <div className="row">
 
+                    {this.state.alcohols.map(alcohol => (
+                        <ShoppingCartList
+                            alcohols={this.state.alcohols}
+                            key={alcohol.id}
+                            id={alcohol.id}
+                            name={alcohol.alcohol_name}
+                            image={alcohol.image_abrv}
+                            price={alcohol.price}
+                        />
+                    ))}
+
+
+
+
+                </div>
             </div>
-
         )
     }
-
-
 
 
 }
 
 export default ShoppingCart;
+
+

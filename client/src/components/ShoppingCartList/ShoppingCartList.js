@@ -2,43 +2,35 @@ import React from "react";
 import "./ShoppingCartList.css";
 import "../AlcoholListItem"
 
-const ShoppingCartList = ({alcohols}) => {
-    console.log(alcohols)
-    
+const ShoppingCartList = props => {
+    console.log(props.alcohols)
+
     return (
 
-        <div className="row">
+        // <div className="row">
             <table className="col-md-9 shoppingCartTable">
-                <thead>
-                    <tr>
-                        <th id="shoppingCartImage"> Image </th>
-                        <th id="shoppingCartItem"> Item </th>
-                        <th id="Price"> Price </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr id="shoppingCartAlcoholList">
-                        <td> </td>
-                        <td> </td>
-                        <td> </td>
-                    </tr>
-                </tbody>
+                <div className="card-header">
+                    <thead>
+                        <tr>
+                            <th className="col-md-3" id="shoppingCartImage">  </th>
+                            <th className="col-md-3" id="shoppingCartItem"> Item </th>
+                            <th className="col-md-3" id="Price"> Price </th>
+                        </tr>
+                    </thead>
+                </div>
+                <div className="card-body">
+                    <tbody>
+                        <tr id="shoppingCartAlcoholList">
+                            <td className="col-md-3" >
+                                <img id="shoppingcartAlcoholImage" alt={props.name} src={`../../img/alcohol/${props.image}.png`} />
+                            </td>
+                            <td className="col-md-3 shoppingAlcoholName" > {props.name} </td>
+                            <td className="col-md-3" > {props.price} </td>
+                        </tr>
+                    </tbody>
+                </div>
             </table>
-            <table className="col-md-3 checkoutTable">
-                <thead>
-                    <tr>
-                        <th id="checkoutHead"> Checkout </th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> </td>
-
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        // </div>
 
     )
 
