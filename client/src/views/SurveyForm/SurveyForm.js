@@ -48,23 +48,23 @@ class SurveyForm extends Component {
     this.setState({
       subOption: event.target.value
     });
-    console.log(this.state.subOption);
+    // console.log(this.state.subOption);
   }
 
   handleRadioClick2 = event => {
     this.setState({
       freqOption: event.target.value
     });
-    console.log(this.state.freqOption);
+    // console.log(this.state.freqOption);
   }
 
 
   handleBoxClick = event => {
-    console.log("box click")
-    console.log(event.target.name)
-    console.log(event.target.id);
-    console.log(event.target.checked)
-    console.log(event.target.label)
+    // console.log("box click")
+    // console.log(event.target.name)
+    // console.log(event.target.id);
+    // console.log(event.target.checked)
+    // console.log(event.target.label)
 
     let newFlavChecks = [...this.state.flavChecks]
     if (!newFlavChecks[event.target.id]) {
@@ -73,17 +73,17 @@ class SurveyForm extends Component {
       newFlavChecks[event.target.id] = false
     }
     this.setState({ flavChecks: newFlavChecks })
-    console.log(this.state.flavChecks)
+    // console.log(this.state.flavChecks)
   }
 
   handleFormSubmit = event => {
     event.preventDefault()
-    console.log("=====SUB-RADIO=====")
-    console.log(this.state.subOption)
-    console.log("=====FREQ-RADIO=====")
-    console.log(this.state.freqOption)
-    console.log("=====CHECKBOX VALUES=====")
-    console.log(this.state.flavChecks)
+    // console.log("=====SUB-RADIO=====")
+    // console.log(this.state.subOption)
+    // console.log("=====FREQ-RADIO=====")
+    // console.log(this.state.freqOption)
+    // console.log("=====CHECKBOX VALUES=====")
+    // console.log(this.state.flavChecks)
 
     let surveyFlavFilter = [...this.state.surveyFlav]
 
@@ -103,19 +103,19 @@ class SurveyForm extends Component {
     localStorage.setItem("subscription", this.state.subOption)
     localStorage.setItem("flavorString", flavorString)
 
-    console.log(flavorString)
-    console.log(surveyFlavFilter)
+    // console.log(flavorString)
+    // console.log(surveyFlavFilter)
 
     API.surveyFilter(this.state.subOption, flavorString)
-      .then(res => console.log(res))
-      .then(() => console.log(this.state.subOption))
+      // .then(res => console.log(res))
+      // .then(() => console.log(this.state.subOption))
       .then(() => flavorString = "")
       .then(() => this.props.history.push("/alcohol"))
-      .catch(err => console.log(err))
+      // .catch(err => console.log(err))
   }
 
   render() {
-    console.log(this.props)
+    // console.log(this.props)
     return (
       <div className="container">
         <div className="row">
