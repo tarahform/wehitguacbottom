@@ -4,6 +4,7 @@ import "../AlcoholListItem"
 
 const ShoppingCartList = ({alcohols}) => {
     console.log(alcohols)
+    
     return (
 
         <div className="row">
