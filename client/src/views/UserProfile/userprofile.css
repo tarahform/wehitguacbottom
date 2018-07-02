@@ -13,17 +13,26 @@
   font-family: 'Raleway', sans-serif; 
 }
 
-#userProfilePhotoCard {
-  position: relative;
-  background-color: none;  
-  border: none;
-  border-radius: 15px;
+#userProfileColRight {
+  font-size: 20pt;
+}
+
+#userPictureDiv {
+  height: auto;
 }
 
 #userPicture {
   width: 150px;
+  background-color: none;
   height: 150px;
   background-color: none;
+  border-radius: 15px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 #userOverlay {
