@@ -6,7 +6,8 @@ import { auth } from "../../firebase";
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 const Navbar = ({ authUser }) => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
-    <Link className="navbar-brand" to="/">
+
+    <Link to="/welcome"className="navbar-brand">
       <img id="logo" alt="y" src="/img/Create-oh.png" />
     </Link>
         
@@ -14,16 +15,16 @@ const Navbar = ({ authUser }) => (
 
         <li
           className={
-            window.location.pathname === "/" ||
               window.location.pathname === "/welcome"
               ? "nav-item active"
               : "nav-item"
           }
         >
-          <Link to="/" className="nav-link">
+          <Link to="/welcome" className="nav-link">
             Welcome
           </Link>
         </li>
+
         <li
           className={
             window.location.pathname === "/about"
@@ -35,10 +36,11 @@ const Navbar = ({ authUser }) => (
             About
           </Link>
         </li>
+
           { authUser ?
         <li
           className={
-            window.location.pathname === "/UserProfile"
+            window.location.pathname === "/userprofile"
               ? "nav-item active"
               : "nav-item"
           }
@@ -51,7 +53,7 @@ const Navbar = ({ authUser }) => (
           { authUser ?
         <li
           className={
-            window.location.pathname === "/Alcohol"
+            window.location.pathname === "/alcohol"
               ? "nav-item active"
               : "nav-item"
           }
@@ -98,6 +100,7 @@ const Navbar = ({ authUser }) => (
             Sign In
           </Link>
         </li> : ""}
+
         {!authUser ?
         <li
           className={

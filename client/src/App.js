@@ -14,7 +14,6 @@ import ShoppingCart from "./views/ShoppingCart";
 import SurveyForm from "./views/SurveyForm";
 import Signup from "./components/Signup";
 import Signin from "./components/Signin";
-import Events from "./components/Events";
 import { firebase } from "./firebase";
 import API from "./utils/API";
 
@@ -62,12 +61,11 @@ class App extends Component {
               <Route exact path="/signup" render={props => (
                 <Signup {...props} updateUserDataInApp={this.updateUserDataInApp} />
               )} />
-              <Route exact path="/events" component={Events} />
               <Route exact path="/surveyform" component={SurveyForm} />
               <Route
                 exact path="/userprofile"
                 render={props => (
-                  <UserProfile {...props} userData={this.state.userData} />
+                  <UserProfile {...props} userData={this.state.userData} updateUserDataInApp={this.updateUserDataInApp}/>
                 )}
               />
               <Route exact path="/shoppingcart" render={props => (
