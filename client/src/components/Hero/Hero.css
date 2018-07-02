@@ -1,20 +1,17 @@
 .hero {
-  height: 500px;
+  height: 700px;
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
 .hero::after {
   content: "";
   display: block;
   opacity: .4;
-  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: black;
 }
 
 .hero * {
@@ -22,15 +19,20 @@
   z-index: 2;
 }
 
-.hero h1, .hero h2 {
+.hero h2 {
   color: white;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px rgb(22,25,73);
   font-family: 'Unica One', cursive;
 }
 
 .hero h1 {
   font-size: 60px;
+  color: rgb(22,25,73);
+  font-family: 'Unica One', cursive;
+  text-shadow: 2px 2px 4px white;
+  font-size: 100px;
   padding-top: 140px;
+  padding-bottom: 20px;
   margin-top: 0;
 }
 
