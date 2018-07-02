@@ -110,7 +110,7 @@ class Recipes extends Component {
             </div>
           </div>
         </div>
-        <div className="row" id="recipeRow">
+        <div className="row justify-content-around" id="recipeRow">
 
           {this.state.searchResults.map(drank =>
             <RecipeListItem

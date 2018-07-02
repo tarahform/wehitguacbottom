@@ -4,11 +4,6 @@
   margin-bottom: 30px;
 }
 
-#savedRecipeRowUserProfile {
-  justify-content: center;
-  align-content: center;
-}
-
 #userProfileJumbo {
   color: white;
   background-color: rgb(173,175,192);
@@ -58,8 +53,4 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-}
-
-#userProfileRow2 {
-  margin-left: 10%;
 }
