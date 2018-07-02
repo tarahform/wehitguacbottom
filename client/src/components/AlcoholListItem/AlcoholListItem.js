@@ -9,12 +9,11 @@ const AlcoholListItem = props => {
 
   return (
 
-        <div className="col-md-4">
-          <div className={props.selected ? "card border-dark" : "card"} onClick={() => props.handleAlcoholSelect(props.id)}>
-            <div className="card-header" id="category">
-              {props.category}
+        <div className="col-md-4" id="alcoholListItemCol">
+          <div className={props.selected ? "card border-dark" : "card"} onClick={() => props.handleAlcoholSelect(props.id)} id="alcoholCard">
+            <div className="card-header" id="alcoholCategory">
+              <h6 id="alcoholHeader">{props.category}</h6>
             </div>
-
             <div className="card-body">
               <h6 className="card-title title-holder" id="alcoholName">
                 <strong> {props.name} </strong>

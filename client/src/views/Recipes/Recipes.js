@@ -63,22 +63,20 @@ class Recipes extends Component {
   handleFavorite = (drinkId) => {
     // console.log("clicked")
     const { favoriteRecipes } = this.state;
-    console.log("favoriteRecipes:", favoriteRecipes);
+    // console.log("favoriteRecipes:", favoriteRecipes);
     if (this.state.favoriteRecipes.includes(drinkId)) {
       // splice takes two arguments --> (starting index, how many elements to remove from the starting index) and removed them from anywhere in the array
       // removes from the right, if negative no elements are removed
       // get index of the drink in the favorite recipes array
       // then splice => 1 element
       favoriteRecipes.splice(favoriteRecipes.indexOf(drinkId), 1);
-      console.log("favoriteRecipes after removed", favoriteRecipes);
+      // console.log("favoriteRecipes after removed", favoriteRecipes);
     } else {
       favoriteRecipes.push(drinkId)
-      console.log("favoriteRecipes after added", favoriteRecipes);
+      // console.log("favoriteRecipes after added", favoriteRecipes);
     }
-
-    console.log("stringified favorites", JSON.stringify(favoriteRecipes));
-
-    console.log("this.props.userData", this.props.userData);
+    // console.log("stringified favorites", JSON.stringify(favoriteRecipes));
+    // console.log("this.props.userData", this.props.userData);
     axios.put("/api/favorite/update", {
       UserId: this.props.userData.id,
       favoriteRecipes: JSON.stringify(favoriteRecipes)

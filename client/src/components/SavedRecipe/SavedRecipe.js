@@ -51,7 +51,8 @@ class SavedRecipe extends Component {
     // console.log(this.state.favoriteRecipes)
     return (
       // map through this.state.favoriteRecipes the same way I do in recipes.js
-      <div className="col-md-4">
+      <div className="col-12">
+        <div className="row" id="savedRecipesRow">
         {this.state.favoriteRecipes.map(drank => {
           if (drank !== "") {
             return <RecipeListItem
@@ -65,6 +66,7 @@ class SavedRecipe extends Component {
           }
         }
         )}
+        </div>
       </div>
     )
   }
