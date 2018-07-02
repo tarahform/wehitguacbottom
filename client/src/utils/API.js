@@ -49,5 +49,13 @@ export default {
       shoppingcart: JSON.stringify(shoppingcart)
 
     })
+  },
+
+  //finds all of the drinks in the shopping cart using the users data
+  findDrinksInCart: function(shoppingcart) {
+    // console.log("API.js", shoppingcart)
+    let ids = "";
+    shoppingcart.forEach(id => ids += id + "/")
+    return axios.get("/api/alcohol/" + ids)
   }
 };

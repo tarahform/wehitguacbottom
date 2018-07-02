@@ -71,7 +71,7 @@ class Alcohol extends Component {
   }
 
   render() {
-    console.log(this.state.shoppingcart)
+    // console.log(this.state.shoppingcart)
     return (
 
       <div className="container">
