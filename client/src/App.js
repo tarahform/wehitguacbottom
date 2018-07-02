@@ -57,7 +57,9 @@ class App extends Component {
             <Route exact path="/welcome" component={Welcome} />
             <Route exact path="/about" component={About} />
             <Route exact path="/signin" component={Signin} />
-            <Route exact path="/signup" component={Signup} />
+            <Route exact path="/signup" render={props => (
+              <Signup {...props} updateUserDataInApp={this.updateUserDataInApp}  />
+            )} />
             <Route exact path="/events" component={Events} />
             <Route exact path="/surveyform" component={SurveyForm} />
             <Route
@@ -70,7 +72,7 @@ class App extends Component {
               <ShoppingCart {...props} userData={this.state.userData} updateUserDataInApp={this.updateUserDataInApp}/>
             )} />
             <Route exact path="/alcohol" render={props => (
-              <Alcohol {...props} userData={this.state.userData} updateUserDataInApp={this.updateUserDataInApp}/>
+              <Alcohol {...props} userData={this.state.userData} updateUserDataInApp={this.updateUserDataInApp} />
             )} />
             <Route exact path="/recipes" render={props => (
               <Recipes {...props} userData={this.state.userData} />

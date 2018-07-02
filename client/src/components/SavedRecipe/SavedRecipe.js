@@ -17,7 +17,7 @@ class SavedRecipe extends Component {
         .then(response => {
           if (response) {
             // console.log(response.data.favoriteRecipes)
-            var favoriteRecipes = JSON.parse(response.data.favoriteRecipes);
+            var favoriteRecipes = JSON.parse(response.data.favoriteRecipes).filter(id => id !== "");
             this.setState({ favoriteRecipes })
             //  console.log("My favorite recipes: ", favoriteRecipes)
           }
@@ -37,6 +37,9 @@ class SavedRecipe extends Component {
     } else {
       favoriteRecipes.push(drinkId)
     }
+    // console.log("Favorite Recipes: ", favoriteRecipes)
+
+
     axios.put("/api/favorite/update", {
       UserId: this.props.userData.id,
       favoriteRecipes: JSON.stringify(favoriteRecipes)
@@ -49,12 +52,18 @@ class SavedRecipe extends Component {
     return (
       // map through this.state.favoriteRecipes the same way I do in recipes.js
       <div className="col-md-4">
-        {this.state.favoriteRecipes.map(drank =>
-          <RecipeListItem
-            key={drank}
-            id={drank}
-            handleFavorite={this.handleFavorite}
-          />
+        {this.state.favoriteRecipes.map(drank => {
+          if (drank !== "") {
+            return <RecipeListItem
+              key={drank}
+              id={drank}
+              handleFavorite={this.handleFavorite}
+              favorite={true}
+            />
+          } else {
+            return ""
+          }
+        }
         )}
       </div>
     )

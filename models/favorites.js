@@ -4,6 +4,7 @@ module.exports = (sequelize, DataTypes) => {
         {
             favoriteRecipes: {
                 type: DataTypes.TEXT,
+                defaultValue: "[]",
                 allowNull: true
             }
         },
