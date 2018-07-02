@@ -102,9 +102,10 @@ class SurveyForm extends Component {
 
     localStorage.setItem("subscription", this.state.subOption)
     localStorage.setItem("flavorString", flavorString)
-
-    console.log(flavorString)
+    
+    console.log("flavorString", flavorString);
     console.log(surveyFlavFilter)
+    console.log("this.state.subOption", this.state.subOption)
 
     API.surveyFilter(this.state.subOption, flavorString)
       .then(res => console.log(res))
