@@ -1,5 +1,7 @@
-#aboutText {
+#aboutText1, #aboutText2 {
+  font-size: 15pt;
   color: white;
+  text-shadow: 3px 3px 6px rgb(22,25,73);
   font-family: 'Quicksand', sans-serif;
 }
 
