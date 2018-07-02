@@ -89,13 +89,13 @@ class Recipes extends Component {
       <div className="container" id="searchContainer">
         <div className="jumbotron" id="searchJumbotron">
           <div className="row">
-            <div className="col-md-12">
-              <h1 id="recipeH1">Have alcohol but no recipes???</h1>
+            <div className="col-md-12" id="textSearchRow">
+              <h1 id="recipeH1Row">Have alcohol but no recipes???</h1>
             </div>
           </div>
           <div className="row">
-            <div className="col-md-12">
-              <h2 id="recipeh2">No problem, we got you covered!</h2>
+            <div className="col-md-12" id="searchRowText">
+              <h2 id="recipeH2Row">No problem, we got you covered!</h2>
             </div>
           </div>
           <div className="row">
@@ -110,7 +110,7 @@ class Recipes extends Component {
             </div>
           </div>
         </div>
-        <div className="row" id="recipeRow">
+        <div className="row justify-content-around" id="recipeRow">
 
           {this.state.searchResults.map(drank =>
             <RecipeListItem

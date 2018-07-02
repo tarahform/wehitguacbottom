@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import ShoppingCartList from "../../components/ShoppingCartList";
+import "./ShoppingCart.css";
 
 class ShoppingCart extends Component {
 
@@ -37,27 +38,40 @@ class ShoppingCart extends Component {
         return (
 
             <div className="container">
-                <div className="jumbotron text-center" id="alcoholJumbotron">
-                    <h1> Your Shopping Cart </h1>
+                <div className="jumbotron text-center" id="alcoholShoppingCartJumbotron">
+                    <p id="shoppingCartJumbotronTitle"> Your Shopping Cart </p>
                 </div>
-                <div className="row">
 
-                    {this.state.alcohols.map(alcohol => (
-                        <ShoppingCartList
-                            alcohols={this.state.alcohols}
-                            key={alcohol.id}
-                            id={alcohol.id}
-                            name={alcohol.alcohol_name}
-                            image={alcohol.image_abrv}
-                            price={alcohol.price}
-                        />
-                    ))}
-
+                {this.state.alcohols.map(alcohol => (
+                    <ShoppingCartList
+                        alcohols={this.state.alcohols}
+                        key={alcohol.id}
+                        id={alcohol.id}
+                        name={alcohol.alcohol_name}
+                        image={alcohol.image_abrv}
+                        price={alcohol.price}
+                    />
+                ))}
 
 
-
+                <div className="row" id="checkOutRow">
+                    <div className="col-md-4 text-center" id="checkOutCol1">
+                        <p id="totalAmountTitle">Total: </p>
+                    </div>
+                    <div className="col-md-4 text-center" id="checkOutCol2">
+                        <h1 id="totalAmountSum">
+                            
+                        </h1>
+                    </div>
+                    <div className="col-md-4 text-center" id="checkOutCol3">
+                        <button type="button" id="placeOrderButton" class="btn btn-primary"> Place Order </button>
+                    </div>
                 </div>
+
             </div>
+
+
+
         )
     }
 

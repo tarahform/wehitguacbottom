@@ -13,23 +13,23 @@
     margin-bottom: 30px;
 }
 
-#recipeH1 {
+#searchRowText, #textSearchRow {
+    font-family: 'Unica One', cursive; 
+}
+
+#recipeH1Row {
     font-size: 40pt;
     text-shadow: 2px 2px 4px black;
     color: white;
-    font-family: 'Unica One', cursive;
 }
 
-#recipeh2 {
+#recipeH2Row {
     font-size: 30pt;
     text-shadow: 2px 2px 4px black;
     color: white;
-    font-family: 'Unica One', cursive;
 }
 
 #recipeRow {
-    display: flex;
-    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -51,6 +51,3 @@ form {
     margin: 2.5pt;
 }
 
-#recipeH1, #recipeh2 {
-    font-family: 'Raleway', sans-serif; 
-} 

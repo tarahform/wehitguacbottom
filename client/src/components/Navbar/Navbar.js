@@ -60,6 +60,7 @@ const Navbar = ({ authUser }) => (
             Alcohol
           </Link>
         </li> : ""}
+
           { authUser ?
         <li
           className={
@@ -70,6 +71,19 @@ const Navbar = ({ authUser }) => (
         >
           <Link to="/recipes" className="nav-link">
             Recipes
+          </Link>
+        </li> : ""}
+
+          { authUser ?
+        <li
+          className={
+            window.location.pathname === "/shoppingcart"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/shoppingcart" className="nav-link">
+            Checkout
           </Link>
         </li> : ""}
         
