@@ -78,7 +78,7 @@ class Signup extends Component {
         });
 
         this.props.updateUserDataInApp(email)
-        history.push("/userprofile");
+        history.push("/surveyform");
       })
       .catch(fberror => {
         this.setState({ fberror });

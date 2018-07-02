@@ -19,8 +19,6 @@ class RecipeListItem extends Component {
       .then(response => {
         // console.log("no [0] here", response.data.drinks)
         var drink = response.data.drinks[0];
-        // drink.splice(1) --> ask Ali about this? ======================================================
-        // change the class of something in React??? =====================================================
         // console.log("THIS: ", drink)
         var ingredients = [];
         for (var i = 1; i < 16; i++) {
@@ -42,9 +40,9 @@ class RecipeListItem extends Component {
     // console.log(this.props)
     return (
       this.state.alcoholic === "Alcoholic" ?
-        <div className="col-md-4 col-sm-6">
+        <div className="col-md-4 col-sm-6" id="recipeListItemCol">
           <div className="card text-center" id="recipeCard">
-            <div className="card-header" id="category">
+            <div className="card-header" id="recipeCategory">
               <h6 id="recipeHeader">{this.state.name}<i id="favorite" onClick={() => this.props.handleFavorite(this.props.id)} className={this.props.favorite ? "fas fa-heart red-heart" : "far fa-heart not-red-heart"}></i></h6>
             </div>
             <div className="card-body">

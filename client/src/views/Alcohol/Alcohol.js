@@ -12,24 +12,37 @@ class Alcohol extends Component {
   }
 
   componentDidMount() {
-    
+
     let alcohols;
     let shoppingcart = this.state.shoppingcart;
 
-      API.getAllAlcohol()
-        .then(res => alcohols = res.data )
-        .then(() => {
-          if(this.props.userData && this.props.userData.shoppingcart) {
-           shoppingcart = JSON.parse(this.props.userData.shoppingcart) 
-          }
-          this.setState({ alcohols, shoppingcart })
-        })
-        .catch(err => console.log(err))
+    API.getAllAlcohol()
+    // .then(res => alcohols = res.data )
+    // .then(() => {
+    //   if(this.props.userData && this.props.userData.shoppingcart) {
+    //    shoppingcart = JSON.parse(this.props.userData.shoppingcart) 
+    //   }
+    //   this.setState({ alcohols, shoppingcart })
+    // })
+    // .catch(err => console.log(err))
+
+    let userSub = localStorage.getItem("subscription")
+    let userFlav = localStorage.getItem("flavorString")
+
+    API.surveyFilter(userSub, userFlav)
+      .then(res => alcohols = res.data)
+      .then(() => {
+        if (this.props.userData && this.props.userData.shoppingcart) {
+          shoppingcart = JSON.parse(this.props.userData.shoppingcart)
+        }
+        this.setState({ alcohols, shoppingcart })
+      })
+      .catch(err => console.log(err))
   }
 
   componentWillReceiveProps(nextProps) {
-    if(nextProps.userData && nextProps.userData.shoppingcart) {
-      this.setState({shoppingcart: JSON.parse(nextProps.userData.shoppingcart) })
+    if (nextProps.userData && nextProps.userData.shoppingcart) {
+      this.setState({ shoppingcart: JSON.parse(nextProps.userData.shoppingcart) })
     }
   }
 
@@ -37,7 +50,7 @@ class Alcohol extends Component {
 
   handleAlcoholSelect = alcoholId => {
     console.log("ive been clicked")
-    if(!this.props.userData) return;
+    if (!this.props.userData) return;
 
     const { shoppingcart } = this.state;
     // console.log(shoppingcart)
@@ -54,20 +67,20 @@ class Alcohol extends Component {
 
     API.updateShoppingCart(this.props.userData.id, shoppingcart)
       .then(() => this.props.updateUserDataInApp(this.props.userData.email))
-    
+
   }
 
   render() {
     // console.log(this.state.shoppingcart)
     return (
 
-      <div className="container">
+      <div className="container" id="alcoholContainer">
         <div className="jumbotron text-center" id="alcoholJumbotron">
           <h1 id="alcoholH1">Please Select 5 Alcohols to <img id="alcoholLogoImage" alt="Create-OH" src="/img/Create-oh.png" /> Order </h1>
         </div>
-        <div className="row">
-          <div className="col-md-10">
-            <div className="row">
+        <div className="row" id="alcoholListRow">
+          <div className="col-md-9" id="alcoholListCol">
+            <div className="row" id="alcholListItemRow">
               {this.state.alcohols.map(alcohol => (
                 <AlcoholListItem
                   key={alcohol.id}
@@ -83,9 +96,9 @@ class Alcohol extends Component {
               ))}
             </div>
           </div>
-          <div className="col-md-2 text-center">
+          <div className="col-md-3 text-center">
             <Link to={this.state.shoppingcart.length < 5 ? "#" : "/shoppingcart"}>
-              <i className={this.state.shoppingcart.length < 5 ? "fas fa-box-open" : "fas fa-box" } ></i>
+              <i className={this.state.shoppingcart.length < 5 ? "fas fa-box-open" : "fas fa-box"} ></i>
             </Link>
           </div>
         </div>

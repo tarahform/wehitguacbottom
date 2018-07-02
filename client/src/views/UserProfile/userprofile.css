@@ -1,7 +1,24 @@
+#userProfilePage {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#userProfileJumbo {
+  color: white;
+  background-color: rgb(173,175,192);
+  border-radius: 15px 50px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Raleway', sans-serif; 
+}
+
 #userProfilePhotoCard {
   position: relative;
   width: 100%;
   border: none;
+  border-radius: 15px;
 }
 
 #userPicture {
@@ -36,8 +53,4 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-}
-
-#userProfileRow2 {
-  margin-left: 10%;
 }

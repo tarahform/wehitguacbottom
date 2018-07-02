@@ -1,26 +1,17 @@
-.card {
-  border-radius: 2px;
+#recipeListItemCol {
+  justify-content: center;
+  align-content: center;
+}
+
+#recipeCard {
+  border-radius: 15px;
   height: auto;
   width: 300px;
   margin-top: 1rem;
 }
 
-.card-header {
+#recipeCategory {
   position: relative;
-}
-
-.far.fa-heart.not-red-heart {
-  position: absolute;
-  right: 1em;
-  top: 1em;
-  color: black;
-}
-
-.fas.fa-heart.red-heart {
-  position: absolute;
-  right: 1em;
-  top: 1em;
-  color: red;
 }
 
 #seeFullRecipe {
@@ -44,8 +35,18 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-#recipeCard {
-  border-radius: 15px;
+.far.fa-heart.not-red-heart {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  color: black;
+}
+
+.fas.fa-heart.red-heart {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  color: red;
 }
 
 
