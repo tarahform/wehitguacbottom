@@ -23,13 +23,13 @@ class UserProfile extends Component {
         // console.log(this.state.userData)
         return (
 
-            <div className="container-fluid" id="userProfilePage">
+            <div className="container" id="userProfilePage">
                 <div className="jumbotron" id="userProfileJumbo">
                     <div className="row justify-content-center" id="userProfileRow2">
                         <div className="col-md-6 border-0 aos-item" id="userProfileColLeft">
                             <div className="card border-0" id="userPictureDiv">
                                 <div className="card-body border-0" id="userProfilePhotoCard">
-                                    <img src="" alt="Avatar" className="image img-fluid rounded-circle" id="userPicture" />
+                                    <img src="./user.png" alt="Avatar" className="image img-fluid rounded-circle" id="userPicture" />
                                 </div>
                                 <div className="overlay border-0" id="userOverlay">
                                     <div className="userProfilePhotoBtn">

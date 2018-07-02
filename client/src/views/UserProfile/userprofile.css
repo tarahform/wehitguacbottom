@@ -8,7 +8,7 @@
   color: white;
   background-color: rgb(173,175,192);
   border-radius: 15px 50px;
-  width: 100%;
+  /* width: 100%; */
   margin-top: 30px;
   margin-bottom: 30px;
   font-family: 'Raleway', sans-serif; 
@@ -23,8 +23,8 @@
 
 #userPicture {
   display: block;
-  max-width: 300px;
-  height: auto;
+  max-width: 150px;
+  height: 150;
 }
 
 #userOverlay {
@@ -33,11 +33,11 @@
   bottom: 0;
   left: 0;
   right: 0;
-  max-width: 350px;
+  max-width: 200px;
   height: auto;
   opacity: 0;
   transition: .5s ease;
-  background-color: white;
+  background-color: none;
   border: none;
 }
 
