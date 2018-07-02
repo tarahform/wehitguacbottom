@@ -2,5 +2,9 @@
 font-family: 'Dancing Script', cursive; */
 #shoppingcartAlcoholImage {
     height: 200px;
-    width: 150px
+    width: 150px;
+}
+
+#alcoholShoppingCartJumbotron {
+    font-family: 'Quicksand', sans-serif;
 }
