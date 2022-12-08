@@ -23,7 +23,7 @@
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "cocktail-api-search": "^1.0.21",
-    "express": "^4.15.4",
+    "express": "^4.17.3",
     "google-fonts": "^1.0.0",
     "moment": "^2.22.2",
     "mysql2": "^1.5.3",
